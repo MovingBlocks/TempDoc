@@ -4,7 +4,7 @@ The console can be accessed by pressing the <ESCAPE> key.
 
 <table>
     <tr>
-        <td>**Command**</td><td>**Description**</td>
+        <td><b>Command</b></td><td><b>Description</b></td>
     </tr>
 <tr>
 <td>exit</td><td>Exits Blockmania</td>

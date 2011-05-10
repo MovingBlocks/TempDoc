@@ -1,13 +1,23 @@
-The console can be accessed by pressing the <ESCAPE> key.
-
-# Console commands #
+The console can be toggled by pressing [ESCAPE].
 
 <table>
-    <tr>
-        <td><b>Command</b></td><td><b>Description</b></td>
-    </tr>
 <tr>
-<td>exit</td><td>Exits Blockmania</td>
+<td><b>Command</b></td><td><b>Description</b></td>
+</tr>
+<tr>
+<td>exit</td><td>Exits Blockmania.</td>
+</tr>
+<tr>
+<td>reset_player</td><td>Resets the player's position to the spawning point.</td>
+</tr>
+<tr>
+<td>goto [x] [y] [z]</td><td>Teleports the player to position x=[x], y=[y], z=[z].</td>
+</tr>
+<tr>
+<td>place [object] [type]</td><td>Places and object [object] of type [type] in front of the player.</td>
+</tr>
+<tr>
+<td>set [variable] [value]</td><td>Sets the variable [object] to the value of [value].</td>
 </tr>
 </table>
 

@@ -33,9 +33,9 @@
 <td>PLAYER_HEIGHT</td><td>NUMERIC</td><td>TODO</td>
 </tr>
 <tr>
-<td>G_FORCE</td><td>NUMERIC</td><td>TODO</td>
+<td>GRAVITY</td><td>NUMERIC</td><td>TODO</td>
 </tr>
 <tr>
-<td>SLOWDOWN_INTENS</td><td>NUMERIC</td><td>TODO</td>
+<td>FRICTION</td><td>NUMERIC</td><td>TODO</td>
 </tr>
 </table>

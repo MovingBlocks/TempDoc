@@ -8,7 +8,7 @@ The console can be toggled by pressing [ESCAPE].
 <td>exit</td><td>Exits Blockmania.</td>
 </tr>
 <tr>
-<td>reset_player</td><td>Resets the player's position to the spawning point.</td>
+<td>respawn</td><td>Resets the player's position to the spawning point.</td>
 </tr>
 <tr>
 <td>goto [x] [y] [z]</td><td>Teleports the player to position x=[x], y=[y], z=[z].</td>

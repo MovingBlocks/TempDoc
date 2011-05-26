@@ -1,4 +1,4 @@
-Welcome to the Blockmania wiki!
+Welcome to the Blockmania Wiki!
 
  * [[Installation]]
  * [[FAQ]]

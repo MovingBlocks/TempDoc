@@ -12,10 +12,10 @@
 <td>SHOW_DEBUG_INFORMATION</td><td>BOOL</td><td>If enabled some debug information are displayed in the upper area of the screen.</td>
 </tr>
 <tr>
-<td>SHOW_CROSSHAIR</td><td>BOOL</td><td>If enabled a crosshair is display in the center of the screen.</td>
+<td>SHOW_CROSSHAIR</td><td>BOOL</td><td>If enabled a crosshair is displayd in the center of the screen.</td>
 </tr>
 <tr>
-<td>ENABLE_BOBBING</td><td>BOOL</td><td>If enabled the player's camera 'shakes' slightly while the player moves.</td>
+<td>ENABLE_BOBBING</td><td>BOOL</td><td>If enabled the player's camera 'shakes' slightly while moving.</td>
 </tr>
 <tr>
 <td>DEMO_FLIGHT</td><td>BOOL</td><td>If enabled the player is moved automatically in one direction. Works only if GOD_MODE is enabled.</td>

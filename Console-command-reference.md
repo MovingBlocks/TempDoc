@@ -11,6 +11,12 @@ The console can be toggled by pressing [ESCAPE].
 <td>respawn</td><td>Resets the player's position to the spawning point.</td>
 </tr>
 <tr>
+<td>load [seed]</td><td>Loads or generates a new world using the given seed value.</td>
+</tr>
+<tr>
+<td>map</td><td>Displays the height map of the area surrounding the player.</td>
+</tr>
+<tr>
 <td>goto [x] [y] [z]</td><td>Teleports the player to position x=[x], y=[y], z=[z].</td>
 </tr>
 <tr>

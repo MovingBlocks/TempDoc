@@ -8,6 +8,9 @@ The console can be toggled by pressing [ESCAPE].
 <td>exit</td><td>Exits Blockmania.</td>
 </tr>
 <tr>
+<td>exit!</td><td>Exits Blockmania (without saving unsaved chunks to disk).</td>
+</tr>
+<tr>
 <td>respawn</td><td>Resets the player's position to the spawning point.</td>
 </tr>
 <tr>

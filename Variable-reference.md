@@ -3,19 +3,19 @@
 <td><b>Variable name</b></td><td><b>Type</b><td><b>Description</b></td>
 </tr>
 <tr>
-<td>SHOW_PLACING_BOX</td><td>BOOL</td><td>If enabled the currently selected block is highlighted with a wireframe box.</td>
+<td>PLACING_BOX</td><td>BOOL</td><td>If enabled the currently selected block is highlighted with a wireframe box.</td>
 </tr>
 <tr>
-<td>SHOW_CHUNK_OUTLINES</td><td>BOOL</td><td>If enabled each chunk is highlighted with a wireframe box.</td>
+<td>CHUNK_OUTLINES</td><td>BOOL</td><td>If enabled each chunk is highlighted with a wireframe box.</td>
 </tr>
 <tr>
-<td>SHOW_DEBUG_INFORMATION</td><td>BOOL</td><td>If enabled some debug information are displayed in the upper area of the screen.</td>
+<td>DEBUG</td><td>BOOL</td><td>If enabled some debug information are displayed in the upper area of the screen.</td>
 </tr>
 <tr>
-<td>SHOW_CROSSHAIR</td><td>BOOL</td><td>If enabled a crosshair is displayd in the center of the screen.</td>
+<td>CROSSHAIR</td><td>BOOL</td><td>If enabled a crosshair is displayd in the center of the screen.</td>
 </tr>
 <tr>
-<td>ENABLE_BOBBING</td><td>BOOL</td><td>If enabled the player's camera 'shakes' slightly while moving.</td>
+<td>BOBBING</td><td>BOOL</td><td>If enabled the player's camera 'shakes' slightly while moving.</td>
 </tr>
 <tr>
 <td>DEMO_FLIGHT</td><td>BOOL</td><td>If enabled the player is moved automatically in one direction. Works only if GOD_MODE is enabled.</td>

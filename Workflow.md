@@ -7,7 +7,7 @@ Always use the "develop" branch as base for your development.
 ## Step by step guide
 
  1. Create a local fork of the main repository (simply use the **_Fork_** button on the main project page)
- 2. Clone your fork: `git clone (url)`
+ 2. Clone the newly created fork to your workstation: `git clone (url)`
  3. Add the main repository as a remote called **upstream**: `git remote add upstream git://github.com/begla/Blockmania.git`
  4. Switch to the **develop **branch: `git checkout develop`
  4. Create a topic branch (named after the issue on GitHub) for the feature/fix you're working on: `git checkout -b <issueNumber>-<description>`

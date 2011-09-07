@@ -5,8 +5,8 @@ Welcome to the Blockmania Wiki!
  * [[Programming style]]
 
 ## Blockmania ##
- * [[Console-command-reference]]
- * [[Object-reference]]
- * [[Variable-reference]]
+ * [[Console command reference]]
+ * [[Object reference]]
+ * [[Variable reference]]
  * [[Blocks]]
  * [[Trees]]

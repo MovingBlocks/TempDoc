@@ -5,4 +5,4 @@
  * **Instance variables:** _lowerCamelCase
  * **Parameters:** lowerCamelCase
  * **Local variables:** lowerCamelCase
- * **Constant values (only static _AND_ final):** THIS_IS_THE_CONSTANT
+ * **Constant values (only values that are static and final):** THIS_IS_THE_CONSTANT

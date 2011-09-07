@@ -19,5 +19,6 @@ This workflow is based on the free e-book "[[http://progit.org/book/ch5-2.html]]
  10. Switch to your local topic branch: `git checkout <issueNumber>-<description>`
  11. Rebase your local topic branch on top of your local develop branch: `git rebase develop`
  12. Push your work: `git push origin <issueNumber>-<description>`
+ 13. And finally: Isse a pull request on the main repository
 
  

@@ -8,23 +8,37 @@ List taken from [here](http://wiki.nanoware.org/Terasology/WebTopicList).
 
 * AdminGroup
     * x3ro: Do we need this?
+
 * AdminUser
     * x3ro: Do we need this?
+
 * AdminUserLeftBar
     * x3ro: Do we need this?
+
 * AnatomySystem
     * x3ro: Should we put this in the Wiki or an Incubator forum thread? 
+
 * AntonKireev
     * x3ro: This seems to be a user profile?
-* AppletArchitecture
+
+* [[Applet Architecture]]
+
 * BenjaminGlatzel
-* BlockArchitecture
-* BlockShapesInBlender
+    * x3ro: This seems to be a user profile?
+
+* [[Block Architecture]]
+* [[Block Shapes In Blender]]
+
 * CommunitySuggestions
-* <strike>[[Contributor Guide]]</strike>
-* DevSetup
-* DevTeam
+    * x3ro: This seems like a canditate for the Incubator as well.
+
+* [[Contributor Guide]]
+* [[Dev Setup]]
+* [[Dev Team]]
+
 * DownloadTerasology
+    * x3ro: This on a FAQ page perhaps?
+
 * EngineRoom
 * EntitySystemArchitecture
 * FancyGit

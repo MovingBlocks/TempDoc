@@ -15,12 +15,13 @@ List taken from [here](http://wiki.nanoware.org/Terasology/WebTopicList).
 * AnatomySystem
     * x3ro: Should we put this in the Wiki or an Incubator forum thread? 
 * AntonKireev
+    * x3ro: This seems to be a user profile?
 * AppletArchitecture
 * BenjaminGlatzel
 * BlockArchitecture
 * BlockShapesInBlender
 * CommunitySuggestions
-* <strike>ContributorGuide</strike>
+* <strike>[[Contributor Guide]]</strike>
 * DevSetup
 * DevTeam
 * DownloadTerasology

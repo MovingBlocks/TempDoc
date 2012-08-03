@@ -7,9 +7,13 @@ Nothing migrated yet. Wiki is located [here](http://forum.movingblocks.net/wiki/
 List taken from [here](http://wiki.nanoware.org/Terasology/WebTopicList).
 
 * AdminGroup
+    * x3ro: Do we need this?
 * AdminUser
+    * x3ro: Do we need this?
 * AdminUserLeftBar
+    * x3ro: Do we need this?
 * AnatomySystem
+    * x3ro: Should we put this in the Wiki or an Incubator forum thread? 
 * AntonKireev
 * AppletArchitecture
 * BenjaminGlatzel

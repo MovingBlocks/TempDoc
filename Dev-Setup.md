@@ -4,7 +4,7 @@ How to get set up with IntelliJ, Git, and other related tools for contributing t
 
 ## Terminology
 
-Git can be sort of confusing - see [[FancyGit]] for more advanced stuff. Here's a quick term list that'll be accurate assuming the steps below are followed:
+Git can be sort of confusing - see [[Fancy Git]] for more advanced stuff. Here's a quick term list that'll be accurate assuming the steps below are followed:
 
 * https://github.com - an online service storing remote Git repos for people and allowing easy forking of projects with lots of neat stats and graphs - in particular linking together commits from different contributors on the same project "tree" like at https://github.com/MovingBlocks/Terasology/network
 * `repo` - a Git repository, which may be yours, and may contain more than one branch. `git remote -v` will state which remote repos a Git-tracked directory on your computer knows about (is "tracking")
@@ -41,11 +41,11 @@ Stuff you need! Download / install / register for the following (if you don't al
 
 ### Configuration
 
-Follow these instructions to get ready to run from code - unless you're a core contributor with Push access to the main repo, you can then use the MovingBlocks section on [[FancyGit]] instead - no fork needed
+Follow these instructions to get ready to run from code - unless you're a core contributor with Push access to the main repo, you can then use the MovingBlocks section on [[Fancy Git]] instead - no fork needed
 
 * "Fork" the project by opening https://github.com/MovingBlocks/Terasology and clicking the little fork button in the upper right
 * Note the url to your fork, should be something like `git@github.com:[user]/Terasology.git`
-* Start up IntelliJ to get it hooked up with source control (you can also use plain command line - see the [[FancyGit]]
+* Start up IntelliJ to get it hooked up with source control (you can also use plain command line - see the [[Fancy Git]]
 * Under the Version Control menu - Checkout from version control - GitHub
 * Provide your login details (you might also have to give IntelliJ a password manager password and such)
 * Your GitHub details should pop up - pick a directory to check out into
@@ -53,7 +53,7 @@ Follow these instructions to get ready to run from code - unless you're a core c
 * This will clone the remote repo to your local drive - *NOTE:* this can take quite a while with no progress bar! Be patient for at least a few minutes :-)
 * A prompt will pop up asking if you want to create a project for your new files - pick *no*
 * Open a command prompt in the directory you checked out into (so run `cmd` and do `cd D:\Dev\Terasology` or sometihng) and execute `gradlew idea` there - this installs Gradle automatically and builds the project config
-* There's also a version for Eclipse - `gradlew eclipse` - more work on the project generation might be coming. See the Gradle section on [[FancyGit]]
+* There's also a version for Eclipse - `gradlew eclipse` - more work on the project generation might be coming. See the Gradle section on [[Fancy Git]]
 * Open a new project and pick the Terasology project in your shiny new source controlled directory
 * Go to the Version Control(may be CVS) menu / Enable Version Control Integration, and pick Git (prepares Git IDE integration)
 * Navigate to `org.terasology.game.Terasology` in the project explorer under `src` and right click it, then pick run to start the game!
@@ -120,7 +120,7 @@ Ample usage of `git branch -avv` is recommended to double check on the state and
 
 Similar pages here in the wiki
 
-* [[FancyGit]] - more technically detailed Git instructions and observations
+* [[Fancy Git]] - more technically detailed Git instructions and observations
 * [[IssueTracking]] - details on how we use the issue tracking system on `GitHub
 * [[UnitTesting]] - highly appreciated :-)
 * [[JavaDoc]] - likewise!

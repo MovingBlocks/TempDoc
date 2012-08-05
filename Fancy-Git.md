@@ -1,6 +1,6 @@
 # Getting fancy with Git
 
-This page is for more advanced issues related to Git and our source code - that way we keep the <DevSetup> page from becoming _too_ overwhelming
+This page is for more advanced issues related to Git and our source code - that way we keep the [[Dev Setup]] page from becoming _too_ overwhelming
 
 ## Fancy Gradle
 
@@ -51,7 +51,7 @@ If you're going to be working with Git beyond the absolute minimum you'll likely
 
 ### Update branch
 
-Aside from the easier IntelliJ GUI option on the [DevSetup] page there's also a way to do branch updates via command line.
+Aside from the easier IntelliJ GUI option on the [Dev Setup] page there's also a way to do branch updates via command line.
 
 * `git fetch --all` to have all the right Git data refreshed locally
 * Make sure you have your desired local branch selected - check with `git branch -a` (the asterisk is your active branch)
@@ -165,7 +165,7 @@ If alternatively you're happy with the state of some changes you'd like to packa
 
 ## Related Links
 
-* [[DevSetup]]
+* [[Dev Setup]]
 * [[IssueTracking]]
 * [[UnitTesting]]
 * [[JavaDoc]]

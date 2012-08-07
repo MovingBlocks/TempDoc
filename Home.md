@@ -1,15 +1,12 @@
 Welcome to the Terasology Wiki!
 ===============================
-
-%TOC%
-
-This is the Terasology wiki, used for game documentation and other resources like how to get started as a contributor
+This is the Terasology wiki, used for game documentation and other resources like how to get started as a contributor.
 
 Game Info
 ---------
 
 _What is Terasology ?_ Founded by Benjamin 'begla' Glatzel as an open source tech demo to research procedural terrain generation a team is now taking it to the next level - a full fledged game. We're aiming for a survival and discovery game with a strong influence from Minecraft, Dwarf Fortress, and Dungeon Keeper. A key part of the game will be building up an estate of some sort and managing specialized minions to climb up the ladder of discovery, while surviving in a world that might just be full of things that want to kill you.
- * [[What is Terasology?|WhatIsTerasology]] - more details on exactly what our goals are
+ * [[What is Terasology?|What-is-Terasology]] - more details on exactly what our goals are
  * [[Download Terasology|DownloadTerasology]] - basic instructions for how to download and set up the game. Also contains version history and other useful links
  * [[Dev Team|DevTeam]] - the who's who of Terasology and what holes we might especially need more people to help with
 

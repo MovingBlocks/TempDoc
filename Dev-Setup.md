@@ -71,6 +71,8 @@ Extras:
 * We've seen a Windows 7 machine once fail to use Git to communicate with GitHub properly from command line and IntelliJ, yet be okay with Git Bash. Turned out the user home dir wasn't set right, so Git couldn't find the SSH files. Solution was to set the `HOME` environment variable to the user's home directory (like `C:\Users\[Username]`). Git Bash was smart enough to do without.
 * You may have to re-run =gradlew idea= occasionally if new project library files (jars) or settings are added/changed
 * LWJGL and Java 1.7 on Macs may not work due to a JAWT dependency error. This is a known (and fairly critical) issue to LWJGL due to some changes in the Apple-Oracle (Apracle?) approach to Java on Macs. For now please use Java 1.6. See http://lwjgl.org/forum/index.php/topic,4326.0.html for more details
+* On older versions of Java 1.6 you may get the following error on compilation - the solution is to upgrade to the latest 1.6 or even 1.7 (though that may bring other issues). More info at http://stackoverflow.com/questions/314572/bug-in-eclipse-compiler-or-in-javac
+ * `type parameters of <T>T cannot be determined; no unique maximal instance exists for type variable T with upper bounds T,java.lang.Object`
 
 ### Development
 

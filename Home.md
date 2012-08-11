@@ -18,11 +18,11 @@ Interested in getting involved with working on the game? This section is for you
   * [[Contributor Guide|Contributor-Guide]] - anything related to contributing to Terasology including links to help you learn the related technologies 
   * [[Dev Setup]] - specifically how to set up to develop on Terasology on your local machine
   * [[Fancy Git]] - more advanced Git topics that you don't _need_ to be able to run from source, but may need to submit source or maintain your source setup over time
-  * [[IssueTracking]] - how and what we're tracking using the !GitHub issue system
-  * [[UnitTesting]] - or the lack thereof, the most common developer sin!
+  * [[Issue Tracking]] - how and what we're tracking using the !GitHub issue system
+  * [[Unit Testing]] - or the lack thereof, the most common developer sin!
   * [[JavaDoc]] - well-written code explains itself, but it doesn't help to have that in an exportable format!
-  * [[TextureOrigin]] - an index for textures we use and who contributed them. That way we can give credit where due and keep track of how many of our core textures are unique vs sourced from texture packs
-  * [[CommunitySuggestions]] - a place for us to store suggestions made by the public in a place that's not good for potential long-term storage (tickets, forum, etc)
+  * [[Texture Origin]] - an index for textures we use and who contributed them. That way we can give credit where due and keep track of how many of our core textures are unique vs sourced from texture packs
+  * [[Community Suggestions]] - a place for us to store suggestions made by the public in a place that's not good for potential long-term storage (tickets, forum, etc)
 
 Communication
 -------------
@@ -42,7 +42,7 @@ Architecture
 
 These pages offer more advanced insight into specific features of the game are architected and why
 
-   * [[AppletArchitecture]] - structure of the applet version of the game and related info
-   * [[BlockArchitecture]] - development overview of our Block system (pending changes needed to make the game work in an applet again)
-   * [[ShapeArchitecture]] - defining 3D meshes via definitions in Groovy!
-   * [[EntitySystemArchitecture]] - describes the structure and usage of the entity system
+   * [[Applet Architecture]] - structure of the applet version of the game and related info
+   * [[Block Architecture]] - development overview of our Block system (pending changes needed to make the game work in an applet again)
+   * [[Shape Architecture]] - defining 3D meshes via definitions in Groovy!
+   * [[Entity System Architecture]] - describes the structure and usage of the entity system

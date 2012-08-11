@@ -4,17 +4,14 @@ While you _could_ write block shape definitions by hand, it is also possible to 
 
 ## Installing Terasology Block Shape Addon
 
-1. First you will want to install blender - Blender 2.60 was used when developing the addon, but it should hopefully be compatible with similar versions.
-
-2. Obtain the Terasology project, as described on the [[Dev Setup]] page. Alternatively you can download the addon manually from  https://github.com/MovingBlocks/Terasology/tree/develop/blender_addons
-
-3. In the project, you will find a directory called blender_addons, with a sub directory called io_mesh_terasology. 
+* First you will want to install blender - Blender 2.60 was used when developing the addon, but it should hopefully be compatible with similar versions.
+* Obtain the Terasology project, as described on the [[Dev Setup]] page. Alternatively you can download the addon manually from  https://github.com/MovingBlocks/Terasology/tree/develop/blender_addons
+* In the project, you will find a directory called blender_addons, with a sub directory called io_mesh_terasology. 
 
 Copy this entire directory into `[your blender install directory]/[your blender version]/scripts/addons` (typically something like `C:\Program Files\Blender Foundation\Blender\2.60\scripts\addons`). 
 
-4. Start Blender, and open the user preferences page (under the File menu). On the Addons tab find the "Import-Export: Terasology Block Shape Export" addon and activate it by checking the box on the right.
-
-5. While you are in the user preferences page, you may wish to go to the System tab and uncheck Mipmaps. This will prevent blender from blurring the pixels of textures, allowing you to see them as they will appear in-game.
+* Start Blender, and open the user preferences page (under the File menu). On the Addons tab find the "Import-Export: Terasology Block Shape Export" addon and activate it by checking the box on the right.
+* While you are in the user preferences page, you may wish to go to the System tab and uncheck Mipmaps. This will prevent blender from blurring the pixels of textures, allowing you to see them as they will appear in-game.
 
 ## Fundamentals
 
@@ -25,15 +22,16 @@ All the information in [[Shape Architecture]] may be useful, but some additional
 * A standard block is half the scale of a new Blender cube
 * Blender axes are different from Terasology's axes, and are instead as follows:
 
-(TODO: re-format table)
-| *Sub-block* | *Direction* |
-| Center | - |
-| Top | +Z axis |
-| Bottom | -Z axis |
-| Front | -Y axis |
-| Back | +Y axis |
-| Left | +X axis |
-| Right | -X axis |
+**Sub-block** / **Direction**
+* Center 
+* Top / +Z axis
+* Bottom / -Z axis
+* Front / -Y axis
+* Back / +Y axis
+* Left / +X axis
+* Right / -X axis
+
+Notes:
 
 * Do not scale in Object mode, only in Edit mode
 * When UV mapping, you should map against a single 16x16 texture, not the image manifest.

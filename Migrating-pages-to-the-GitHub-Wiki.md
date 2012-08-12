@@ -27,13 +27,13 @@ List taken from [here](http://wiki.nanoware.org/Terasology/WebTopicList).
     * x3ro: This on a FAQ page perhaps?
     * Cerv: Something like that. I'll try to take this one :-)
 
-* EntitySystemArchitecture
+* [[EntitySystemArchitecture]]
 * [[FancyGit]]
-* IssueTracking
-* JavaDoc
-* MajorConcepts
-* ReleasePlan
-* ShapeArchitecture
+* [[IssueTracking]]
+* [[JavaDoc]]
+* [[MajorConcepts]]
+* [[ReleasePlan]]
+* [[ShapeArchitecture]]
 * TextureOrigin
 * UnitTesting
 * UsingIRC

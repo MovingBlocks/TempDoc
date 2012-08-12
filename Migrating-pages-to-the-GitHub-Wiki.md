@@ -30,11 +30,11 @@ List taken from [here](http://wiki.nanoware.org/Terasology/WebTopicList).
 
 * [[Entity System Architecture]]
 * [[Fancy Git]]
-* [[IssueTracking]]
+* [[Issue Tracking]]
 * [[JavaDoc]]
-* [[MajorConcepts]]
-* [[ReleasePlan]]
-* [[ShapeArchitecture]]
+* [[Major Concepts]]
+* [[Release Plan]]
+* [[Shape Architecture]]
 * TextureOrigin
 * UnitTesting
 * UsingIRC

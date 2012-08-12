@@ -29,7 +29,7 @@ List taken from [here](http://wiki.nanoware.org/Terasology/WebTopicList).
     * Cerv: Something like that. I'll try to take this one :-)
 
 * [[Entity System Architecture]]
-* [[FancyGit]]
+* [[Fancy Git]]
 * [[IssueTracking]]
 * [[JavaDoc]]
 * [[MajorConcepts]]

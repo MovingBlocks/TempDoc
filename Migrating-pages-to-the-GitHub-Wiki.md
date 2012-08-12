@@ -6,7 +6,7 @@ Nothing migrated yet. Wiki is located [here](http://forum.movingblocks.net/wiki/
 
 List taken from [here](http://wiki.nanoware.org/Terasology/WebTopicList).
 
-* AnatomySystem
+* <strike>AnatomySystem</strike>
     * x3ro: Should we put this in the Wiki or an Incubator forum thread? 
     * Cerv: Forum prolly, more of a suggestion than a design/system
     * x3ro: [Migrated to Forum](http://forum.movingblocks.net/threads/anatomy.506/)

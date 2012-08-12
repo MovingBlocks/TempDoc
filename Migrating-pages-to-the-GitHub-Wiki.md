@@ -1,4 +1,4 @@
-# From Movingblocks Wiki
+## From Movingblocks Wiki
 
 Nothing migrated yet. Wiki is located [here](http://forum.movingblocks.net/wiki/index/).
 

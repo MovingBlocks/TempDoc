@@ -27,6 +27,10 @@ After you've made it through the DevSetup instructions so you can run Terasology
    * For code, find something that exists under source control that seems relevant to your interests
    * Start walking the code to understand what happens where - our entity system and especially the involved events can be a little tricky to get into, execution flow can be sort of unorthodox
 
+The following pages might come in handy:
+
+    * [[Asset System]] - Information on how assets are handled within Terasology
+
 Next steps - got the skills, need something to do!
 --------------------------------------------------
 

@@ -29,7 +29,7 @@ After you've made it through the DevSetup instructions so you can run Terasology
 
 The following pages might come in handy:
 
-    * [[Asset System]] - Information on how assets are handled within Terasology
+* [[Asset System]] - Information on how assets are handled within Terasology
 
 Next steps - got the skills, need something to do!
 --------------------------------------------------

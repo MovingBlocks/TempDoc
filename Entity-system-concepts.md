@@ -10,3 +10,16 @@ This structure provides flexibility and reuse when creating entities - you can a
 
 # Components and Systems
 
+In Terasology, a component is essentially just a request for an entity to be given a feature, and some data that feeds into how that feature works.  A component itself does not contain any logic for a feature - instead that is left to Systems.
+
+A System provides the actual logic behind a component or combination of components - it can process them each frame, or respond to events dealing with them.  Multiple components being involved is common - rendering a mesh from a Mesh component cannot be done without a location from a Location component, for instance.
+
+There are a number of advantages to the separation between data (in the Components) and logic (in the Systems)
+* Allows mods to modify the behaviour of components. If a modder doesn't like the default behaviour of the Health component, they can replace the Health system with their own version - that will still work with all the existing entities with a Health component.
+* Allows optimisation of the processing of multiple entities.
+
+# Events
+
+# Prefabs
+
+# Persistence

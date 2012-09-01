@@ -30,6 +30,7 @@ After you've made it through the DevSetup instructions so you can run Terasology
 The following pages might come in handy:
 
 * [[Asset System]] - Information on how assets are handled within Terasology
+* [[Entity System Concepts]] - Overview of the concepts involved in the entity system
 
 Next steps - got the skills, need something to do!
 --------------------------------------------------

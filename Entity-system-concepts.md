@@ -39,3 +39,6 @@ In Terasology, prefabs can be defined in a JSON format and included in mods.
 # Persistence
 
 Entities and their components are automatically persisted when a world is saved.  
+
+# Read more
+[Entity System Architecture](https://github.com/MovingBlocks/Terasology/wiki/Entity-System-Architecture)

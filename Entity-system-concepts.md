@@ -20,6 +20,14 @@ There are a number of advantages to the separation between data (in the Componen
 
 # Events
 
+Terasology also includes an event system built around the entity system. Events can be sent to entities, and systems can subscribe to be notified about specific events, when they are received by entities with a desired combination of components.
+
+For instance, when an entity is hit by a sword a DamageEvent is sent to it. This event includes the amount of damage dealt - it could also include information on the type of damage, the source of the damage and so forth.  The Health System would subscribe to the damage event but only for entities with a Health component. So if the hit entity has a health component then the health system would receive the event and can react to it by subtracting health - potentially sending another event if the entity's health reaches zero.
+
+This provides two valuable features:
+1. It provides a mechanism for an entity to react to an event based on the components it has. This means that someone can later on create their own component and system combination that reacts to Damage events differently.
+2. Because a event can be received by multiple systems, it is possible for modders to intercept and modify or cancel an event to change behaviour.  An armor component could be added that halves all damage, and set up to intercept the damage event - without having to change the health system at all.
+
 # Prefabs
 
 # Persistence

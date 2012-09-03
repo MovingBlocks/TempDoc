@@ -1,4 +1,4 @@
-We use the Checkstyle project to help keep the codebase consistent with some code conventions. Said conventions are embedded within the configuration file at `config/checkstyle/checkstyle.xml`
+We use the [Checkstyle](http://checkstyle.sourceforge.net/) project to help keep the codebase consistent with some code conventions. Said conventions are embedded within the configuration file at `config/checkstyle/checkstyle.xml`
 
 While this was implemented fairly late and left open a lot of warnings we need to be smart about when we fix existing warnings. When working an area please keep an eye out for warnings to fix in files you're impacting anyway. Make sure to run Checkstyle on any new files you add since that's the best time to fix warnings.
 

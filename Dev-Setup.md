@@ -73,6 +73,8 @@ Extras:
 * LWJGL and Java 1.7 on Macs may not work due to a JAWT dependency error. This is a known (and fairly critical) issue to LWJGL due to some changes in the Apple-Oracle (Apracle?) approach to Java on Macs. For now please use Java 1.6. See http://lwjgl.org/forum/index.php/topic,4326.0.html for more details
 * On older versions of Java 1.6 you may get the following error on compilation - the solution is to upgrade to the latest 1.6 or even 1.7 (though that may bring other issues). More info at http://stackoverflow.com/questions/314572/bug-in-eclipse-compiler-or-in-javac
  * `type parameters of <T>T cannot be determined; no unique maximal instance exists for type variable T with upper bounds T,java.lang.Object`
+* On Linux you may end up with a line-ending issue on the Gradle wrapper script. If you get an error like the following try to either just run `dos2unix` on `gradlew` or alternatively copy paste its content into a new file and overwrite the old file with it
+ * `bash: ./gradlew: /bin/bash^M: bad interpreter: No such file or directory`
 
 ### Development
 

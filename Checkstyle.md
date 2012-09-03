@@ -6,6 +6,8 @@ The simplest way to run Checkstyle is from the command line in the project root:
 
 `gradlew check`
 
+For more details see the forum thread at http://forum.movingblocks.net/threads/terasology-code-style-conventions.501/
+
 ## IDE Integration
 
 You should be able to use the Checkstyle plugin for at least IntelliJ and Eclipse. With this enabled you can run checks on individual files when on the Checkstyle tab. Here are sample instructions for setup in IntelliJ:

@@ -18,6 +18,7 @@ Interested in getting involved with working on the game? This section is for you
   * [[Contributor Guide|Contributor-Guide]] - anything related to contributing to Terasology including links to help you learn the related technologies 
   * [[Dev Setup]] - specifically how to set up to develop on Terasology on your local machine
   * [[Fancy Git]] - more advanced Git topics that you don't _need_ to be able to run from source, but may need to submit source or maintain your source setup over time
+  * [[Checkstyle]] - notes about our code conventions
   * [[Issue Tracking]] - how and what we're tracking using the !GitHub issue system
   * [[Unit Testing]] - or the lack thereof, the most common developer sin!
   * [[JavaDoc]] - well-written code explains itself, but it doesn't help to have that in an exportable format!

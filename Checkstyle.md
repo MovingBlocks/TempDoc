@@ -15,14 +15,26 @@ For more details see the forum thread at http://forum.movingblocks.net/threads/t
 You should be able to use the Checkstyle plugin for at least IntelliJ and Eclipse. With this enabled you can run checks on individual files when on the Checkstyle tab. Here are sample instructions for setup in IntelliJ:
 
 1. Open Plugin-Manager
-1. Browse repositories ...
-1. Search for "ChechStyle"
-1. Install "CheckStyle-IDEA
-1. Open Project
-1. File / Settings...
-1. Checkstyle
-1. Add (select `config/checkstyle/checkstyle.xml`)
-1. Edit properties: `samedir = config/checkstyle`
+2. Browse repositories ...
+3. Search for "ChechStyle"
+4. Install "CheckStyle-IDEA
+5. Open Project
+6. File / Settings...
+7. Checkstyle
+8. Add (select `config/checkstyle/checkstyle.xml`)
+9. Edit properties: `samedir = config/checkstyle`
+
+## Eclipse Integration
+1. Open Help -> Eclipse Marketplace
+2. Search for "Checkstyle"
+3. Install "Checkstle Plug-In"
+4. Open Properties for Project
+5. Select "Checkstyle"
+6. Switch to tab "Local Check Configurations"
+7. Create a new configuration (Name="Terasology", location="/Terasology/config/checkstyle/checkstyle.xml")
+8. Switch to tab "Main"
+9. Choose checkstyle "Terasology (local)"
+10. Select "Checkstyle active for this project"
 
 ## Jenkins Integration
 

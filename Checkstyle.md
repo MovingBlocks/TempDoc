@@ -4,7 +4,9 @@ While this was implemented fairly late and left open a lot of warnings we need t
 
 The simplest way to run Checkstyle is from the command line in the project root:
 
-`gradlew check`
+`gradlew check` All checks and tests
+
+`gradlew checkstyleMain` Checkstyle for "src/main/java"
 
 For more details see the forum thread at http://forum.movingblocks.net/threads/terasology-code-style-conventions.501/
 

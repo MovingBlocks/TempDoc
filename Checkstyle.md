@@ -16,7 +16,7 @@ You should be able to use the Checkstyle plugin for at least IntelliJ and Eclips
 
 1. Open Plugin-Manager
 2. Browse repositories ...
-3. Search for "ChechStyle"
+3. Search for "CheckStyle"
 4. Install "CheckStyle-IDEA
 5. Open Project
 6. File / Settings...
@@ -27,13 +27,13 @@ You should be able to use the Checkstyle plugin for at least IntelliJ and Eclips
 ## Eclipse Integration
 1. Open Help -> Eclipse Marketplace
 2. Search for "Checkstyle"
-3. Install "Checkstle Plug-In"
+3. Install "Checkstyle Plug-In"
 4. Open Properties for Project
 5. Select "Checkstyle"
 6. Switch to tab "Local Check Configurations"
 7. Create a new configuration (Name="Terasology", location="/Terasology/config/checkstyle/checkstyle.xml")
 8. Switch to tab "Main"
-9. Choose checkstyle "Terasology (local)"
+9. Choose Checkstyle "Terasology (local)"
 10. Select "Checkstyle active for this project"
 
 ## Jenkins Integration

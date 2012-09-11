@@ -13,7 +13,7 @@ _What is Terasology ?_ Founded by Benjamin 'begla' Glatzel as an open source tec
 Player Guide
 ---------
 
-These pages explain how the game's _unstable / develop_ version works, in detail. The stable / master version may differ as it isn't updated as frequently. See the [[https://github.com/MovingBlocks/Terasology#terasology][GitHub README]] for a current summary of that release.
+These pages explain how the game's _unstable / develop_ version works, in detail. The stable / master version may differ as it isn't updated as frequently. See the [[GitHub README|https://github.com/MovingBlocks/Terasology#terasology]] for a current summary of that release.
 
 * [[Key Bindings]] - how to control yourself inside the game
 * [[Tool Functions]] - what the tools do

@@ -107,6 +107,10 @@ While not as fancy as Perforce's P4V Revision Graph, Git can do graphs! .... in 
 
 * `git log --graph --oneline --all`
 
+And you can sometimes end up without a `origin/HEAD` setting if you've been deleting default branches and what not, to set one do something like:
+
+* `git remote set-head origin master`
+
 ### Keeping the branch map clean
 
 This looks to be a little tricky as we've hit scenarios where pulling/pushing code around didn't result in a nice connection on the branch map. Need more info on exactly what makes this tick - usually it has been fairly easy to fix, although it can result in duplicate listings of earlier commits. A big warning: It is very easy in trying to revert or undo stuff on a local branch to submit a pile of silly commits you don't want to pollute the main branch network with. This is especially the case if you're new to Git. Be cautious! :D

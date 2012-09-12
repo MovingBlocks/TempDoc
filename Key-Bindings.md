@@ -18,3 +18,13 @@ The following are the basic keys enabled in Terasology for you to interact with 
 * [F3] - Toggle debug mode and information
 
 ?? - Hide the GUI
+
+Inventory
+----------
+
+There are a fair bit of nice shortcuts that work in the inventory
+
+* Using the mousewheel over an item stack will add/remove items from it
+    * Left-CTRL will do so at double speed (2 items at a time)
+* Shift-clicking on an item will insta-move it from one side to another in a transfer (like inventory to chest) - or should that be made CTRL instead?
+* Right-clicking an item stack will pick up half of it (or drop a single item if used with a stack held over an empty or compatible stack)

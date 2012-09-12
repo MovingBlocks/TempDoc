@@ -13,7 +13,7 @@ To set up IntelliJ to support Markdown syntax highligting and local preview foll
 * Go to Settings / Plugins
 * Browse repositories and search for "Markdown"
 * Install the plugin using the button in the toolbar (don't just select the plugin and click Ok - nothing will happen)
-* Under Settings / File Types look for "Markdown" (you may have to restart IntelliJ) and make sure `*.md` is a registered pattern there
+* Under Settings / File Types look for "Markdown" (you may have to restart IntelliJ) and make sure `*.md` and `*.markdown` are registered patterns there
 * Under Settings / Markdown be sure to enable "hard wraps" to use the right line break format for GitHub
 * Restart IntelliJ - you should now have a "Text" and a "Preview" tab in bottom of the main edit area for Markdown files
 

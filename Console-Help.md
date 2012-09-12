@@ -20,7 +20,7 @@ First a few quick notes:
 
 Block related:
 * giveBlock "Water" - Gives 16 water blocks
-* giveBlock "IronPyrites", 42 - Gives 42 Iron Pyrite (Fool's Gold) blocks
+* giveBlock "IronPyrites" 42 - Gives 42 Iron Pyrite (Fool's Gold) blocks
 * giveBlock "Clay" "Slope" - Gives you 16 clay blocks that are sloped
 * giveBlock "Chest" - Gives you a Chest block you can place, activate ('E'), put stuff in, destroy, pick up, place elsewhere, find same stuff in it!
 * giveBlock "Tnt" - Gives you 16 TNT blocks you can place and activate ('E') to blow up

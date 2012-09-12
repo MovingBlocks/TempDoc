@@ -41,14 +41,14 @@ Communication
 
 We have several ways to get the word out on updates, and likewise there are several ways to contact us
 
-* [[http://forum.movingblocks.net][Forum]] - new development / game topics will be posted here, and any questions answered
-* [[https://github.com/MovingBlocks/Terasology][GitHub]] - "Watch" the official project here to be able to easily spot commits
-* [[http://twitter.com/#!/Terasology][Twitter]] - we'll tweet regularly about significant commits or new discussion topics posted, so "Follow" us for updates
-* [[http://www.facebook.com/pages/Terasology/248329655219905][Facebook]] - if you prefer to keep updated via Facebook you can "Like" us on there to keep up
-* [[https://plus.google.com/b/103835217961917018533/103835217961917018533][Google+]] - help prove people actually use G+ ! ;-)
+* [Forum](http://forum.movingblocks.net) - new development / game topics will be posted here, and any questions answered
+* [GitHub](https://github.com/MovingBlocks/Terasology) - "Watch" the official project here to be able to easily spot commits
+* [Twitter](http://twitter.com/#!/Terasology) - we'll tweet regularly about significant commits or new discussion topics posted, so "Follow" us for updates
+* [Facebook](http://www.facebook.com/pages/Terasology/248329655219905) - if you prefer to keep updated via Facebook you can "Like" us on there to keep up
+* [Google+](https://plus.google.com/b/103835217961917018533/103835217961917018533) - help prove people actually use G+ ! ;-)
 * [Blog](http://blog.movingblocks.net/blog/) - Major news like milestones reached, new videos posted, etc will get posted to our blog
 * [IRC](http://webchat.freenode.net/) #terasology - We're setting this up for live chat but it may take a while to stabilize with people only rarely on (or AFK), See UsingIRC for setup details
-* [[http://jenkins.movingblocks.net/rssAll][Jenkins RSS]] - If you really want to know when something has just been built ;-)
+* [Jenkins RSS](http://jenkins.movingblocks.net/rssAll) - If you really want to know when something has just been built ;-)
 
 Architecture
 ------------

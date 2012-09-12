@@ -36,7 +36,7 @@ Teratology does exist as a term (see [Wikipedia](http://en.wikipedia.org/wiki/Te
 FAQ
 ---
 
-Post your questions in the [[http://board.movingblocks.net][forum]], reply to [[https://twitter.com/#!/Terasology][tweets]], comment on [[http://www.facebook.com/pages/Terasology/248329655219905][Facebook]] / [[https://plus.google.com/u/0/103835217961917018533/posts][Google+]] or [[https://github.com/MovingBlocks/Terasology][GitHub]], whatever gets our attention!
+Post your questions in the [forum](http://forum.movingblocks.net), reply to [tweets](https://twitter.com/#!/Terasology), comment on [Facebook](http://www.facebook.com/pages/Terasology/248329655219905) / [Google+](https://plus.google.com/u/0/103835217961917018533/posts) or [GitHub](https://github.com/MovingBlocks/Terasology), whatever gets our attention!
 
 How about multiplayer?
 ----------------------

@@ -7,9 +7,9 @@ Download
 
 We offer stable milestone downloads and unstable develop downloads that may update several times daily. We also have applet versions of either that are playable in a browser.
 
-   * Stable milestone download: [[http://www.movingblocks.net:8080/jenkins/job/TerasologyStable/lastSuccessfulBuild/artifact/out/TerasologyStable.zip][Jenkins]] - version 0.3.0
-      * Stable applet on blog site: [[http://blog.movingblocks.net/terasology-play][Applet]] - version 0.3.0
-   * Unstable develop download: [[http://www.movingblocks.net:8080/jenkins/job/Terasology/lastSuccessfulBuild/artifact/out/Terasology.zip][Jenkins]] - latest (0.4.?)
+   * Stable / master download: [Jenkins Stable](http://jenkins.movingblocks.net/job/TerasologyStable/lastSuccessfulBuild/artifact/build/distributions/Terasology.zip)
+   * Applet on official site: [Applet](http://forum.movingblocks.net/pages/applet)
+   * Unstable / develop download: [Jenkins](http://www.movingblocks.net:8080/jenkins/job/Terasology/lastSuccessfulBuild/artifact/out/Terasology.zip)
 
 Setup
 -----
@@ -22,28 +22,28 @@ For plain setup of the game simply download the zip file, extract it, and run us
    * Any (if your Java is set up right): Double-click =Terasology.jar=
 You need to have a 1.6+ Java JRE or JDK installed on your system. Download Java from http://www.java.com/en/download/index.jsp
 
-If you encounter any problems running the game please drop us a note in the [[http://board.movingblocks.net/viewforum.php?f=5][General Forum]] !
+If you encounter any problems running the game please drop us a note in the [Support Forum](http://forum.movingblocks.net/forums/support.20/) !
 
 Gameplay
 --------
 
-%TODO% - need to automate a game manual since we list this in several places. In the meantime go to [[https://github.com/MovingBlocks/Terasology][GitHub]] and scroll down a ways to see what keys do what and such
+%TODO% - need to automate a game manual since we list this in several places. In the meantime go to [GitHub](https://github.com/MovingBlocks/Terasology) and scroll down a ways to see what keys do what and such
 
 Known Issues
 ------------
 
 There are both general known issues such as graphic or sound compatibility as well as known bugs. General issues include:
 
-   * Some integrated video chipsets have compatibility issues with !OpenGL - this can result in anything from minor to major graphic quirks, or the game outright not working. Unless your hardware is very old it is possible we can fix it, just make a post in the [[http://board.movingblocks.net/viewforum.php?f=5][General Forum]] with your details (check Terasology.log in the logs directory, for instance)
+   * Some integrated video chipsets have compatibility issues with !OpenGL - this can result in anything from minor to major graphic quirks, or the game outright not working. Unless your hardware is very old it is possible we can fix it, just make a post in the [Support Forum](http://forum.movingblocks.net/forums/support.20/) with your details (check Terasology.log in the logs directory, for instance)
    * Likewise integrated / older sound cards can also cause problems, this time with !OpenAL. There is a common problem on Windows that you can test real quick by looking for =OpenAL32.dll= in your Windows System32 directory and if one is present rename it (like append =.old=). Terasology may use an existing DLL if it exists, rather than the bundled version we develop against (note: this may cause other audio issues - rename your DLL back if so)
-For outstanding known bugs see [[https://github.com/MovingBlocks/Terasology/issues?labels=Bug&sort=created&direction=desc&state=open&page=1][GitHub 'Bug' Issues]]
+For outstanding known bugs see [GitHub 'Bug' Issues](https://github.com/MovingBlocks/Terasology/issues?labels=Bug&sort=created&direction=desc&state=open&page=1)
 
-Since we're still extremely early it is hard to know for sure whether something is a bug or just not implemented yet. But if you find something dramatic (like the screen going black!) feel free to report it in the [[http://board.movingblocks.net/viewforum.php?f=5][General Forum]]
+Since we're still extremely early it is hard to know for sure whether something is a bug or just not implemented yet. But if you find something dramatic (like the screen going black!) feel free to report it in the [Support Forum](http://forum.movingblocks.net/forums/support.20/)
 
 Version History
 ---------------
 
-We track our release level via [[https://github.com/MovingBlocks/Terasology/issues/milestones][GitHub Milestones]]. Completed ones are listed below for reference with any additional notes beyond what's stored in issues on !GitHub
+We track our release level via [GitHub Milestones](https://github.com/MovingBlocks/Terasology/issues/milestones). Completed ones are listed below for reference with any additional notes beyond what's stored in issues on GitHub
 
 ### 0.1 - Legacy
 
@@ -51,7 +51,7 @@ We ended up with a first milestone on GitHub that was never used, but it still b
 
 ### 0.2 - Stratification
 
-Completed: February 22nd 2012 - [[https://github.com/MovingBlocks/Terasology/issues?sort=created&direction=desc&state=closed&page=1&milestone=2][GitHub]]
+Completed: February 22nd 2012 - [GitHub](https://github.com/MovingBlocks/Terasology/issues?sort=created&direction=desc&state=closed&page=1&milestone=2)
 
 The goal of this milestone was to branch out into several rough and crude implementations of basic concepts so we could see something more inside Terasology than placing/removing blocks, as well as get a better idea of which areas of focus we'd even have to begin with and could start getting contributors interested in working on.
 

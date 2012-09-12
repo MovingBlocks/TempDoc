@@ -37,8 +37,8 @@ Next steps - got the skills, need something to do!
 
 We submit issues on GitHub for stuff we could use in the project, and tag some of them as friendly for contributors (although friendly may differ widely based on whether you know a little Java, some art, etc). Look in the following categories in particular, but just about any item is up for grabs unless indicated otherwise. The categories may overlap.
 
-   * [[https://github.com/MovingBlocks/Terasology/issues?labels=Contributor-friendly&sort=created&direction=desc&state=open&page=1&milestone=1][Contributor friendly]] - these should be fairly approachable if you have some technical skill for the sort of stuff we use
-   * [[https://github.com/MovingBlocks/Terasology/issues?labels=Research&sort=created&direction=desc&state=open&page=1&milestone=1][Research Items]] - you may be able to help do research without even touching our codebase - tho these items may be more advanced
+* [Contributor friendly](https://github.com/MovingBlocks/Terasology/issues?labels=Contributor-friendly&sort=created&direction=desc&state=open&page=1&milestone=1) - these should be fairly approachable if you have some technical skill for the sort of stuff we use
+* [Research Items](https://github.com/MovingBlocks/Terasology/issues?labels=Research&sort=created&direction=desc&state=open&page=1&milestone=1) - you may be able to help do research without even touching our codebase - tho these items may be more advanced
 
 Texturing
 ---------
@@ -51,7 +51,7 @@ We're purposedly using low-res textures akin to Minecraft to allow the massive n
    * DwarfFortress uses an extensive collection of stones, minerals, gems, etc, which makes up a great inspiration for something similar we want to accomplish - see http://df.magmawiki.com/index.php/Stone for details. While DF is essentially text-based the amount of different "blocks" there is impressive and something we'd like to see happen with actual _graphics_ !
    * http://webmineral.com/help/Color.shtml - a very nice real-life mineral site with individual pictures of an unimaginably large number of minerals. Any interesting minerals we'd like to have in the game could have textures inspired by these images or others like them
 
-To see Art related issues that need work see [[https://github.com/MovingBlocks/Terasology/issues?labels=Art&sort=created&direction=desc&state=open&page=1&milestone=1][this page on GitHub]]
+To see Art related issues that need work see [this page on GitHub](https://github.com/MovingBlocks/Terasology/issues?labels=Art&sort=created&direction=desc&state=open&page=1&milestone=1)
 
 Block Design
 ------------

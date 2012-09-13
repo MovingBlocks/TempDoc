@@ -14,7 +14,7 @@ Commands
 ---------
 
 First a few quick notes:
-* All commands must be prefixed with a single slash character: `/` - this is new with stable build 15
+* All commands must be prefixed with a single slash character: `/` - this is new with develop build 283
 * Parameters should be spaced apart with no commas needed (also new). Strings should still be in double quotes
 * Block and shape names are no longer case sensitive
 

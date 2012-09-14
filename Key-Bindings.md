@@ -5,6 +5,7 @@ The following are the basic keys enabled in Terasology for you to interact with 
 
 * [W,A,S,D] - Movement
 * [E] - Activate (Chest, TNT, etc)
+* [Q] - Throw held (block) item (hold down to charge for a longer throw!)
 * [Space] - Jump
 * [Shift] - Hold to run
 * [Left click] - Activate left click action (default = place block)
@@ -12,12 +13,11 @@ The following are the basic keys enabled in Terasology for you to interact with 
 * [Mouse wheel up/down] - Cycle through toolbar slots
 * [1..0] - Change the active toolbar slot
 * [I] - Toggle inventory screen
+* [H] - Hide user interface
 * [F] - Toggle viewing distance (near, moderate, far, ultra)
 * [Tab] - Toggle developer console
 * [Escape] - Show/hide the game menu screen
 * [F3] - Toggle debug mode and information
-
-?? - Hide the GUI
 
 Inventory
 ----------

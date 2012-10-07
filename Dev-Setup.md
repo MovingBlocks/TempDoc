@@ -29,7 +29,7 @@ To be able to run Terasology from source (and potentially get started for contri
 Stuff you need! Download / install / register for the following (if you don't already have them handy)
 
 * Download and install a recent Java SDK - http://www.oracle.com/technetwork/java/javase/downloads/index.html
- * Latest 1.6 is recommended
+ * Latest 1.6 is recommended (http://www.oracle.com/technetwork/java/javase/downloads/jdk6u35-downloads-1836443.html)
 * Git for source control - http://git-scm.com/download
  * Pick the option to run Git from the Windows Command Prompt (middle option) and check out windows, commit unix (that is, if you're on Windows)
  * You can otherwise follow the install steps at this tutorial: http://help.github.com/win-set-up-git/
@@ -44,7 +44,7 @@ Stuff you need! Download / install / register for the following (if you don't al
 Follow these instructions to get ready to run from code - unless you're a core contributor with Push access to the main repo, you can then use the MovingBlocks section on [[Fancy Git]] instead - no fork needed
 
 * "Fork" the project by opening https://github.com/MovingBlocks/Terasology and clicking the little fork button in the upper right
-* Note the url to your fork, should be something like `git@github.com:[user]/Terasology.git`
+* Note the url to your fork, should be something like `git@github.com:[user]/Terasology.git` or `https://github.com/[user]/Terasology.git` if you're using the Windows native version.
 * Start up IntelliJ to get it hooked up with source control (you can also use plain command line - see the [[Fancy Git]]
 * Under the Version Control menu - Checkout from version control - GitHub
 * Provide your login details (you might also have to give IntelliJ a password manager password and such)
@@ -54,9 +54,9 @@ Follow these instructions to get ready to run from code - unless you're a core c
 * A prompt will pop up asking if you want to create a project for your new files - pick *no*
 * Open a command prompt in the directory you checked out into (so run `cmd` and do `cd D:\Dev\Terasology` or sometihng) and execute `gradlew idea` there - this installs Gradle automatically and builds the project config
 * There's also a version for Eclipse - `gradlew eclipse` - more work on the project generation might be coming. See the Gradle section on [[Fancy Git]]
-* Open a new project and pick the Terasology project in your shiny new source controlled directory
+* Open the Terasology project in your shiny new source controlled directory
 * Go to the Version Control(may be CVS) menu / Enable Version Control Integration, and pick Git (prepares Git IDE integration)
-* Navigate to `org.terasology.game.Terasology` in the project explorer under `src` and right click it, then pick run to start the game!
+* Navigate to `org.terasology.game.Terasology` in the project explorer under `src.main` and right click it, then pick run to start the game!
 
 Extras:
 
@@ -65,7 +65,8 @@ Extras:
 
 #### Common issues:
 
-* Usually the project will find a 1.6 Java SDK and know about Java - if you get a massive amount of Java errors (or don't see the "Run" option on Terasology.java) you may have to check under File / Project Structure / Platform Settings / SDKs to see if you have a valid Java setup. Sometimes you may only have a 1.7 SDK installed, that will trigger this issue too. Just add the 1.7 and use that instead or install a 1.6
+* Usually the project will find a 1.6 Java SDK and know about Java - if you get a massive amount of Java errors (or don't see the "Run" option on Terasology.java) you may have to check under File / Project Structure / Platform Settings / SDKs to see if you have a valid Java setup. Sometimes you may only have a 1.7 SDK installed, that will trigger this issue too. Just add the 1.7 and use that instead or install a 1.6.  
+Click [HERE](https://raw.github.com/CallMeAsher/TeraMisc/master/wiki/AddSdkGuide.jpg) to see how to add the 1.6 SDK if IntelliJ doesn't show it by default.
 * You may have to set your JAVA_HOME also - such as on Linux with a command like this: `export JAVA_HOME="/usr/lib/jvm/java-6-sun"`
 * Outdated graphics card drivers can cause startup problems and some cards just seem quirky. Please post in the [Support Forum](http://forum.movingblocks.net/forums/support.20/) if you still have issues after installing your latest drivers and attach the log file from the /logs directory
 * We've seen a Windows 7 machine once fail to use Git to communicate with GitHub properly from command line and IntelliJ, yet be okay with Git Bash. Turned out the user home dir wasn't set right, so Git couldn't find the SSH files. Solution was to set the `HOME` environment variable to the user's home directory (like `C:\Users\[Username]`). Git Bash was smart enough to do without.

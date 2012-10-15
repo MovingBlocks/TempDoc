@@ -7,6 +7,7 @@ The following are the basic keys enabled in Terasology for you to interact with 
 * [E] - Activate (Chest, TNT, etc)
 * [Q] - Throw held (block) item (hold down to charge for a longer throw!)
 * [Space] - Jump
+* [Double Space] - God mode (fly / no-clip)
 * [Shift] - Hold to run
 * [Left click] - Activate left click action (default = place block)
 * [Right click] - Activate right click action (default = remove block)
@@ -18,6 +19,18 @@ The following are the basic keys enabled in Terasology for you to interact with 
 * [Tab] - Toggle developer console
 * [Escape] - Show/hide the game menu screen
 * [F3] - Toggle debug mode and information
+* [F4] - Different debug metrics
+* [F5] - Show block picker GUI element
+
+Debug Features
+----------
+
+These keys are only active if the player first uses `F3` to enter debug mode
+
+* [Arrow up/down] - Adjust the current time in small steps
+* [P] - Activate first-person player camera
+* [O] - Activate animated spawning point camera
+* [K] - Kills the player
 
 Inventory
 ----------

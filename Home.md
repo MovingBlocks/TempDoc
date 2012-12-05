@@ -6,8 +6,8 @@ Game Info
 ---------
 
 _What is Terasology ?_ Founded by Benjamin 'begla' Glatzel as an open source tech demo to research procedural terrain generation a team is now taking it to the next level - a full fledged game. We're aiming for a survival and discovery game with a strong influence from Minecraft, Dwarf Fortress, and Dungeon Keeper. A key part of the game will be building up an estate of some sort and managing specialized minions to climb up the ladder of discovery, while surviving in a world that might just be full of things that want to kill you.
-* [[What is Terasology?|What-is-Terasology]] - more details on exactly what our goals are
-* [[Download Terasology|Download-Terasology]] - basic instructions for how to download and set up the game. Also contains version history and other useful links
+* [[About Terasology|What-is-Terasology]] - more details on exactly what our goals are
+* [[Download Terasology]] - basic instructions for how to download and set up the game. Also contains version history and other useful links
 * [[Dev Team|Dev-Team]] - the who's who of Terasology and what holes we might especially need more people to help with
 
 Player Guide
@@ -25,7 +25,8 @@ Contributing
 
 Interested in getting involved with working on the game? This section is for you!
 
-* [[Contributor Guide|Contributor-Guide]] - anything related to contributing to Terasology including links to help you learn the related technologies
+* [[Modding Guide]] - details on how to create mods for the game (quick guide making some assumptions of development familiarity)
+* [[Contributor Guide]] - notes for general contributions to Terasology including links to help you learn the related technologies
 * [[Dev Setup]] - specifically how to set up to develop on Terasology on your local machine
 * [[Fancy Git]] - more advanced Git topics that you don't _need_ to be able to run from source, but may need to submit source or maintain your source setup over time
 * [[Checkstyle]] - notes about our code conventions and how to automatically check them

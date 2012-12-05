@@ -2,6 +2,21 @@ Modding Guide
 =================
 This is a quick start guide specific to creating and enhancing mods for Terasology. You may also want to read the [[Contributor Guide|Contributor-Guide]] or [[Dev Setup]] for general topics and setup
 
+
+Overview
+---------------------------------------
+
+Our goal is for everything, including the very player object itself, to be in essence a "mod" - that is, fully modifiable or entirely replaceable without touching the game engine itself. Which itself casts the [[term "mod"|http://forum.movingblocks.net/threads/modding-terminology.344/]] into question a bit, as the core game will ship with multiple selections of "mods" making up different gameplay styles.
+
+Until we sort that out we'll just leave it alone and go along with making more content :-)
+
+   * **What can currently be modded nicely**: Blocks and other in-game assets, world content through Components and Systems
+   * **What can't be modded quite so nicely**: GUI components (a couple mods rely on matching UI changes in the engine), terrain generation and selection, game modes
+
+Note that in addition to "engine" type functionality outside the modding system there is also a "core" mod inside the system that holds what you'd typically think of as engine stuff, such as the player prefab itself, starting tools, doors and chests, etc. The `core.jar` that all lives in can be modified and distributed to friends to showcase fundamental changes made to the game.
+
+Lots of changes are expected in this area, far more in the game than the documentation, so apologies in advance as this will end up going out of date regularly ... :P
+
 Running with mods
 ---------------------------------------
 
@@ -18,6 +33,7 @@ Key part is using "Make Project" to force everything to compile, including the s
 
 If you still get quirky issues on startup you may want to try selecting individual mod directories (like `Terasology/mods/miniion`), right clicking, and selecting "Compile Module". Goal is to fix this soon with better dependency management in the project
 
+Note that after launching the game you still have to actually **enable** mods on the world creation screen
 
 Structure of a mod
 ---------------------------------------

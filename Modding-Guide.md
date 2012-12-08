@@ -6,14 +6,13 @@ This is a quick start guide specific to creating and enhancing mods for Terasolo
 Overview
 ---------------------------------------
 
-Our goal is for everything, including the very player object itself, to be in essence a "mod" - that is, fully modifiable or entirely replaceable without touching the game engine itself. Which itself casts the [[term "mod"|http://forum.movingblocks.net/threads/modding-terminology.344/]] into question a bit, as the core game will ship with multiple selections of "mods" making up different gameplay styles.
-
-Until we sort that out we'll just leave it alone and go along with making more content :-)
+Our goal is for everything, including the very player object itself, to be a content module - that is, fully modifiable or entirely replaceable without touching the game engine itself. The core game will ship with multiple selections of these "mods" making up different gameplay styles and players can then customize them further or create additional new content.
 
    * **What can currently be modded nicely**: Blocks and other in-game assets, world content through Components and Systems
    * **What can't be modded quite so nicely**: GUI components (a couple mods rely on matching UI changes in the engine), terrain generation and selection, game modes
+   * **Other comments:** Mods can use content from other mods but there is no formal dependency or version managing yet
 
-Note that in addition to "engine" type functionality outside the modding system there is also a "core" mod inside the system that holds what you'd typically think of as engine stuff, such as the player prefab itself, starting tools, doors and chests, etc. The `core.jar` that all lives in can be modified and distributed to friends to showcase fundamental changes made to the game.
+Note that in addition to the engine there is also a "core" module inside the modding system that holds what you might typically consider to be engine stuff, such as the player prefab itself, starting tools, doors and chests, etc. The `core.jar` all that lives in can then be modified and distributed to friends to showcase fundamental changes made to the game.
 
 Lots of changes are expected in this area, far more in the game than the documentation, so apologies in advance as this will end up going out of date regularly ... :P
 
@@ -26,12 +25,14 @@ While the modding system works as-is there are still a few quirks we need to wor
    * `gradlew idea` on command line in project root dir
    * Open project in IntelliJ
    * Set project SDK under Project Structure if needed
-   * Build --> Make Project (CTRL-F9 - this forces the mods to build)
+   * _Build --> Make Project (CTRL-F9)_
    * Run org.terasology.game.Terasology
 
 Key part is using "Make Project" to force everything to compile, including the stuff under /mods. This may only be needed for IntelliJ, with Eclipse more eager to compile all the time
 
 If you still get quirky issues on startup you may want to try selecting individual mod directories (like `Terasology/mods/miniion`), right clicking, and selecting "Compile Module". Goal is to fix this soon with better dependency management in the project
+
+**NOTE:** If you are using IntelliJ 12 you can enable "Make Project Automatically" under File / Settings / Compiler. This should both cause everything to build initially as well as keep up with updates in mod directories automatically.
 
 Note that after launching the game you still have to actually **enable** mods on the world creation screen
 
@@ -50,20 +51,25 @@ Each mod currently needs to live as its own IntelliJ sub-module / something simi
 
 Mods are picked up by the game automatically on startup and any assets like blocks or sounds are loaded and made available. The mod's id becomes a namespace through which you can reference the assets, although if unique the game will guess the namespace for some things like blocks
 
-TODO: How to reference stuff from one mod in another safely?
+You can reference stuff in another mod's namespace from your mod, but keep in mind there's no explicit dependency management yet, nor versioning of mods.
 
 Create a new mod
 --------------------------------------------------
 
-The easiest way to start with a new mod is to simply copy one of the bundled mods. Again using "portals" as an example you'd follow these steps:
+You can create a new mod in one of two ways - the first is going to be the proper way long-term but isn't quite complete yet (for instance it may clear out project config changes you've made after an initial `gradlew idea`).
+
+   * Add the name of your mod to `settings.gradle` at the project root dir
+   * Run `gradlew cleanIdea idea` - this creates an Intellij `.iml` file for you in a new mod dir and sets it up as a module in your project
+   * Manually copy in / create a mod.text along with other needed directories (see detailed steps below)
+
+The completely manual version is simply making a copy of one of the existing bundled mods. Again using "portals" as an example you'd follow these steps:
 
    * Copy `mods/portals` to `mods/mymod` and rename `.idea/portals.iml` to `.idea/mymod.iml`
    * Go to "Project Structure" and add a new module from existing source, select your new directory's `.iml` file
    * Open `mod.txt` and update it with your mod's details. Make sure the id is unique.
-   * Add the name of your mod to `settings.gradle` at the project root dir if you want to be able to include it outside your local development environment (this is likely go change)
+   * Add the name of your mod to `settings.gradle` at the project root dir if you want to be able to include it outside your local development environment
       * With this done you should be able to run `gradlew distMods` in the project root to get your mod as a `.jar` under `builds/distributions/mods` that you can share with friends
    * Look for nice examples close to something you want to do in an existing mod and start tinkering with your own!
-
 
 New content tutorial
 --------------------------------------------------

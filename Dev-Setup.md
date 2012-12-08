@@ -4,7 +4,7 @@ How to get set up with IntelliJ, Git, and other related tools for contributing t
 
 ## Terminology
 
-Git can be sort of confusing - see [[Fancy Git]] for more advanced stuff. Here's a quick term list that'll be accurate assuming the steps below are followed:
+Git can be sort of confusing - see [[Fancy Git]] for more involved details. Here's a quick term list that'll be accurate assuming the steps below are followed:
 
 * https://github.com - an online service storing remote Git repos for people and allowing easy forking of projects with lots of neat stats and graphs - in particular linking together commits from different contributors on the same project "tree" like at https://github.com/MovingBlocks/Terasology/network
 * `repo` - a Git repository, which may be yours, and may contain more than one branch. `git remote -v` will state which remote repos a Git-tracked directory on your computer knows about (is "tracking")
@@ -34,7 +34,7 @@ Stuff you need! Download / install / register for the following (if you don't al
  * Pick the option to run Git from the Windows Command Prompt (middle option) and check out windows, commit unix (that is, if you're on Windows)
  * You can otherwise follow the install steps at this tutorial: http://help.github.com/win-set-up-git/
 * IntelliJ for IDE - http://www.jetbrains.com/idea/download
- * Be sure to pick the free community edition
+ * You can start with the free community edition - if you become a regular contributor we have a [[freebie open source project license for the Ultimate edition|http://forum.movingblocks.net/threads/intellij-12-has-been-released.652/]]
 * Sign up for GitHub - https://github.com/signup/free
  * Keep following the steps at http://help.github.com/win-set-up-git/ to *set up your SSH key* in particular
    * Parts of that guide have been moved to https://help.github.com/articles/generating-ssh-keys
@@ -45,18 +45,16 @@ Follow these instructions to get ready to run from code - unless you're a core c
 
 * "Fork" the project by opening https://github.com/MovingBlocks/Terasology and clicking the little fork button in the upper right
 * Note the url to your fork, should be something like `git@github.com:[user]/Terasology.git` or `https://github.com/[user]/Terasology.git` if you're using the Windows native version.
-* Start up IntelliJ to get it hooked up with source control (you can also use plain command line - see the [[Fancy Git]]
-* Under the Version Control menu - Checkout from version control - GitHub
-* Provide your login details (you might also have to give IntelliJ a password manager password and such)
-* Your GitHub details should pop up - pick a directory to check out into
- * IntelliJ seems picky on whether this directory exists already - make sure only the _parent_ directory exists
-* This will clone the remote repo to your local drive - *NOTE:* this can take quite a while with no progress bar! Be patient for at least a few minutes :-)
-* A prompt will pop up asking if you want to create a project for your new files - pick *no*
-* Open a command prompt in the directory you checked out into (so run `cmd` and do `cd D:\Dev\Terasology` or sometihng) and execute `gradlew idea` there - this installs Gradle automatically and builds the project config
+* You can **either** set up once from the command line (suggested) or start with IntelliJ (get a new project via "Check out from version control" and follow the prompts)
+   * Pick a working directory (like `C:\Dev` on Windows), bring up a command prompt there, then execute `git clone git@github.com:MovingBlocks/Terasology.git` (replace "MovingBlocks" with your username to use your own fork)
+   * If you use IntelliJ then make sure only the _parent_ directory exists (Git won't check out into a project directory that already exists)
+* This will clone the remote repo to your local drive - *NOTE:* this can take quite a while! Be patient for at least a few minutes :-)
+* Open a command prompt in the directory you checked out into (so run `cmd` and do `cd C:\Dev\Terasology` or so) and execute `gradlew idea` there - this fetches the right version of Gradle automatically and builds the project config
 * There's also a version for Eclipse - `gradlew eclipse` - more work on the project generation might be coming. See the Gradle section on [[Fancy Git]]
 * Open the Terasology project in your shiny new source controlled directory
-* Go to the Version Control(may be CVS) menu / Enable Version Control Integration, and pick Git (prepares Git IDE integration)
+* Go to the Version Control (may be CVS) menu / Enable Version Control Integration, and pick Git (prepares Git IDE integration)
 * Navigate to `org.terasology.game.Terasology` in the project explorer under `src.main` and right click it, then pick run to start the game!
+   * If this class does not have a green triangle "run" icon on it be sure to set the Project SDK under Project Structure on the File menu
 
 Extras:
 
@@ -66,7 +64,7 @@ Extras:
 #### Common issues:
 
 * Usually the project will find a 1.6 Java SDK and know about Java - if you get a massive amount of Java errors (or don't see the "Run" option on Terasology.java) you may have to check under File / Project Structure / Platform Settings / SDKs to see if you have a valid Java setup. Sometimes you may only have a 1.7 SDK installed, that will trigger this issue too. Just add the 1.7 and use that instead or install a 1.6.  
-Click [HERE](https://raw.github.com/CallMeAsher/TeraMisc/master/wiki/AddSdkGuide.jpg) to see how to add the 1.6 SDK if IntelliJ doesn't show it by default.
+   * Click [HERE](https://raw.github.com/CallMeAsher/TeraMisc/master/wiki/AddSdkGuide.jpg) to see how to add the 1.6 SDK if IntelliJ doesn't show it by default.
 * You may have to set your JAVA_HOME also - such as on Linux with a command like this: `export JAVA_HOME="/usr/lib/jvm/java-6-sun"`
 * Outdated graphics card drivers can cause startup problems and some cards just seem quirky. Please post in the [Support Forum](http://forum.movingblocks.net/forums/support.20/) if you still have issues after installing your latest drivers and attach the log file from the /logs directory
 * We've seen a Windows 7 machine once fail to use Git to communicate with GitHub properly from command line and IntelliJ, yet be okay with Git Bash. Turned out the user home dir wasn't set right, so Git couldn't find the SSH files. Solution was to set the `HOME` environment variable to the user's home directory (like `C:\Users\[Username]`). Git Bash was smart enough to do without.
@@ -93,7 +91,7 @@ Now you're finally ready to actually make changes and commit + push them somewhe
 * IntelliJ will happily let you change your local files no problem, no need to do anything until you actually want to submit your changes somewhere.
 * You can use `git status` to get a list of local files you've created/modified/etc. They'll also show in different colors in IntelliJ
 * To add a new file to Git use the right-click menu in IntelliJ on the target file then select the Git sub-menu and the "add" command
-* This will "stage" files for a local commit (read up on Git more if you're confused, it really can be kind of confusing). IntelliJ will find modified files on its own, command line Git won't
+* This will "stage" files for a local commit (read up on Git more if you're confused, it really can be kind of confusing). IntelliJ will remember modified files on its own for commits, command line Git won't unless you tell it
 * If you want to push your changes to your remote repository you can use the Git / Commit right-click option on top level project entry in IntelliJ and follow the prompts (includes all sorts of technical terms!)
 * An important distinction here is if you do a plain "Commit" or a "Commit and Push..." - the first one will only store your changes safely in your local Git repository, while including a Push will also send the changes to your personal remote repo
 * If you do use "Commit and Push..." another screen will pop up asking you to confirm by also pressing "Rebase and Push" (exact label may differ by version)
@@ -106,7 +104,7 @@ If you encounter any issues configuring remote repos (or forget what local branc
 Say some updates have been checked in to one of the `movingblocks` branches and you want to get the latest to keep up. There's an easy way to do this via IntelliJ - just make sure you've made the remote reference to `movingblocks`
 
 * Right click the project top element (or use the Version Control / VCS menu) and go to Git / Pull Changes
-* Update the Remote branches with the "Get Branches" button and make sure you select the right current branch (local) and remote repository
+* Update the Remote branches with the "Get Branches" button and make sure you select the right current branch (local) and remote repository. Alternatively you may need to use the "Fetch" menu item.
 * Select the remote branch(es) you want to merge to your local and click "Pull" !
 * You'll get a nice summary in your Version Control window with what was changed. Yay GUIs!
 * To push the update to _your_ remote branch (your Pull only updated your local) right click the project top again and select Git / Push Changes

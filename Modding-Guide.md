@@ -1,6 +1,6 @@
 Modding Guide
 =================
-This is a quick start guide specific to creating and enhancing mods for Terasology. You may also want to read the [[Contributor Guide|Contributor-Guide]] or [[Dev Setup]] for general topics and setup
+This is a quick start guide specific to creating and enhancing mods for Terasology, paired with our [[Modding API]] page. You may also want to read the [[Contributor Guide]] or [[Dev Setup]] for general topics and setup
 
 
 Overview
@@ -8,7 +8,7 @@ Overview
 
 Our goal is for everything, including the very player object itself, to be a content module - that is, fully modifiable or entirely replaceable without touching the game engine itself. The core game will ship with multiple selections of these "mods" making up different gameplay styles and players can then customize them further or create additional new content.
 
-   * **What can currently be modded nicely**: Blocks and other in-game assets, world content through Components and Systems
+   * **What can currently be modded nicely**: Blocks and other in-game assets, world content through Components and Systems, console commands
    * **What can't be modded quite so nicely**: GUI components (a couple mods rely on matching UI changes in the engine), terrain generation and selection, game modes
    * **Other comments:** Mods can use content from other mods but there is no formal dependency or version managing yet
 

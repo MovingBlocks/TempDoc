@@ -115,6 +115,19 @@ And you can sometimes end up without a `origin/HEAD` setting if you've been dele
 
 This looks to be a little tricky as we've hit scenarios where pulling/pushing code around didn't result in a nice connection on the branch map. Need more info on exactly what makes this tick - usually it has been fairly easy to fix, although it can result in duplicate listings of earlier commits. A big warning: It is very easy in trying to revert or undo stuff on a local branch to submit a pile of silly commits you don't want to pollute the main branch network with. This is especially the case if you're new to Git. Be cautious! :D
 
+Rebasing can be useful to do locally if you've been making frequent or messy commits with lots of debug statements, reverted changes, etc
+
+   * TODO
+
+If mistakes are pushed somewhere you can revert back one or more commits and force-push the older commit to your remote. To revert back one commit look for the parent commit ID you want and locally with the right branch checked out do:
+
+   * `git checkout [branch]` - pick a local branch you want to roll back commits on (oh, and you might want to branch a backup ..)
+   * `git reset [id]` - reset to the commit with the id supplied (easy to confirm on GitHub - the IDs are linked to their respective commits)
+   * `git status` - to confirm that you're now behind 'x' commits
+   * `git branch -avv` - to again confirm that the active commit descriptions line up like you expect - can't be too careful!
+   * `git push origin [branch]` - to confirm that you get an error saying you'd lose commits - just in case!
+   * `git push origin [branch] -f` - do the revert to the older commit - no going back at this point so be certain you are doing the right thing!
+
 ## MovingBlocks
 
 Our GitHub Organization is called MovingBlocks ("MB" for short) and lives at https://github.com/MovingBlocks/Terasology

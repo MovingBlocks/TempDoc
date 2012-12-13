@@ -41,3 +41,17 @@ There are a fair bit of nice shortcuts that work in the inventory
     * Left-CTRL will do so at double speed (2 items at a time)
 * Shift-clicking on an item will insta-move it from one side to another in a transfer (like inventory to chest) - or should that be made CTRL instead?
 * Right-clicking an item stack will pick up half of it (or drop a single item if used with a stack held over an empty or compatible stack)
+
+Other keyboard layouts
+----------
+
+There are two commands available in the commandline to change the keybindings. The supported keyboard layouts are AZERTY and NEO 2 layout.
+
+* Use /AZERTY to set the bindings fitting the azerty layout:
+   * Z : forward
+   * S : back
+   * Q : left
+* Use /NEO to set the bindings to fit the neo 2 layout:
+   * V,I,U,A : moving
+   * L : use item
+   * G : inventory

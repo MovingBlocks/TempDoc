@@ -36,6 +36,7 @@ Interested in getting involved with working on the game? This section is for you
 * [[JavaDoc]] - well-written code explains itself, but it doesn't help to have that in an exportable format!
 * [[Texture Origin]] - an index for textures we use and who contributed them. That way we can give credit where due and keep track of how many of our core textures are unique vs sourced from texture packs
 * [[Community Suggestions]] - a place for us to store suggestions made by the public in a place that's not good for potential long-term storage (tickets, forum, etc)
+* [[Console commands]] - instructions to create new console commands
 
 Communication
 -------------

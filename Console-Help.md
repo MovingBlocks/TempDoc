@@ -28,6 +28,7 @@ Block related:
 * /listBlocks - Lists all actively used blocks (have been loaded for the world)
 * /listFreeShapeBlocks - Lists all blocks that can be requested in any known shape
 * /listShapes - Lists the available shapes
+* /placeBlock "Dirt" - place a dirt block in front of the player
 
 Misc:
 * /help - Show in-game help (more thorough)
@@ -35,3 +36,6 @@ Misc:
 * /teleport 42 42 42 - Warps the player to x = 42, y = 42, z = 42
 * /fullHealth - Fully restores the player's health
 
+Keyboard Layouts:
+* /AZERTY - set keyboard layout to AZERTY
+* /NEO - set key bindings to fit neo 2 layout

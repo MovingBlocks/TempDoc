@@ -60,10 +60,10 @@ Block Design
 Related Sections
 ----------------
 
-   * [[DevSetup]] - how to use Git, IntelliJ and so forth to get set up for developing!
-   * IssueTracking - details on how we're working with issue tracking on GitHub
-   * UnitTesting - you know you gotta, it helps!
-   * JavaDoc - and so does this
+   * [[Dev Setup]] - how to use Git, IntelliJ and so forth to get set up for developing!
+   * [[Issue tracking]] - details on how we're working with issue tracking on GitHub
+   * [[UnitTesting]] - you know you gotta, it helps!
+   * [[JavaDoc]] - and so does this
 
 Related Resources
 -----------------

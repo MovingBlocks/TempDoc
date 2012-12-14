@@ -16,7 +16,7 @@ List all the things! That can serve as extension points for Terasology, that is.
    * Events - for communication between systems
    * Actions - similar to events, need more detail
    * Blocks - definitions & textures simply go in the right spot, no need to extend anything
-   * Commands - can be included by implementing CommandProvider and using annotations for descriptions
+   * Commands - can be included by implementing CommandProvider and using annotations for descriptions. See [[Console Commands]] for details
 
 ### Pending
 

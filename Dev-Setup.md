@@ -10,8 +10,8 @@ Git can be sort of confusing - see [[Fancy Git]] for more involved details. Here
 * `repo` - a Git repository, which may be yours, and may contain more than one branch. `git remote -v` will state which remote repos a Git-tracked directory on your computer knows about (is "tracking")
 * `branch` - one "collection" of code in a repo, which usually differs a little from other branches in the same repo. `git branch -avv` will tell you what you've got including mappings between local and remote branches
 * `upstream` - general term referring to a repo away from yours that is closer to the "ultimate source" of a project (it may also be used as an alias, we're avoiding that for clarity - upstream does _not_ refer to anything specific for us)
-* `origin` - where you cloned your local Git repo from (should be your home on GitHub). May also be listed as `remotes/origin/master` with "master" as the example branch
-* `movingblocks` - reference to our remote Organization repo - likewise may be listed as `remotes/movingblocks/develop` and such
+* `origin` - Usually your remote repo you created on GitHub when you forked from MovingBlocks.  You clone from your personal fork to your local machine, hence the name **origin** of your local repo.  May also be listed as `remotes/origin/master` with "master" as the example branch
+* `movingblocks` - reference to our remote Organization repo - likewise may be listed as `remotes/movingblocks/develop` and such.  In many GitHub guides, this would be the concept of a "upstream" repo.
 * `master` - your local master branch. Should be paired with your `remotes/origin/master`
 * `develop` - generally the place where the primary changes happen. More specific development may take place in "topic branches" (that are exactly what they sound like)
 * `Commit` - submit changes to your local development environment (you have a local repo where stuff gets stored until you're ready to push somewhere remote) - allows you to keep better control of your local work via revisions

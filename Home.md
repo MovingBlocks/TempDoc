@@ -39,6 +39,7 @@ Interested in getting involved with working on the game? This section is for you
 
 ### Art
 
+* [[Contributor Guide]] covers most art related contribution tasks.
 * [[Texture Origin]] - an index for textures we use and who contributed them. That way we can give credit where due and keep track of how many of our core textures are unique vs sourced from texture packs
 
 ### Documentation, Issue Reporting, and Community

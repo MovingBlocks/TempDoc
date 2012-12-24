@@ -53,8 +53,9 @@ Follow these instructions to get ready to run from code - unless you're a core c
 * There's also a version for Eclipse - `gradlew eclipse` - more work on the project generation might be coming. See the Gradle section on [[Fancy Git]]
 * Open the Terasology project in your shiny new source controlled directory
 * Go to the Version Control (may be CVS) menu / Enable Version Control Integration, and pick Git (prepares Git IDE integration)
-* Navigate to `org/terasology/game/Terasology` in the project explorer (under `src/main/java`) and right click it, then pick run to start the game!
-   * If this class does not have a green triangle "run" icon on it be sure to set the Project SDK under Project Structure on the File menu
+* In the project explorer under `src/main/java`, navigate to `org/terasology/game/` and right-click `Terasology`, then pick run(see note if not available) to start the game!   
+   * **Note:** If no run option available, right-click 'Terasology' and click `Compile`.  The Project Structure window may open under the Modules tab, asking you to set the SDK for the project.  Next to 'Module SDK: No Project SDK' click `New...`->`JSDK`(for some reason it seems you have to click this twice before it opens the next window)->Browse to and select SDK folder( _e.g._ jdk1.6.0_35, Googling `jdk path MyOSNameHere` will find lots of posts showing you how to find this path).  It may ask you if you want to setup the project, choose yes.
+
 
 Extras:
 

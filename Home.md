@@ -25,18 +25,28 @@ Contributing
 
 Interested in getting involved with working on the game? This section is for you!
 
-* [[Modding Guide]] - details on how to create mods for the game (quick guide making some assumptions of development familiarity)
 * [[Contributor Guide]] - notes for general contributions to Terasology including links to help you learn the related technologies
+* [[Modding Guide]] - details on how to create mods for the game (quick guide making some assumptions of development familiarity)
+
+### Programming
+
 * [[Dev Setup]] - specifically how to set up to develop on Terasology on your local machine
 * [[Fancy Git]] - more advanced Git topics that you don't _need_ to be able to run from source, but may need to submit source or maintain your source setup over time
 * [[Checkstyle]] - notes about our code conventions and how to automatically check them
-* [[Markdown and Wiki]] - how to tweak away with Markdown and the GitHub wiki
-* [[Issue Tracking]] - how and what we're tracking using the GitHub issue system
 * [[Unit Testing]] - or the lack thereof, the most common developer sin!
 * [[JavaDoc]] - well-written code explains itself, but it doesn't help to have that in an exportable format!
-* [[Texture Origin]] - an index for textures we use and who contributed them. That way we can give credit where due and keep track of how many of our core textures are unique vs sourced from texture packs
-* [[Community Suggestions]] - a place for us to store suggestions made by the public in a place that's not good for potential long-term storage (tickets, forum, etc)
 * [[Console commands]] - instructions to create new console commands
+
+### Art
+
+* [[Texture Origin]] - an index for textures we use and who contributed them. That way we can give credit where due and keep track of how many of our core textures are unique vs sourced from texture packs
+
+### Documentation, Issue Reporting, and Community
+
+* [[Markdown and Wiki]] - how to tweak away with Markdown and the GitHub wiki
+* [[Issue Tracking]] - how and what we're tracking using the GitHub issue system
+* [[Community Suggestions]] - a place for us to store suggestions made by the public in a place that's not good for potential long-term storage (tickets, forum, etc)
+
 
 Communication
 -------------

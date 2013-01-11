@@ -47,3 +47,8 @@ The Terasology Block Shape plugin adds a properties pane to Blender. The first t
 The next two properties are set for each mesh
 * Full Side - does this mesh fill the side it is for. That is, if this side is against another blocks side, would that other block side be completely obscured
 * Is AABB Collider - should this mesh be used to generate a collider. This can be used by non-side mesh.
+
+## Related Links
+
+* [[Shape Architecture]]
+* [[German Tutorial|http://terasologyblog.de/2012/08/tutorial-erstellen-eines-json-blockes]]

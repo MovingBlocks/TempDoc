@@ -14,7 +14,6 @@ The following are the basic keys enabled in Terasology for you to interact with 
 * [Mouse wheel up/down] - Cycle through toolbar slots
 * [1..0] - Change the active toolbar slot
 * [I] - Toggle inventory screen
-* [H] - Hide user interface
 * [F] - Toggle viewing distance (near, moderate, far, ultra)
 * [Tab] - Toggle developer console
 * [Escape] - Show/hide the game menu screen
@@ -30,6 +29,8 @@ These keys are only active if the player first uses `F3` to enter debug mode
 * [Arrow up/down] - Adjust the current time in small steps
 * [P] - Activate first-person player camera
 * [O] - Activate animated spawning point camera
+* [H] - Hide user interface
+* [R] - Wireframe mode
 * [K] - Kills the player
 
 Inventory

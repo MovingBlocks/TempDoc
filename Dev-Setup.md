@@ -62,7 +62,7 @@ Extras:
 
 * You can "Watch" the various repositories and "Follow" contributors on GitHub to more easily keep track of what's going on
 * Look at the readme section on https://github.com/MovingBlocks/Terasology (scroll down) for instructions on what you can do - don't forget looking at the Options menu in-game to adjust the graphic settings as they default to minimum
-* If you end up with heap size errors, you should add the VM option '-Xmx1024m' in the run configuration. (it will allow Java to use up to 1024m for the heap)
+* If you end up with heap size errors, you should add the VM option `-Xmx1024m` in the run configuration. (it will allow Java to use up to 1024m for the heap)
 
 #### Common issues:
 

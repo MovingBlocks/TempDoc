@@ -5,7 +5,9 @@ We made the decision not to stick with a conventional solution via GUI for the c
 The crafting "place" is made up of 27 smaller blocks, placed in a 3x3x3 cube. By doing this, we achieve the possibility of three dimensional crafting. The crafting process itself is similar to known systems -- one places blocks/items in the crafting grid and - based on some recipe - can receive some craft result.
 
 # Usage
-To start a crafting process, you have to hold the "Q" key while holding a block or item in hand so that you see the charge indicator. When "right clicking" during charging, the craft blocks appears in front of you, with one instance of the item hold in hand already placed in the grid.
+To start a crafting process, you have to hold the **Q** key while holding a block or item in hand so that you see the charge indicator. When **right clicking** during charging, the craft blocks appears in front of you, with one instance of the item hold in hand already placed in the grid.
+
+The craft block is divided into 3 layers -- bottom, middle and top -- to make the placement of blocks/item practicable to the user. To place the selected block/item in the grid, point with the crosshair on a specified cell and **right click** -- 
 
 # Recipes
 

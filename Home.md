@@ -73,4 +73,8 @@ These pages offer more advanced insight into specific features of the game are a
 * [[Shape Architecture]] - defining 3D meshes via definitions in JSON!
 * [[Block Shapes In Blender]] - more on shapes
 * [[Entity System Architecture]] - describes the structure and usage of the entity system
-* [[Procedural Architecture Grammar]] - introduction to the PAG for procedural building generation.
+
+Modules
+------------
+* [[Crafting System]] - Introduction to the crafting system, its usage and extenstion.
+* [[Procedural Architecture Grammar]] - Introduction to the PAG for procedural building generation.

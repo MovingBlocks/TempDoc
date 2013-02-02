@@ -121,8 +121,29 @@ Currently, the structure for this section is like the following:
 	
 Where the types mentioned are defined as follows:
 
-* _<instigator>_ : The block or item that is used to refine another element. The instigator is the block/item that the player must select in the toolbar.
-* _<target>_ : A block or item in the craft block the player is pointing at. The target is the block that will be refined in the refinement process.
-* _<resultCount>_ : everything should be clear with that ;)
+* _\<instigator\>_ : The block or item that is used to refine another element. The instigator is the block/item that the player must select in the toolbar.
+* _\<target\>_ : A block or item in the craft block the player is pointing at. The target is the block that will be refined in the refinement process.
+* _\<resultCount\>_ : everything should be clear with that ;)
 
 > **Note:** The way how refinements are specified will change within the next versions!
+
+Moreover, it is possible to define more than one refinement recipe. To do so, just add another `"<instigator>:<target>:<resultCount>" : {}` block, seperated from the first one by a comma.
+
+### Example
+An example for a refinement definition is given in the following code block:
+
+	"refinement" : {
+	  "coalore:coalore:4" : {
+	    "instigator"  : "coalore",
+		"target"      : "coalore",
+		"resultCount" : "2"
+	  },
+	  "stone:coalore:2" : {
+	    "instigator"  : "stone",
+		"target"      : "coalore",
+		"resultCount" : "2"
+	  }
+	}
+
+# Related Links
+* [[Crafting System]]

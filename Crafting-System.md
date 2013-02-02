@@ -20,11 +20,14 @@ You can get placed blocks/items back by selecting them via the crosshair and **l
 Furthermore, you can **hold the right or left mouse button** pressed to add or delete items continuously. Another way of adding a higher number of items to the grid at the same time is to hold **Q** to charge the number of items that will be added. The graduation is divided into 6 parts, each stands for 1/6 of the amount of items. Thus, charging to the half circle around the crosshair will place the half of the items in the grid. 
 
 ## Mini-Inventory
-You may have noticed that you only have the items in your toolbar available for crafting. This difficulty was solved by the so called _mini-inventory_, which allows to scroll easily through your inventory. To access the mini-inventroy, press and hold **shift* and use the **mouse wheel** to scroll through the rows of your inventory. 
+You may have noticed that you only have the items in your toolbar available for crafting. This difficulty was solved by the so called _mini-inventory_, which allows to scroll easily through your inventory. To access the mini-inventroy, press and hold **shift** and use the **mouse wheel** to scroll through the rows of your inventory. 
 
 ## Crafting
 Now you know how to handle the crafting system, so we can start with the actual crafting. If you have arranged the blocks and items in the craft grid in a way such that the current configuration matches with some recipe, a _thought cloud_ appears over the craft block, containing an icon hint to the craft result. 
 In order to receive the item, press **E** and you will get one (or another number, specified by the recipe) of the result item to your inventory. The amount of the used items in the craft block is decreased simultaneously.
+
+## Refinement
+Finally, we have refinement left. Refinement is a simple form of changing an item's properties. In order to start the refinement process, selecet an item from you toolbar, press and hold **Q** and **right click** to bring up the craft block interface. The craft grid already contains an instance of the selected item. The item in the grid is called the _target_ of the refinement process. To perform the refinement, you need to have an _instigator_, which will "trigger" the refinement. Selecet the instigator item or block in your toolbar, point with the crosshair to the item in the crafting grid and you will see the thought cloud with the refined item in it. Now press **E** to receive to add the refined item to your inventory.
 
 # Recipes
 

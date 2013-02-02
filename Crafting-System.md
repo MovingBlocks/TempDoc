@@ -1,4 +1,4 @@
-This article will give an overview of the TS Crafting System, provided by the "Crafting"-module by @Adeon.
+This article will give an overview of the TS Crafting System, provided by the "Crafting"-module.
 The focus of this articel is on the in-games usage. For details on how to specify own recipes please go to [[Crafting System (Developer)]]. 
 
 # General Information

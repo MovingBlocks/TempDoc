@@ -35,9 +35,8 @@ In order to receive the item, press **E** and you will get one (or another numbe
 Finally, we have refinement left. Refinement is a simple form of changing an item's properties. In order to start the refinement process, selecet an item from you toolbar, press and hold **Q** and **right click** to bring up the craft block interface. The craft grid already contains an instance of the selected item. The item in the grid is called the _target_ of the refinement process. To perform the refinement, you need to have an _instigator_, which will "trigger" the refinement. Selecet the instigator item or block in your toolbar, point with the crosshair to the item in the crafting grid and you will see the thought cloud with the refined item in it. Now press **E** to receive to add the refined item to your inventory.
 
 # Recipes
-The whole craft system is based on recipes. All crafting (and refinement) results are based on these recipes. 
-
-New recipes are defined via a "CraftRecipe" section in the _*.prefab_ files. 
+The whole craft system is based on recipes. All crafting (and refinement) results are based on these recipes. New recipes are defined via a "CraftRecipe" section in the _*.prefab_ files. 
 
 # Read More
 [Crafting (Forum)](http://forum.movingblocks.net/threads/crafting.247/)
+[Video Tutorial (engl.)](http://www.youtube.com/watch?v=-cdhxguyMpA)

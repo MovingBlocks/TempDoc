@@ -37,6 +37,13 @@ Finally, we have refinement left. Refinement is a simple form of changing an ite
 # Recipes
 The whole craft system is based on recipes. All crafting (and refinement) results are based on these recipes. New recipes are defined via a "CraftRecipe" section in the _*.prefab_ files. 
 
-# Read More
+You can change the behaviour of the recipes by specifying different options. These options will be explained in detail right after the section on basic recipe definitions.
+
+## Recipe definitions
+This section will explain the general structure of recipes. Therefore, the example of a pickaxe will be used. As already said, the _pickaxe.prefab_ must contain the following section:
+`"CraftRecipe" : {}`
+
+# Related Links
 [Crafting (Forum)](http://forum.movingblocks.net/threads/crafting.247/)
+
 [Video Tutorial (engl.)](http://www.youtube.com/watch?v=-cdhxguyMpA)

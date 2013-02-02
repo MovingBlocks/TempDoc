@@ -1,4 +1,5 @@
 This article will give an overview of the TS Crafting System, provided by the "Crafting"-module by @Adeon.
+The focus of this articel is on the in-games usage. For details on how to specify own recipes please go to [[Crafting System (Developer)]]. 
 
 # General Information
 We made the decision not to stick with a conventional solution via GUI for the crafting system but introduced an intuitive and innovative in-game approach. 

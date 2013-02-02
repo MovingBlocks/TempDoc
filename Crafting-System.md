@@ -12,6 +12,11 @@ If the block/item could successfully be placed, the amount of the selected block
 
 You can get placed blocks/items back by selecting them via the crosshair and **left clicking** on your mouse. 
 
+## Add and remove multiple items
+Furthermore, you can hold the right or left mouse button pressed to add or delete items continuously. Another way of adding a higher number of items to the grid at the same time is to hold **Q** to charge the number of items that will be added. The graduation is divided into 6 parts, each stands for 1/6 of the amount of items. Thus, charging to the half circle around the crosshair will place the half of the items in the grid. 
+
+## Mini-Inventory
+
 # Recipes
 
 # Read More

@@ -143,6 +143,6 @@ To sum up the recipe definition and its options so far I want to give you the re
 
 
 # Related Links
-[Crafting (Forum)](http://forum.movingblocks.net/threads/crafting.247/)
-
-[Video Tutorial (engl.)](http://www.youtube.com/watch?v=-cdhxguyMpA)
+* [[Crafting System (Developer)]]
+* [Crafting (Forum)](http://forum.movingblocks.net/threads/crafting.247/)
+* [Video Tutorial (engl.)](http://www.youtube.com/watch?v=-cdhxguyMpA)

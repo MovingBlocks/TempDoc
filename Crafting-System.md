@@ -133,7 +133,7 @@ To sum up the recipe definition and its options so far I want to give you the re
       "recipe" : {
 		"bottom" :
 		  [
-		        " ", " ",     " ",
+		    " ", " ",     " ",
 			" ", "coal",  " ",
 			" ", "stick", " "
 		  ]

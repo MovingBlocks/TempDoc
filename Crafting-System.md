@@ -129,11 +129,11 @@ To sum up the recipe definition and its options so far I want to give you the re
 
 	"CraftRecipe" : {
 	  "fullMatch"   : false,
-	  "resultCount" : 4.
+	  "resultCount" : 4,
       "recipe" : {
 		"bottom" :
 		  [
-		    " ", " ",     " ",
+		        " ", " ",     " ",
 			" ", "coal",  " ",
 			" ", "stick", " "
 		  ]

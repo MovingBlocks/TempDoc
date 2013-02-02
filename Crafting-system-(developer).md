@@ -106,3 +106,23 @@ To sum up the recipe definition and its options so far I want to give you the re
 		  ]
       }
     }
+
+## Refinements
+You can specify a **refinement** by replacing the **recipe** subsection through a refinement subsection. 
+Currently, the structure for this section is like the following:
+  
+    "refinement" : {
+		"<instigator>:<target>:<resultCount>" : {
+			"instigator"  : "<instigator>",
+			"target"      : "<target>",
+			"resultCount" : "<resultCount>"
+		}
+	}
+	
+Where the types mentioned are defined as follows:
+
+* _<instigator>_ : The block or item that is used to refine another element. The instigator is the block/item that the player must select in the toolbar.
+* _<target>_ : A block or item in the craft block the player is pointing at. The target is the block that will be refined in the refinement process.
+* _<resultCount>_ : everything should be clear with that ;)
+
+> **Note:** The way how refinements are specified will change within the next versions!

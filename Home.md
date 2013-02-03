@@ -78,3 +78,4 @@ Modules
 ------------
 * [[Crafting System]] - Introduction to the crafting system, its usage and extenstion.
 * [[Procedural Architecture Grammar]] - Introduction to the PAG for procedural building generation.
+* [[Miniions]] - Introduction to the miniion system.

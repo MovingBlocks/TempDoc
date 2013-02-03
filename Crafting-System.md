@@ -8,12 +8,17 @@ The crafting "place" is made up of 27 smaller blocks, placed in a 3x3x3 cube. By
 # Activation
 The Crafting-Module is integrated in the stable builds starting from build #22. You can find the module listed in the _Mods windows_ when you create a new world. In order to active the craft system in the game, select the module's name in the list and click the **Activate** button. You can now use the craft system in your fresh created worlds.
 
+![Active the "Craft System" in the mod list.](http://terasologyblog.de/wp-content/uploads/2013/02/TS-Crafting-tutorial-menu_3.jpg)
+
 
 # Usage
 This sections explains the main usage of the crafting system, including information on how to start the crafting process, how to effectively use the available features and how to actually craft new items.
 
 ## Start crafting process
-To start a crafting process, you have to hold the **Q** key while holding a block or item in hand so that you see the charge indicator. When **right clicking** during charging on an existing block in the world, the craft blocks appears in front of you, with one instance of the item hold in hand already placed in the grid.
+To start a crafting process, you have to hold the **Q** key while holding a block or item in hand so that you see the charge indicator.
+![Press and hold "Q".](http://terasologyblog.de/wp-content/uploads/2013/02/TS-Crafting-tutorial-start_crafting_1.jpg) 
+When **right clicking** during charging on an existing block in the world, the craft blocks appears in front of you, with one instance of the item hold in hand already placed in the grid.
+![The crafting grid with the initial placed block.](http://terasologyblog.de/wp-content/uploads/2013/02/TS-Crafting-tutorial-start_crafting_2.jpg)
 
 ## The craft block (Add and remove items)
 The craft block is divided into 3 layers -- bottom, middle and top -- to make the placement of blocks/item practicable to the user. The navigation through the different layers works as follows: To go a layer up, press and hold **shift** and **click right**, that will move the interactable grid one layer up. To go one layer down respectively, press and hold **shift** and **left click** on your mouse.
@@ -28,13 +33,16 @@ Furthermore, you can **hold the right or left mouse button** pressed to add or d
 
 ## Mini-Inventory
 You may have noticed that you only have the items in your toolbar available for crafting. This difficulty was solved by the so called _mini-inventory_, which allows to scroll easily through your inventory. To access the mini-inventroy, press and hold **shift** and use the **mouse wheel** to scroll through the rows of your inventory. 
+![The mini-inventory.](http://terasologyblog.de/wp-content/uploads/2013/02/TS-Crafting-tutorial-mini-inventar.jpg)
 
 ## Crafting
 Now you know how to handle the crafting system, so we can start with the actual crafting. If you have arranged the blocks and items in the craft grid in a way such that the current configuration matches with some recipe, a _thought cloud_ appears over the craft block, containing an icon hint to the craft result. 
 In order to receive the item, press **E** and you will get one (or another number, specified by the recipe) of the result item to your inventory. The amount of the used items in the craft block is decreased simultaneously.
+![The thought-cloud at the top indicates that the placed blocks match with the pickaxe recipe.](http://terasologyblog.de/wp-content/uploads/2013/02/TS-Crafting-tutorial-crafting_1.jpg)
 
 ## Refinement
 Finally, we have refinement left. Refinement is a simple form of changing an item's properties. In order to start the refinement process, selecet an item from you toolbar, press and hold **Q** and **right click** to bring up the craft block interface. The craft grid already contains an instance of the selected item. The item in the grid is called the _target_ of the refinement process. To perform the refinement, you need to have an _instigator_, which will "trigger" the refinement. Selecet the instigator item or block in your toolbar, point with the crosshair to the item in the crafting grid and you will see the thought cloud with the refined item in it. Now press **E** to receive to add the refined item to your inventory.
+![Refinement of stone.](http://terasologyblog.de/wp-content/uploads/2013/02/TS-Crafting-tutorial-refinement.jpg)
 
 # Related Links
 * [[Crafting System (Developer)]]

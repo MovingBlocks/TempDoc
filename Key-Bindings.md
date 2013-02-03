@@ -4,7 +4,7 @@ Key Bindings
 The following are the basic keys enabled in Terasology for you to interact with the world. There are additional keys with [[Debug Features]] enabled
 
 * [W,A,S,D] - Movement
-* [E] - Activate (Chest, TNT, etc)
+* [E] - Activate/Use (Chest, TNT, Door, etc)
 * [Q] - Throw held (block) item (hold down to charge for a longer throw!)
 * [Space] - Jump
 * [Double Space] - God mode (fly / no-clip)
@@ -20,6 +20,12 @@ The following are the basic keys enabled in Terasology for you to interact with 
 * [F3] - Toggle debug mode and information
 * [F4] - Different debug metrics
 * [F5] - Show block picker GUI element
+* [F9] - Toggle SSAO
+
+Key Combinations
+----------
+* [Q + Right click] Start Crafting mode
+    * for more crafting controls, see [[Crafting System]]
 
 Debug Features
 ----------
@@ -48,11 +54,11 @@ Other keyboard layouts
 
 There are two commands available in the commandline to change the keybindings. The supported keyboard layouts are AZERTY and NEO 2 layout.
 
-* Use /AZERTY to set the bindings fitting the azerty layout:
+* Use `/AZERTY` to set the bindings fitting the azerty layout:
    * Z : forward
    * S : back
    * Q : left
-* Use /NEO to set the bindings to fit the neo 2 layout:
+* Use `/NEO` to set the bindings to fit the neo 2 layout:
    * V,I,U,A : moving
    * L : use item
    * G : inventory

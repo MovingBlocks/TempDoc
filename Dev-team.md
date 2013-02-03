@@ -22,13 +22,14 @@ Who has been involved so far or are expected to potentially be involved soon
    * stellarfirefly - sys admin, Jenkins (potential)
    * Jeremiah - RPG elements (potential)
    * AlbireoX (simplyianm) - Various things
+   * Skaldarnar - building generation
 
 By Area
 -------
 
 Bold indicates desired focus areas. Everything is subject to change and having two or more people experienced in an area would be great in case somebody goes missing.
 
-   * World generation - begla
+   * World generation - begla, nym_traveel
    * 3D programming - begla et al
    * Overall organization - Cervator
    * Gameplay / design - Cervator

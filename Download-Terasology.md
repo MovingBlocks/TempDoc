@@ -27,7 +27,11 @@ If you encounter any problems running the game please drop us a note in the [Sup
 Gameplay
 --------
 
-%TODO% - need to automate a game manual since we list this in several places. In the meantime go to [GitHub](https://github.com/MovingBlocks/Terasology) and scroll down a ways to see what keys do what and such
+> %TODO% - need to automate a game manual since we list this in several places.
+
+In the meantime go to [GitHub](https://github.com/MovingBlocks/Terasology) and scroll down a ways to see what keys do what and such. You
+can get more help at [[Key Bindings]] and [[Console Help]].
+
 
 Known Issues
 ------------
@@ -43,17 +47,21 @@ Since we're still extremely early it is hard to know for sure whether something 
 Version History
 ---------------
 
-We track our release level via [GitHub Milestones](https://github.com/MovingBlocks/Terasology/issues/milestones). Completed ones are listed below for reference with any additional notes beyond what's stored in issues on GitHub
+We track our release level via [GitHub Milestones](https://github.com/MovingBlocks/Terasology/issues/milestones). Completed ones are
+listed below for reference with any additional notes beyond what's stored in issues on GitHub.
 
 ### 0.1 - Legacy
 
-We ended up with a first milestone on GitHub that was never used, but it still bumped the ID by one - so this can be thought of as the period where the project was still Blockmania. So milestone 2 actually turns out to be our first official Terasology milestone
+We ended up with a first milestone on GitHub that was never used, but it still bumped the ID by one - so this can be thought of as the
+period where the project was still Blockmania. So milestone 2 actually turns out to be our first official Terasology milestone.
 
 ### 0.2 - Stratification
 
 Completed: February 22nd 2012 - [GitHub](https://github.com/MovingBlocks/Terasology/issues?sort=created&direction=desc&state=closed&page=1&milestone=2)
 
-The goal of this milestone was to branch out into several rough and crude implementations of basic concepts so we could see something more inside Terasology than placing/removing blocks, as well as get a better idea of which areas of focus we'd even have to begin with and could start getting contributors interested in working on.
+The goal of this milestone was to branch out into several rough and crude implementations of basic concepts so we could see something
+more inside Terasology than placing/removing blocks, as well as get a better idea of which areas of focus we'd even have to begin with
+and could start getting contributors interested in working on.
 
 [[http://www.movingblocks.net:8080/jenkins/job/TerasologyStable/1/][Build link]]
 

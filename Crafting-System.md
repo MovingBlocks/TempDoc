@@ -8,6 +8,7 @@ The crafting "place" is made up of 27 smaller blocks, placed in a 3x3x3 cube. By
 # Activation
 The Crafting-Module is integrated in the stable builds starting from build #22. You can find the module listed in the _Mods windows_ when you create a new world. In order to active the craft system in the game, select the module's name in the list and click the **Activate** button. You can now use the craft system in your fresh created worlds.
 
+
 # Usage
 This sections explains the main usage of the crafting system, including information on how to start the crafting process, how to effectively use the available features and how to actually craft new items.
 

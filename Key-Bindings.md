@@ -21,6 +21,7 @@ The following are the basic keys enabled in Terasology for you to interact with 
 * [F4] - Different debug metrics
 * [F5] - Show block picker GUI element
 * [F9] - Toggle SSAO
+* [F12] - Take a screenshot
 
 Key Combinations
 ----------

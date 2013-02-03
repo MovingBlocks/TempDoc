@@ -45,5 +45,6 @@ Misc:
 
 Keyboard Layouts:
 * `/AZERTY` - set keyboard layout to _AZERTY_
-* `/NEO` - set key bindings to _NEO 2_ layout
+* `/NEO` - set key bindings to _NEO 2_ layout  
+
 See [[Key Bindings]] for more information.

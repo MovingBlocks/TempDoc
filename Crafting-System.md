@@ -1,6 +1,8 @@
 This article will give an overview of the TS Crafting System, provided by the "Crafting"-module.
 The focus of this articel is on the in-games usage. For details on how to specify own recipes please go to [[Crafting System (Developer)]]. 
 
+> **Note:** This article is based on the stable/master branch (stable build #22). Since the crafting system is under heavy development, the given information must not be valid for the development branch versions.
+
 # General Information
 We made the decision not to stick with a conventional solution via GUI for the crafting system but introduced an intuitive and innovative in-game approach. 
 The crafting "place" is made up of 27 smaller blocks, placed in a 3x3x3 cube. By doing this, we achieve the possibility of three dimensional crafting. The crafting process itself is similar to known systems -- one places blocks/items in the crafting grid and - based on some recipe - can receive some craft result.

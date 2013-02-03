@@ -33,6 +33,7 @@ Debug Features
 These keys are only active if the player first uses `F3` to enter debug mode
 
 * [Arrow up/down] - Adjust the current time in small steps
+* [Arrow left/right] - Adjust game time in greater steps
 * [P] - Activate first-person player camera
 * [O] - Activate animated spawning point camera
 * [H] - Hide user interface

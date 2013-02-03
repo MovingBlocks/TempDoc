@@ -48,3 +48,5 @@ Finally, we have refinement left. Refinement is a simple form of changing an ite
 * [[Crafting System (Developer)]]
 * [Crafting (forum thread)](http://forum.movingblocks.net/threads/crafting.247/)
 * [Video Tutorial (engl.)](http://www.youtube.com/watch?v=-cdhxguyMpA)
+* [Video Tutorial (german)] (http://www.youtube.com/watch?feature=player_embedded&v=XwuAC8cy7mE&list=PLfqYgIZWs3YeLZDgDQ9ztKWvhKoPqNkX3)
+* [Einführung in das Craftingsystem (terasologyblog.de)](http://terasologyblog.de/2013/02/einfuhrung-in-das-crafting-system/)

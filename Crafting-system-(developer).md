@@ -1,6 +1,8 @@
 This article is intended for (mod) developers that want to specify own (refinement) recipes in their mods. 
 For the general usage of the crafting system in-game go to [[Crafting System]].
 
+> **Note:** This article is based on the stable/master branch (stable build #22). Since the crafting system is under heavy development, the given information must not be valid for the development branch versions.
+
 # Recipes
 The whole craft system is based on recipes. All crafting (and refinement) results are based on these recipes. New recipes are defined via a "CraftRecipe" section in the _*.prefab_ files. 
 

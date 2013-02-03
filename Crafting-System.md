@@ -12,7 +12,7 @@ The Crafting-Module is integrated in the stable builds starting from build #22. 
 This sections explains the main usage of the crafting system, including information on how to start the crafting process, how to effectively use the available features and how to actually craft new items.
 
 ## Start crafting process
-To start a crafting process, you have to hold the **Q** key while holding a block or item in hand so that you see the charge indicator. When **right clicking** during charging, the craft blocks appears in front of you, with one instance of the item hold in hand already placed in the grid.
+To start a crafting process, you have to hold the **Q** key while holding a block or item in hand so that you see the charge indicator. When **right clicking** during charging on an existing block in the world, the craft blocks appears in front of you, with one instance of the item hold in hand already placed in the grid.
 
 ## The craft block (Add and remove items)
 The craft block is divided into 3 layers -- bottom, middle and top -- to make the placement of blocks/item practicable to the user. The navigation through the different layers works as follows: To go a layer up, press and hold **shift** and **click right**, that will move the interactable grid one layer up. To go one layer down respectively, press and hold **shift** and **left click** on your mouse.

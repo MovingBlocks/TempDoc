@@ -4,6 +4,15 @@ New blocks can easily be included in the game by creating a module with a `.json
 # General structure
 The block definition files are structures as any other JSON document. For information see the JSON specification.
 
+# Inheritance
+
+Block definitions can extend from other block definitions, specifying just the features by which they differ. This simplifies creating classes of block (like plants).
+
+ Option | Value(s)  | Default | Description
+--------|:---------:|:-------:|-------------
+**basedOn**   | _A block definition uri (e.g. "engine:plant")_ |  | Specifies the block to base this block on.
+**template** | _true, false_ | false | If true, this block cannot be created and exists only to be based on.
+
 # Options
 
 ## Overall behavioural

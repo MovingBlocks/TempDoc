@@ -31,8 +31,14 @@ Block definitions can extend from other block definitions, specifying just the f
 **replacementAllowed**  | _true, false_ | false | Specifies whether the block can be replaced freely by other blocks - that you can place another block over it. **In order to make a block replaceable, it requires the block not to be targetable!**
 **supportRequired**     | _true, false_ | false | Specify whether the block should be destroyed when no longer attached to any other block. **Only works for vertically adjacent blocks - e.g. grass is removed if the ground under it is destroyed**
 
-## Rendering related
-You can use different texture tiles for the different sides of the block. To do so,
+## Tiles
+By default, a block will try to use a tile texture with a matching filename. e.g. A block defined in Grass.json will use the block tile Grass.png from the same module.
+
+You can specify a different tile to be used with the "tile" property:
+
+    "tile" : "engine:grass"
+
+You can also use different texture tiles for the different sides of the block. To do so,
 you have to name the corresponding tiles in a `tiles` section of the block definition, e.g. for the chest block:
 
     "tiles" : {
@@ -42,13 +48,16 @@ you have to name the corresponding tiles in a `tiles` section of the block defin
     }
 
 Possible block parts are
- * **sides** refers to all four sides (excluding only top and bottom) and can itself be overriden
+ * **all** to change every tile (same as using the "tile" property)
+ * **topBottom** to change the top and bottom tile
+ * **sides** to change the four horizontal sides (excluding only top and bottom) and can itself be overridden
  * **front, left, right, back, top, bottom** refer to the specific sides
-> Are there other combinations possible (topBottom)?
+ * **center** to change the tile on the center part of the block (see the section on shapes_
 
 Option | Value(s)  | Default | Description
 --------|:---------:|:-------:|-------------
-**tiles**           |    |       | Enumeration of blockpart-tile pairs. Specify the block tiles corresponding to the block parts. For non mentioned block  parts, the default block texture (texture with the same name) is used.
+**tile** | __a blockTile uri__ | A block tile with the same module and name as block definition | Specifies what blockTile to use to texture this block
+**tiles**           |    |       | Allows the blockTile used by different parts/sides of the block to be overridden.
 **doubleSided**     | _true, false_                     | false | Whether this block should be rendered double sided. This done for billboard plants to render both sides of polygons.
 **invisible**       | _true, false_                     | false | If set to `true` the block is not rendered at all.
 **translucent**     | _true, false_                     | false | Determine whether the block is translucent or not. Blocks with this option enabled can use textures with transparency. Moreover, translucent blocks do not prevent occluded blocks behind them from beeing rendered (blocks behind a translucent glass block are still displayed).

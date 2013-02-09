@@ -1,13 +1,16 @@
 Modding API
 =================
-This is the official Modding API for Terasology, detailing each extension point and status of relevant development. You may also want to read the [[Modding Guide]]
+This is the official Modding API for Terasology, detailing each extension point and status of relevant development.
+You may also want to read the [[Modding Guide]].
 
-The API consists of an overview of all extension points and their status, as well as brief descriptions of each and links to relevant JavaDoc pages. Or, at least, that's the plan, it isn't all done yet :D
+The API consists of an overview of all extension points and their status, as well as brief descriptions of each and
+links to relevant JavaDoc pages. Or, at least, that's the plan, it isn't all done yet :D
 
 Overview
 ---------------------------------------
 
-List all the things! That can serve as extension points for Terasology, that is. Please ask questions and provide feedback in the [[Forum Modding Doc Thread|http://forum.movingblocks.net/threads/modding-guide-and-api-docs.651/]]
+List all the things! That can serve as extension points for Terasology, that is. Please ask questions and provide
+feedback in the [[Forum Modding Doc Thread|http://forum.movingblocks.net/threads/modding-guide-and-api-docs.651/]].
 
 ### Implemented
 

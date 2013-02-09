@@ -2,11 +2,7 @@ This page should give you an overview of how Terasology uses textures and how yo
 
 # Location
 As textures are programme [[Assets|Assets]], they can be found in the `asset` folder of the main programme or some
-modules. The
-different
-textures
-are
-then ordered by their intended usage, e.g. `blockTiles` or model textures.
+modules. The different textures are then ordered by their intended usage, e.g. `blockTiles` or model textures.
 
 # BlockTiles (subfolder)
 A very basic use of textures are the _blockTiles_, the textures for single blocks. They can be found in

@@ -4,7 +4,9 @@ New blocks can easily be included in the game by creating a module with a `.json
 # General structure
 The block definition files are structures as any other JSON document. For information see the JSON specification.
 
-# Inheritance
+# Options
+
+## Inheritance
 
 Block definitions can extend from other block definitions, specifying just the features by which they differ. This simplifies creating classes of block (like plants).
 
@@ -13,18 +15,21 @@ Block definitions can extend from other block definitions, specifying just the f
 **basedOn**   | _A block definition uri (e.g. "engine:plant")_ |  | Specifies the block to base this block on.
 **template** | _true, false_ | false | If true, this block cannot be created and exists only to be based on.
 
-# Options
+## Informational
 
-## Overall behavioural
+ Option | Value(s)  | Default | Description
+--------|:---------:|:-------:|-------------
+**displayName** | | The file name of the block, with the first letter capitalised | The name of the block that is shown to players - particularly when the block is picked up and in their inventory.
+
+## Core behavioural
 
  Option | Value(s)  | Default | Description
 --------|:---------:|:-------:|-------------
 **attachmentAllowed**   | _true, false_ | true  | Determines whether other blocks can be attached to this block.
-**craftPlace**          | _true, false_ | true  | Determines whether the player can open up the [[crafting system]] on this block.
-**hardness**            | \<int\>       | 3     | Specifies the hardness of the block. If the value is very low, the block is easy breakable in the game. The specified value approximately corresponds to the number of hits necessary to destroy the block.
-**liquid**              | _true, false_ | false | Determines if the block is a liquid. There's nothing special so far about it, just that the player can go through it. This may change with a new [[Liquid Simulation System]].
-**replacementAllowed**  | _true, false_ | false | Spefifies whether the block can be replaced freely by other blocks. **In order to make a block replaceable, it requires the block not to be targetable!**
-**supportRequired**     | _true, false_ | false | Specify whether the block should be destroyed when no longer attached to any other block. **Does work only for vertically adjacent blocks.**
+**hardness**            | \<int\>       | 3     | Specifies the hardness of the block - effectively its health.
+**liquid**              | _true, false_ | false | Determines if the block is a liquid.
+**replacementAllowed**  | _true, false_ | false | Specifies whether the block can be replaced freely by other blocks - that you can place another block over it. **In order to make a block replaceable, it requires the block not to be targetable!**
+**supportRequired**     | _true, false_ | false | Specify whether the block should be destroyed when no longer attached to any other block. **Only works for vertically adjacent blocks - e.g. grass is removed if the ground under it is destroyed**
 
 ## Rendering related
 You can use different texture tiles for the different sides of the block. To do so,
@@ -138,8 +143,11 @@ You can specify the block category or family by
 --------|:--------:|-------------
 **categories**  | _\<listOfCategories\>_    | Give a list of categories the block belongs to, e.g. new soil types might go into `"categories" : '["soil"']`.
 
-# Growth information for plants
-> Note: Will it stay in the block definition or should that be controlled by a generator?
+# Temporary/deprecated
+
+ Option | Value(s)  | Default | Description
+--------|:---------:|:-------:|-------------
+**craftPlace**          | _true, false_ | true  | Determines whether the player can open up the [[crafting system]] on this block.
 
 # Suggestions
-* Add soundfile specification fo walking sounds on specific block types?
+* Add soundfile specification for walking sounds on specific block types?

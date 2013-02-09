@@ -24,7 +24,7 @@ You should be able to use the Checkstyle plugin for at least IntelliJ and Eclips
 8. Add (select `config/checkstyle/checkstyle.xml`)
 9. Edit properties: `samedir = config/checkstyle`
 
-Note: With the Darcula theme Checkstyle warnings may get highlighted in red which is a bit dramatic. The color setting can be found and tweaked under Settings / Editor (IDE Settings) / Colors & Fonts / General - "Unknown symbol"
+Note: The color setting for Checkstyle warnings can be found and tweaked under Settings / Inspections / CheckStyle / Real-time scan (you can make a new Severity specific to checkstyle from there). It can be a little tricky to get the setting to take effect, try restarting IntelliJ if it doesn't seem to change.
 
 ## Eclipse Integration
 1. Open Help -> Eclipse Marketplace

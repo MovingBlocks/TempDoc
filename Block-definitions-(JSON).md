@@ -56,7 +56,7 @@ Possible block parts are
 
 Option | Value(s)  | Default | Description
 --------|:---------:|:-------:|-------------
-**tile** | __a blockTile uri__ | A block tile with the same module and name as block definition | Specifies what blockTile to use to texture this block
+**tile** | _a blockTile uri_ | A block tile with the same module and name as block definition | Specifies what blockTile to use to texture this block
 **tiles**           |    |       | Allows the blockTile used by different parts/sides of the block to be overridden.
 **doubleSided**     | _true, false_                     | false | Whether this block should be rendered double sided. This done for billboard plants to render both sides of polygons.
 **invisible**       | _true, false_                     | false | If set to `true` the block is not rendered at all.

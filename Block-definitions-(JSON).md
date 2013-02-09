@@ -34,7 +34,7 @@ Possible block parts are
 
 Option | Value(s)  | Default | Description
 --------|:---------:|:-------:|-------------
-**tiles**           | _"\<blockPart\>" : "\<tile\>"_    |       | Specify the block tiles corresponding to the block parts. For non mentioned block  parts, the default block texture (texture with the same name) is used.
+**tiles**           |    |       | Enumeration of blockpart-tile pairs. Specify the block tiles corresponding to the block parts. For non mentioned block  parts, the default block texture (texture with the same name) is used.
 **doubleSided**     | _true, false_                     | false | Whether this block should be rendered double sided. This done for billboard plants to render both sides of polygons.
 **invisible**       | _true, false_                     | false | If set to `true` the block is not rendered at all.
 **translucent**     | _true, false_                     | false | Determine whether the block is translucent or not. Blocks with this option enabled can use textures with transparency. Moreover, translucent blocks do not prevent occluded blocks behind them from beeing rendered (blocks behind a translucent glass block are still displayed).
@@ -47,8 +47,8 @@ Color gradients can be used to change the color of specific blocks, e.g. grass o
 
  Option | Value(s)  |  Description
 --------|:---------:|-------------
-**colorSource**     | _"\<source\>"_                    | e.g. `"colorSource" : "color_lut"`.
-**colorSources**    | _"\<blockPart\>" : "\source\>"_   | Enumerate the different color sources, `default` can be used to exclude LUTs for specific block parts.
+**colorSource**     | _\<source\>_                    | e.g. `"colorSource" : "color_lut"`.
+**colorSources**    |    | Enumerate the different color sources, `default` can be used to exclude LUTs for specific block parts.
 **colorOffset**     | [R, G, B, A ]                     | Specify a color offset, e.g. given for red leaves: `"colorOffset" : '[2.0, 0.0, 0.5, 1.0']`.
 
 ## Collision related
@@ -96,15 +96,15 @@ Option | Value(s)  | Default | Description
 
 Option | Value(s)  | Default | Description
 --------|:---------:|:-------:|-------------
-**shape**   | _"\<shape\>"_         | "engine:cube" | Define the shape of the block. You can use either existing shapes or use self created ones. For more information, see [[Block Shapes in Blender]] or [[Shapes]] in general.
-**shapes**  | _[ <shape>, ... ]_    |               | You can restrict the usage of a block type to some shapes. If not explicitly defined, a block type can be instantiated as any available shape.
+**shape**   | _\<shape\>_         | "engine:cube" | Define the shape of the block. You can use either existing shapes or use self created ones. For more information, see [[Block Shapes in Blender]] or [[Shapes]] in general.
+**shapes**  | _[\<shape\>,...]_    |               | You can restrict the usage of a block type to some shapes. If not explicitly defined, a block type can be instantiated as any available shape.
 
 ## Other options
 > A lot more information is neede here!
 
  Option | Value(s)  | Description
 --------|:---------:|-------------
-**rotation**                    | _{"AlignToSurface", "horizontal"_ |
+**rotation**                    | "AlignToSurface", "horizontal"  |
 **Blockpart specific options**  |                                   | You can specify different shapes for different attachment positions, like done for the torch block. See the example below.
 
     "sides" : {
@@ -117,7 +117,7 @@ Option | Value(s)  | Default | Description
 # Base new blocks on existing ones
 Option | Value(s)  | Default | Description
 --------|:---------:|:-------:|-------------
-**basedOn**     | _"\<blockName\>"_ |       | You can base new blocks on existing ones, so you can create a template for similar blocks, like different foliage blocks.
+**basedOn**     | _\<blockName\>_ |       | You can base new blocks on existing ones, so you can create a template for similar blocks, like different foliage blocks.
 **template**    | _true, false_     | false | Mark a block definition as template for other blocks.
 
 # Block Families

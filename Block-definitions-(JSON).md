@@ -19,7 +19,7 @@ Block definitions can extend from other block definitions, specifying just the f
 
  Option | Value(s)  | Default | Description
 --------|:---------:|:-------:|-------------
-**displayName** | | The file name of the block, with the first letter capitalised | The name of the block that is shown to players - particularly when the block is picked up and in their inventory.
+**displayName** | <string> | The file name of the block, with the first letter capitalised | The name of the block that is shown to players - particularly when the block is picked up and in their inventory.
 
 ## Core behavioural
 

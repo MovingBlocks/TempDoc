@@ -150,12 +150,11 @@ A typical Sightline test may look like the following:
                                         }
         facade ::- wall_elements;
 
-# Read More
-[Procedural Modeling of Buildings - Peter Wonka](http://peterwonka.net/Publications/mueller.procedural%20modeling%20of%20buildings.SG2006.final-web.pdf)
-
-[Procedural World Blog](http://procworld.blogspot.de/)
-
-[PAG Incubator (Forum)](http://forum.movingblocks.net/threads/procedural-architecture-grammar.586/)
-
-[City Generation and AI (Forum)](http://forum.movingblocks.net/threads/villages-concept-and-stuff.521/)
+# Related Links
+ * [[Grammar System]]
+ * [Procedural Modeling of Buildings - Peter Wonka](http://peterwonka.net/Publications/mueller.procedural%20modeling%20of%20buildings
+ .SG2006.final-web.pdf)
+ * [Procedural World Blog](http://procworld.blogspot.de/)
+ * [PAG Incubator (Forum)](http://forum.movingblocks.net/threads/procedural-architecture-grammar.586/)
+ * [City Generation and AI (Forum)](http://forum.movingblocks.net/threads/villages-concept-and-stuff.521/)
 

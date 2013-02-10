@@ -112,7 +112,7 @@ would be shaped like a cube when placed on the ground, and shaped like stairs wh
 Option | Value(s)  | Default | Description
 --------|:---------:|:-------:|-------------
 shape | _a shape uri_ | "engine:cube" | The shape of the block
-shapes | _a lists of shape uris | | A set of valid shapes for this block
+shapes | _a lists of shape uris_ | | A set of valid shapes for this block
 rotation | _none, horizontal, alignToSurface_ | none | Defines the rotation mode for the block
 top/bottom/sides | | | In alignToSurface rotation mode, allows settings to be specified for specific surface placements
 
@@ -121,7 +121,7 @@ top/bottom/sides | | | In alignToSurface rotation mode, allows settings to be sp
 Option | Value(s)  | Default | Description
 --------|:---------:|:-------:|-------------
 **penetrable**  | _true, false_ | false | A block is penetrable if it does not block solid objects.
-**targetable**  | _true, false_ | true  | Define whether the block can be targeted for interactions. $$Must be set to `false` to allow direct replacement.$$
+**targetable**  | _true, false_ | true  | Define whether the block can be targeted for interactions. **Must be set to `false` to allow direct replacement.**
 
 ## Physics related
 Option | Value(s)  | Default | Description
@@ -164,28 +164,7 @@ Option | Value(s)  | Default | Description
 **shape**   | _\<shape\>_         | "engine:cube" | Define the shape of the block. You can use either existing shapes or use self created ones. For more information, see [[Block Shapes in Blender]] or [[Shapes]] in general.
 **shapes**  | _[\<shape\>,...]_    |               | You can restrict the usage of a block type to some shapes. If not explicitly defined, a block type can be instantiated as any available shape.
 
-## Other options
-> A lot more information is neede here!
-
- Option | Value(s)  | Description
---------|:---------:|-------------
-**rotation**                    | "AlignToSurface", "horizontal"  |
-**Blockpart specific options**  |                                   | You can specify different shapes for different attachment positions, like done for the torch block. See the example below.
-
-    "sides" : {
-        "shape" : "engine:TorchWall"
-    },
-    "top" : {
-        "shape" : "engine:TorchGrounded"
-    }
-
-# Base new blocks on existing ones
-Option | Value(s)  | Default | Description
---------|:---------:|:-------:|-------------
-**basedOn**     | _\<blockName\>_ |       | You can base new blocks on existing ones, so you can create a template for similar blocks, like different foliage blocks.
-**template**    | _true, false_     | false | Mark a block definition as template for other blocks.
-
-You can specify the block category 
+## Block Families/Categories
 
  Option | Value(s) | Description
 --------|:--------:|-------------

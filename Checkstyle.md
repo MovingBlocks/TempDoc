@@ -33,7 +33,7 @@ Note: The color setting for Checkstyle warnings can be found and tweaked under S
 4. Open Properties for Project
 5. Select "Checkstyle"
 6. Switch to tab "Local Check Configurations"
-7. Create a new configuration (Name="Terasology", location="/Terasology/config/checkstyle/checkstyle.xml")
+7. Create a new configuration (Type="Project Relative Configuration", Name="Terasology", Location="/Terasology/config/checkstyle/checkstyle.xml")
 8. Switch to tab "Main"
 9. Choose Checkstyle "Terasology (local)"
 10. Select "Checkstyle active for this project"

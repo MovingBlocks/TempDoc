@@ -14,7 +14,7 @@ For more details see the forum thread at http://forum.movingblocks.net/threads/t
 
 You should be able to use the Checkstyle plugin for at least IntelliJ and Eclipse. With this enabled you can run checks on individual files when on the Checkstyle tab. Here are sample instructions for setup in IntelliJ:
 
-1. Open Plugin-Manager
+1. Open Plugin-Manager under File->Settings->Plugin Manager
 2. Browse repositories ...
 3. Search for "CheckStyle"
 4. Install "CheckStyle-IDEA

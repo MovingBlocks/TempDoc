@@ -31,7 +31,7 @@ Production rules in general are defined in the following form:
 
         predecessor : condition ::- successor : probability;
 
-where \<predecessor\> is a symbol identifying a non terminal shape that is to be replaced with \<successor\> (a symbol of the grammar, either a terminal or a non terminal shape symbol). \<condition\> is a guard that has to evaluate to to true in order for the rule to be applied. The specific rule is selected with \<probability\>.
+where \<predecessor\> is a symbol identifying a non terminal shape that is to be replaced with \<successor\> (a symbol of the grammar, either a terminal or a non terminal shape symbol). \<condition\> is a guard that has to evaluate to true in order for the rule to be applied. The specific rule is selected with \<probability\>.
 
 Please note that \<condition\> and \<probability\> are optional for each rule. So in case you don't need a condition or a probability (by default the rules' probabilities are calculated as \<probability\>=1/\<number of alternatives\>) you can simply write rules like that:
 

@@ -99,7 +99,7 @@ The following rule split the scope of floor and sets the walls to cobblestone bl
 ### 1.4 Repeat rule
 
 The repeat rule repeats the specified pattern along a given direction as often as the specified subshape(s) fit into the current scope.
-This rule is useful in cases of filling up space with repeating patterns, such as the building's height with floors, the facade's widht with wall elements and so on.
+This rule is useful in cases of filling up space with repeating patterns, such as the building's height with floors, the facade's width with wall elements and so on.
 
 Please note that the repeat arguments need to have a fixed and absolute size. Moreover, if the last repeat element does not fit into the current scope it is left out.
 

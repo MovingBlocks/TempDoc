@@ -1,1 +1,0 @@
-This page will contain the PAG grammar definition for use in Terasology.

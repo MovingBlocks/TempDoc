@@ -25,7 +25,7 @@ Each production rule describes a modification of the current scope. For further 
 
 PAG is inspired by/based on the paper [Procedural Modeling of Buildings](http://peterwonka.net/Publications/mueller.procedural%20modeling%20of%20buildings.SG2006.final-web.pdf) by Pascal Müller and Peter Wonka. 
 
-For the exact PAG Definition, go to [[PAG Definition]].
+For the exact PAG Definition, go to [[PAG Grammar Definition]].
 
 ## 1. Production rules
 

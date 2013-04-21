@@ -2,9 +2,15 @@
 
 You read that right, this is a grammar for our grammar. That is, this defines the format for the grammars one can use for procedural generation.
 
-**PAG** := (PREDECESSOR : CONDITIONAL -> SUCCESSOR : PROBABILITY)<sup>+</sup>
+**PAG** :=  SECTION<sup>+</sup>
 
-**ID** := NUMBER<sup>+</sup>
+**SECTION** := COMMENT NEWLINE SECTION | PRIORITY NEWLINE SECTION | RULE
+
+**COMMENT** := ##[^NEWLINE]<sup>+</sup>
+
+**PRIORITY** := Priority NUMBER:
+
+**RULE** := (PREDECESSOR : CONDITIONAL -> SUCCESSOR : PROBABILITY)
 
 **PREDECESSOR** := ALPHANUMERIC<sup>+</sup>(LPAREN PARAM(,PARAM)<sup>*</sup> RPAREN)?
 
@@ -44,5 +50,7 @@ You read that right, this is a grammar for our grammar. That is, this defines th
 **RPAREN** := \\ )
 
 **FLOAT** := NUMBER<sup>*</sup>\\.NUMBER<sup>+</sup>
+
+**NEWLINE** := \\n *(maybe use \\s instead?)*
 
 I use the regular expression notation for + (1 or more), ? (at most 1), brackets for characters, * (for 0 or more), backslash for escaping, and parenthesis for grouping.

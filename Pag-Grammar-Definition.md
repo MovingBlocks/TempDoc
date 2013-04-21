@@ -2,7 +2,7 @@
 
 You read that right, this is a grammar for our grammar. That is, this defines the format for the grammars one can use for procedural generation.
 
-**PAG** := (ID : PREDECESSOR : CONDITIONAL -> SUCCESSOR : PROBABILITY)<sup>+</sup>
+**PAG** := (PREDECESSOR : CONDITIONAL -> SUCCESSOR : PROBABILITY)<sup>+</sup>
 
 **ID** := NUMBER<sup>+</sup>
 
@@ -10,7 +10,7 @@ You read that right, this is a grammar for our grammar. That is, this defines th
 
 **CONDITIONAL** := CONDVAR OP CONDVAR | OCCLUSION | !LPAREN CONDITIONAL RPAREN | CONDITIONAL && CONDITIONAL | CONDITIONAL \|\| CONDITIONAL
 
-**CONDVAR** := SCOPEVAR | NUMBER | PARAM
+**CONDVAR** := PROBVAR | VARARITHMETIC
 
 **SCOPEVAR** := Scope\\.(X | Y | Z | S | P)
 
@@ -43,6 +43,6 @@ You read that right, this is a grammar for our grammar. That is, this defines th
 
 **RPAREN** := \\ )
 
-**FLOAT** := 1\\.0 | 0\\.NUMBER+
+**FLOAT** := NUMBER<sup>*</sup>\\.NUMBER<sup>+</sup>
 
 I use the regular expression notation for + (1 or more), ? (at most 1), brackets for characters, * (for 0 or more), backslash for escaping, and parenthesis for grouping.

@@ -2,55 +2,137 @@
 
 You read that right, this is a grammar for our grammar. That is, this defines the format for the grammars one can use for procedural generation.
 
-**PAG** :=  SECTION<sup>+</sup>
+PAG specification
+=================
 
-**SECTION** := COMMENT NEWLINE SECTION | PRIORITY NEWLINE SECTION | RULE
+	PAG := Header? 'grammar' Identifier Section+
 
-**COMMENT** := ##[^NEWLINE]<sup>+</sup>
+Header
+------
+The _PAG-Header_ will store information for the grammar system, such as which type of structure is created by this grammar, and provide
+the possibility to assign variables for later use in the grammar.
 
-**PRIORITY** := Priority NUMBER:
+	Header := Statement*
 
-**RULE** := (PREDECESSOR : CONDITIONAL -> SUCCESSOR : PROBABILITY)
+	Statement := Identifier ':=' expression
 
-**PREDECESSOR** := ALPHANUMERIC<sup>+</sup>(LPAREN PARAM(,PARAM)<sup>*</sup> RPAREN)?
+Sections
+--------
+Section make up the actual grammar. Each section can define a priority for a rule.
 
-**CONDITIONAL** := CONDVAR OP CONDVAR | OCCLUSION | !LPAREN CONDITIONAL RPAREN | CONDITIONAL && CONDITIONAL | CONDITIONAL \|\| CONDITIONAL
+	Section := Priority Section | '{' Section '}' | Rule
 
-**CONDVAR** := PROBVAR | VARARITHMETIC
+	Priority := 'Priority' decimalLiteral ':'
 
-**SCOPEVAR** := Scope\\.(X | Y | Z | S | P)
+	Rule := Predecessor (':' expression)? '->' Successor (':' expression)?
 
-**OCCLUSION** := (Shape.occ LPAREN "LETTER<sup>+</sup> " RPAREN (== | !=) ("none" | "part" | "full")) | (Shape.visible LPAREN "LETTER<sup>+</sup> " RPAREN)
+	Predecessor := Identifier ('(' Parameter ')')?
 
-**OP** := == | != | > | >= | < | <=
+	Parameter := literal | Identifier
+
+	Successor := Predecessor | BaseRule | '{' (Predecessor | BaseRule)+ '}'
+
+Expressions
+-----------
+Basic logic and arithmetic expressions supported by the grammar.
+
+	expression
+		:= primary
+		 | '!' expression
+		 | expression ('*' | '/' | '%') expression
+		 | expression ('+' | '-') expression
+		 | expression ('<' '=' | '>' '=' | '<' | '>') expression
+		 | expression ('==' | '!=') expression
+		 | expression '&&' expression
+		 | expression '||' expression
+
+	primary := '(' expression ')' | literal | Identifier | ScopeExpression
+
+	ScopeExpression := 'Scope' '.' ( Direction | 's' | 'p' | Occlusion)	// what do s and p stand for?
+
+	Occlusion 
+		:= 'occ' '(' Identifier ')' ('==' | '!=') ('none' | 'part' | 'full')
+		 | 'visible' '(' Identifier ')'
+
+Base Rules
+----------
+The following basic rules are supported by the grammar.  
+
+	BaseRule := SetRule | DivideRule | SplitRule | RepeatRule | Invoke | TransformationRule
+
+	SetRule := 'set' '(' qualifiedIdentifier ')'
+
+	DivideRule := 'divide' Direction '{' ('[' Size ']' Successor)+  '}'
+
+	SplitRule := 'split' '{' ('[' SplitType ']' Successor)+ '}'
+
+	RepeatRule := 'repeat' Direction Successor
+
+The invocation of other grammars is just a proposal for allowing the reuse of code. It may be erased from the specification if
+it proves not to be practical. 
+
+	Invoke := 'invoke' '(' qualifiedIdentifier ')'
+
+Basic transformation of shapes is supported by the following rules.
+
+	TransformationRule := ScaleRule | TranslateRule | RotateRule
+
+	ScaleRule := 'S' '(' numericLiteral (',' numericLiteral ',' numericLiteral)? ')'
+
+	TranslateRule := 'T' '(' numericLiteral ',' numericLiteral ',' numericLiteral ')'
+
+	RotateRule := ('Rx' | 'Ry' | 'Rz') '(' numericLiteral ')'
+
+----------
+The following attributes are used in the base rules.
+
+	Direction := 'X' | 'x' | 'Y' | 'y' | 'Z' | 'z'
+
+	Size := decimalLiteral ('%')? | floatingPointLiteral
+
+	SplitType := 'faces' | 'edges' | 'vertices' | 'walls' | 'floor'
+
+Literals
+--------
+
+	literal := numericLiteral | booleanLiteral
+
+	booleanLiteral := 'true' | 'false'
+
+	numericLiteral := decimalLiteral | floatingPointLiteral
+
+	decimalLiteral := '0' | '1'..'9' Digit*
+
+	floatingPointLiteral := Digits '.' Digits? | '.' Digits | Digits 'f'
+
+	Digits := Digit*
+
+	Digit := '0'..'9'
 
 
-**PROBABILITY** := FLOAT | VARARITHMETIC
+Identifiers
+-----------
+Identifiers (such as predecessor and variable names) have to start with a letter, followed by any sequence of alphnumerical characters.
+Qualified Identifiers will be used to specify assets (such as blocks or other grammar files).
+	
+	Identifier := Letter (Letter | Digit)*
 
-**VARARITHMETIC** := PROBVAR ARITHMETIC PROBVAR | LPAREN VARARITHMETIC RPAREN ARITHMETIC LPAREN VARARITHMETIC RPAREN
+	Letter := 'a'..'z' | 'A'..'Z' | '_'
 
-**PROBVAR** := SCOPEVAR | NUMBER | PARAM | FLOAT
+	qualifiedIdentifier := Identifier (':' Identifier)*	
 
-**ARITHMETIC** := \\+ | - | \\* | \\\\
+Comments, Whitespaces, ...
+--------------------------
+Comments, whitespaces and such are skipped during parsing and have no influence on the actual grammar functionality.
+The rules are denoted using a syntax similar to ANTLR.
 
-**SUCCESSOR** := PREDECESSOR | BASERULE
+	COMMENT := '/*' (.*)? '*/' -> channel(HIDDEN)
 
-**BASERULE** := *TODO*
+	LINE_COMMENT := '//' ~[\r\n]* -> channel(HIDDEN)
 
-**PARAM** := LETTER
+	WS := ( '\r' | '\t' | ' ' | '\n' )+ -> channel(HIDDEN)
 
-**ALPHANUMERIC** := LETTER | NUMBER
 
-**NUMBER** := [0-9]
-
-**LETTER** := [A-Za-z]
-
-**LPAREN** := \\ (
-
-**RPAREN** := \\ )
-
-**FLOAT** := NUMBER<sup>*</sup>\\.NUMBER<sup>+</sup>
-
-**NEWLINE** := \\n *(maybe use \\s instead?)*
-
-I use the regular expression notation for + (1 or more), ? (at most 1), brackets for characters, * (for 0 or more), backslash for escaping, and parenthesis for grouping.
+I use the regular expression notation for _+_ (1 or more), _?_ (at most 1), brackets for characters ranges, _*_ (for 0 or
+more), _\\_ for escaping, _' '_ for literals and parenthesis for grouping. Furthermore, _._ is a wildcard character and
+_~_ denotes "everything until ...".

@@ -3,18 +3,21 @@
 Terasology's Entity System is the core framework for game logic - most everything in the world is an entity. An entity system was chosen as it provides a lot of flexibility and support for extension, and can quite easily support in-game editors and simple mods without any code needing to be written.
 
 Things which are not handled as entities: GUI and blocks (although some blocks may have a related entity).
+
 ### Interfaces and Implementation
 
 Most parts of the Entity System in Terasology are defined as interfaces, and then implemented though a set of classes starting with POJO (for Plain Old Java Object). This allows for the possibility of replacing the implementation with something more exotic in the future for improved performance. Where possible code should be developed against the interfaces. The information below describes how things are done in the POJO implementation.
-### Entity and !EntityRef
+
+### Entity and EntityRef
 
 At the core of the Entity System we have entities - these are identifiable "things" in the world. However an Entity by itself doesn't do anything - it has no data, nor behavior. It is merely a logical container for one or more Components - these provide data, and behavior through their interaction with Systems.
 
-In Terasology entities are worked with through the !EntityRef class. For the most part this just delegates requests to the Entity Manager - the central manager for the Entity System. The !EntityRef itself does not store components, these are stored in the Entity Manager within a hashed table, to allow ease of iterating over all entities with a given type of component.
+In Terasology entities are worked with through the EntityRef class. For the most part this just delegates requests to the Entity Manager - the central manager for the Entity System. The EntityRef itself does not store components, these are stored in the Entity Manager within a hashed table, to allow ease of iterating over all entities with a given type of component.
 
-!EntityRef uses the Null Object Pattern - instead of using Java's null, !EntityRef.NULL should be used. !EntityRef.NULL can be safely accessed with all its functions providing sensible default results - this removes the need to check whether an !EntityRef is null in many cases. Where it is needed, the exists() method can be called to check whether an !EntityRef is a valid reference.
+EntityRef uses the Null Object Pattern - instead of using Java's null, EntityRef.NULL should be used. !ntityRef.NULL can be safely accessed with all its functions providing sensible default results - this removes the need to check whether an EntityRef is null in many cases. Where it is needed, the exists() method can be called to check whether an EntityRef is a valid reference.
 
-One particular feature of the !EntityRef is that when an entity is deleted, all references to it are invalidated and act like !EntityRef.NULL from then on. This allows !EntityRef to be safely used in components, and Entity ids to be reused.
+One particular feature of the EntityRef is that when an entity is deleted, all references to it are invalidated and act like EntityRef.NULL from then on. This allows EntityRef to be safely used in components, and Entity ids to be reused.
+
 ### Component
 
 A component is a meaningful set of data, with a intention of being used to provide behavior, that can be attached to an Entity. For instance, a Location component stores data relating to an entity's position in the world - with the implication that the entity is something in the world. A Mesh component holds information about a mesh used to render the entity - but its presence along with a LocationComponent also implies the entity should be rendered.

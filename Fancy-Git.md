@@ -117,16 +117,17 @@ This looks to be a little tricky as we've hit scenarios where pulling/pushing co
 
 Rebasing can be useful to do locally if you've been making frequent or messy commits with lots of debug statements, reverted changes, etc
 
-   * TODO
+* TODO
 
 If mistakes are pushed somewhere you can revert back one or more commits and force-push the older commit to your remote. To revert back one commit look for the parent commit ID you want and locally with the right branch checked out do:
 
-   * `git checkout [branch]` - pick a local branch you want to roll back commits on (oh, and you might want to branch a backup ..)
-   * `git reset [id]` - reset to the commit with the id supplied (easy to confirm on GitHub - the IDs are linked to their respective commits)
-   * `git status` - to confirm that you're now behind 'x' commits
-   * `git branch -avv` - to again confirm that the active commit descriptions line up like you expect - can't be too careful!
-   * `git push origin [branch]` - to confirm that you get an error saying you'd lose commits - just in case!
-   * `git push origin [branch] -f` - do the revert to the older commit - no going back at this point so be certain you are doing the right thing!
+* `git checkout [branch]` - pick a local branch you want to roll back commits on (oh, and you might want to branch a backup ..)
+* `git reset [id]` - reset to the commit with the id supplied (easy to confirm on GitHub - the IDs are linked to their respective commits)
+ * `git reset --hard HEAD~1` - shortcut for rolling back exactly one commit 
+* `git status` - to confirm that you're now behind 'x' commits
+* `git branch -avv` - to again confirm that the active commit descriptions line up like you expect - can't be too careful!
+* `git push origin [branch]` - to confirm that you get an error saying you'd lose commits - just in case!
+* `git push origin [branch] -f` - do the revert to the older commit - no going back at this point so be certain you are doing the right thing!
 
 ## MovingBlocks
 

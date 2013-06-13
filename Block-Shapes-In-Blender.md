@@ -41,14 +41,14 @@ When creating a block shape, you need to keep the following in mind:
 The Terasology Block Shape addon adds two panes to the 3d view properties side panel in Blender. 
 
 The first pane, Terasology Scene Properties, contains settings that are universal (not based on what mesh you have selected):
-* Author
+* Author - Your name here
 * Collision Type
-* Is Collision Symmetric
-* Use Billboard Normals
+* Is Collision Symmetric - Is collection unchanged if the block is rotated? If checked, then definitions using this shape will not have a block generated for each rotation.
+* Use Billboard Normals - For flat, vertical billboards, this causes the normals to point upwards so they are lit correctly by sunlight.
 
 
 The second pane, Terasology Mesh Properties, contains settings that apply to the currently selected mesh object:
-* Full Side
+* Full Side - Does this side fill the block's space - this will cause the side of blocks facing it not to be rendered.
 * Collider Type
 
 ## Related Links and Resources

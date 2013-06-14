@@ -23,6 +23,7 @@ Who has been involved so far or are expected to potentially be involved soon
    * Jeremiah - RPG elements (potential)
    * AlbireoX (simplyianm) - Various things
    * Skaldarnar - building generation
+   * Panserbjoern (mbrotz) - chunks / per block data storage
 
 By Area
 -------

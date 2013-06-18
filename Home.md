@@ -70,6 +70,7 @@ an applet again)
 * [[Shape Architecture]] - defining 3D meshes via definitions in JSON!
 * [[Block Shapes In Blender]] - more on shapes
 * [[Entity System Architecture]] - describes the structure and usage of the entity system
+* [[Pathfinder Algorithm]] - some notes about pathfinding
 
 Modules
 ------------

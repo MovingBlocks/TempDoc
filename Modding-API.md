@@ -30,12 +30,12 @@ feedback in the [[Forum Modding Doc Thread|http://forum.movingblocks.net/threads
 
 # Engine Behavior
 
-* [[EntityLifecycle]]
-* [[ComponentLifecycle]]
-* [[ChunkLifecycle]]
-* [[BlockTypesAndBlockFamilies]]
-* [[BlockTypeEntities]]
-* [[BlockEntities]]
+* [[Entity Lifecycle]]
+* [[Component Lifecycle]]
+* [[Chunk Lifecycle]]
+* [[Block Types and Block Families]]
+* [[Block Type Entities]]
+* [[Block Entities]]
 
 Related Links
 --------------------------------------------------

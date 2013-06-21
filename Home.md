@@ -44,7 +44,7 @@ but may need to submit source or maintain your source setup over time
 * [[Checkstyle]] - notes about our code conventions and how to automatically check them
 * [[Unit Testing]] - or the lack thereof, the most common developer sin!
 * [[JavaDoc]] - well-written code explains itself, but it doesn't help to have that in an exportable format!
-* [[ModdingAPI]] - Information on the engine and how what features are available for modding
+* [[Modding API]] - Information on the engine and how what features are available for modding
 * [[Console commands]] - instructions to create new console commands
 
 ### Art

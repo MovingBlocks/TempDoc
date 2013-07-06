@@ -30,7 +30,7 @@ Stuff you need! Download / install / register for the following (if you don't al
 
 * Download and install a recent Java SDK - http://www.oracle.com/technetwork/java/javase/downloads/index.html
  * Latest 1.6 is recommended (http://www.oracle.com/technetwork/java/javase/downloads/jdk6u35-downloads-1836443.html)
- * Set JAVAHOME.  This is listed under trouble-shooting below, but if you're going to do this better to know now than after a couple of things have failed.
+ * Optional: Set JAVAHOME.  This is listed under trouble-shooting below, but if you're going to do this it's better to do it now than after a couple of things have failed.
 * Git for source control - http://git-scm.com/download
  * Pick the option to run Git from the Windows Command Prompt (middle option) and check out windows, commit unix (that is, if you're on Windows)
  * Optional (Windows): Git provides an option to add the Git Bash folder to the Windows path - I didn't do this had a couple of problems. 

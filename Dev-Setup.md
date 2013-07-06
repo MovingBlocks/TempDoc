@@ -33,7 +33,7 @@ Stuff you need! Download / install / register for the following (if you don't al
  * Optional: Set JAVAHOME.  This is listed under trouble-shooting below, but if you're going to do this it's better to do it now than after a couple of things have failed.
 * Git for source control - http://git-scm.com/download
  * Pick the option to run Git from the Windows Command Prompt (middle option) and check out windows, commit unix (that is, if you're on Windows)
- * Optional (Windows): Git provides an option to add the Git Bash folder to the Windows path - I didn't do this had a couple of problems. 
+ * Optional (Windows): Git provides an option to add the Git Bash folder to the Windows path - I didn't do this and had a couple of problems. 
  * You can otherwise follow the install steps at this tutorial: http://help.github.com/win-set-up-git/
 * IntelliJ for IDE - http://www.jetbrains.com/idea/download
  * You can start with the free community edition - if you become a regular contributor we have a [[freebie open source project license for the Ultimate edition|http://forum.movingblocks.net/threads/intellij-12-has-been-released.652/]]

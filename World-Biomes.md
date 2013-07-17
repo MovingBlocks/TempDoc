@@ -1,7 +1,3 @@
-The current distribution of biomes (Forest = green, Mountains = red, Desert = yellow, Plains = blue, Snow = white
-
-![Biome map](BiomeMap.png)
-
 Biomes define the properties of the different regions in Terasology. They are calculated using two distinct multifractal noise functions simulating changes in humidity and temperature. Biomes vary in various factors like, for example, the maximum height of the terrain (and thus the intensity of overhangs created), the populated fauna elements, grass color, foliage color and the types of blocks the terrain is made of.
 
 ## Biome types

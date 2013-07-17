@@ -51,6 +51,10 @@ The second pane, Terasology Mesh Properties, contains settings that apply to the
 * Full Side - Does this side fill the block's space - this will cause the side of blocks facing it not to be rendered.
 * Collider Type
 
+Example properties screen (may be outdated):
+
+![Properties window](TerasologyProperties.png)
+
 ## Related Links and Resources
 
 * [[Shape Architecture]]

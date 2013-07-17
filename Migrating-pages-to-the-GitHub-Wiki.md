@@ -10,7 +10,7 @@ Nothing migrated yet. Wiki is located [here](http://forum.movingblocks.net/wiki/
 
 Most have either previously been imported or were idea pages that really need to go to the forum instead (this wiki isn't for "pending" stuff or "maybes")
 
-* UnitTesting
-* UsingIRC
-* WorldBiomes
-* WorldTerrainGeneration
+* [[Unit Testing]]
+* [[Using IRC]]
+* [[World Biomes]]
+* [[World Terrain Generation]]

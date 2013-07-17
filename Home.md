@@ -63,15 +63,14 @@ potential long-term storage (tickets, forum, etc)
 Architecture
 ------------
 
-These pages offer more advanced insight into specific features of the game are architected and why
+These pages offer more advanced insight into how specific features of the game are architected and why.
 
-* [[Applet Architecture]] - structure of the applet version of the game and related info
-* [[Block Architecture]] - development overview of our Block system (pending changes needed to make the game work in
-an applet again)
+* [[Applet Architecture]] - structure of the applet version of the game and related info.
+* [[Block Architecture]] - development overview of our Block system. (pending changes needed to make the game work in an applet again)
 * [[Shape Architecture]] - defining 3D meshes via definitions in JSON!
-* [[Block Shapes In Blender]] - more on shapes
-* [[Entity System Architecture]] - describes the structure and usage of the entity system
-* [[Pathfinder Algorithm]] - some notes about pathfinding
+* [[Block Shapes In Blender]] - more on shapes.
+* [[Entity System Architecture]] - describes the structure and usage of the entity system.
+* [[Pathfinder Algorithm]] - some notes about pathfinding.
 
 Modules
 ------------
@@ -82,20 +81,14 @@ Modules
 Communication
 -------------
 
-We have several ways to get the word out on updates, and likewise there are several ways to contact us
+We have several ways to get the word out on updates, and likewise there are several ways to contact us.
 
-* [Forum](http://forum.movingblocks.net) - new development / game topics will be posted here, and any questions answered
-* [GitHub](https://github.com/MovingBlocks/Terasology) - "Watch" the official project here to be able to easily spot
-commits
-* [Twitter](http://twitter.com/#!/Terasology) - we'll tweet regularly about significant commits or new discussion
-topics posted, so "Follow" us for updates
-* [Facebook](http://www.facebook.com/pages/Terasology/248329655219905) - if you prefer to keep updated via Facebook
-you can "Like" us on there to keep up
-* [Google+](https://plus.google.com/b/103835217961917018533/103835217961917018533) - help prove people actually use
-G+ ! ;-)
+* [Forum](http://forum.movingblocks.net) - new development / game topics will be posted here, and any questions answered.
+* [GitHub](https://github.com/MovingBlocks/Terasology) - "Watch" the official project here to be able to easily spot commits and changes.
+* [Twitter](http://twitter.com/#!/Terasology) - we'll tweet regularly about significant commits or new discussion topics posted, so "Follow" us for updates.
+* [Facebook](http://www.facebook.com/pages/Terasology/248329655219905) - if you prefer to keep updated via Facebook you can "Like" us on there to keep up.
+* [Google+](https://plus.google.com/b/103835217961917018533/103835217961917018533) - help prove people actually use G+ ! ;-)
 * [Blog](http://blog.movingblocks.net/blog/) - Major news like milestones reached, new videos posted,
-etc will get posted to our blog
-* [IRC](http://webchat.freenode.net/) #terasology - We're setting this up for live chat but it may take a while to
-stabilize with people only rarely on (or AFK), See UsingIRC for setup details
-* [Jenkins RSS](http://jenkins.movingblocks.net/rssAll) - If you really want to know when something has just been
-built ;-)
+etc will get posted to our blog.
+* [IRC](http://webchat.freenode.net/) #terasology - We're setting this up for live chat but it may take a while to stabilize with people only rarely on (or AFK), See [Using IRC](Using IRC) for setup details.
+* [Jenkins RSS](http://jenkins.movingblocks.net/rssAll) - If you really want to know when something has just been built ;-)

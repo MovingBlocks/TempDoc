@@ -11,7 +11,7 @@ Additionally, each side is either a full side or a partial side. A full side fil
 
 Below is an example stair block shape, with each side moved away from the center. In the stair block, the Front and Bottom sides are full sides, while the Top, Back, Left and Right sides are not.
 
-![Terasology](/ExplodedBlockShape.png "An 'exploded' block shape")
+![An 'exploded' block shape"](ExplodedBlockShape.png)
 
 ## Shape part
 

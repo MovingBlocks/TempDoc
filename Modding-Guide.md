@@ -1,25 +1,24 @@
-Modding Guide
-=================
-This is a quick start guide specific to creating and enhancing mods for Terasology, paired with our [[Modding API]] page. You may also want to read the [[Contributor Guide]] or [[Dev Setup]] for general topics and setup
+This is a quick start guide specific to creating and enhancing mods for Terasology, paired with our [[Modding API]] page. You may also want to read the [[Contributor Guide]] or [[Dev Setup]] for general topics and setup.
 
 
-Overview
----------------------------------------
+## Overview
+------------------------------------------------
 
 Our goal is for everything, including the very player object itself, to be a content module - that is, fully modifiable or entirely replaceable without touching the game engine itself. The core game will ship with multiple selections of these "mods" making up different gameplay styles and players can then customize them further or create additional new content.
 
-   * **What can currently be modded nicely**: Blocks and other in-game assets, world content through Components and Systems, [[console commands]]
-   * **What can't be modded quite so nicely**: GUI components (a couple mods rely on matching UI changes in the engine), terrain generation and selection, game modes
-   * **Other comments:** Mods can use content from other mods but there is no formal dependency or version managing yet
+   * **What can currently be modded nicely**: Blocks and other in-game assets, world content through Components and Systems, [[console commands]].
+   * **What can't be modded quite so nicely**: GUI components (a couple mods rely on matching UI changes in the engine), terrain generation and selection, game modes.
+   * **Other comments:** Mods can use content from other mods but there is no formal dependency or version managing yet.
 
 Note that in addition to the engine there is also a "core" module inside the modding system that holds what you might typically consider to be engine stuff, such as the player prefab itself, starting tools, doors and chests, etc. The `core.jar` all that lives in can then be modified and distributed to friends to showcase fundamental changes made to the game.
 
 Lots of changes are expected in this area, far more in the game than the documentation, so apologies in advance as this will end up going out of date regularly ... :P
 
-Running with mods
+## Running with mods
 ---------------------------------------
 
-While the modding system works as-is there are still a few quirks we need to work out. In the meantime you may have to include an additional step when running from source with mods to make sure they build properly
+While the modding system works as-is there are still a few quirks we need to work out. In the meantime you may have to include an additional step when running from source with mods to make sure they build properly.
+
 
    * Download source via zip (easy) or Git (see [[Dev Setup]])
    * `gradlew idea` on command line in project root dir
@@ -36,7 +35,7 @@ If you still get quirky issues on startup you may want to try selecting individu
 
 Note that after launching the game you still have to actually **enable** mods on the world creation screen
 
-Structure of a mod
+## Structure of a mod
 ---------------------------------------
 
 Each mod currently needs to live as its own IntelliJ sub-module / something similar in Eclipse under the `mods` directory. Using the bundled "portals" mod as an example we find:
@@ -53,7 +52,7 @@ Mods are picked up by the game automatically on startup and any assets like bloc
 
 You can reference stuff in another mod's namespace from your mod, but keep in mind there's no explicit dependency management yet, nor versioning of mods.
 
-Create a new mod
+Creating a new mod
 --------------------------------------------------
 
 You can create a new mod in one of two ways - the first is going to be the proper way long-term but isn't quite complete yet (for instance it may clear out project config changes you've made after an initial `gradlew idea`).
@@ -71,14 +70,15 @@ The completely manual version is simply making a copy of one of the existing bun
       * With this done you should be able to run `gradlew distMods` in the project root to get your mod as a `.jar` under `builds/distributions/mods` that you can share with friends
    * Look for nice examples close to something you want to do in an existing mod and start tinkering with your own!
 
-New content tutorial
+## Creating new content
 --------------------------------------------------
 
-Lets say you've made your new mod `mymod` and want to add some simple content to it - namely a new block that both contains an inventory (like a chest) and can spawn stuff (like a portal)
+So you've got your basic mod set up, and want to add some new goodies to the game.  This is just the section to get you started.
+Lets say you've made your new mod `mymod` and want to add some simple content to it - namely a new block that both contains an inventory (like a chest) and can spawn stuff (like a portal).
 
-TODO :D
+[[Using Blender Assets]] - A guide on how to take a model from Blender and import it to the game in a friendly format.
 
-Related Links
+### Related Links
 --------------------------------------------------
 
    * [[Modding API]] - API information for what's useful to mods

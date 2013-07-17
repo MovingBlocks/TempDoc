@@ -116,6 +116,8 @@ shapes | _a lists of shape uris_ | | A set of valid shapes for this block
 rotation | _none, horizontal, alignToSurface_ | none | Defines the rotation mode for the block
 top/bottom/sides | | | In alignToSurface rotation mode, allows settings to be specified for specific surface placements
 
+For more on shapes see [[Shape Architecture]]
+
 ## Collision related
 
 Option | Value(s)  | Default | Description

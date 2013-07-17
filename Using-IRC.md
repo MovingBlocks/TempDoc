@@ -1,6 +1,6 @@
 It can be a little awkward getting set up for IRC fully - if you don't want to, just use the quick web chat option at http://webchat.freenode.net
 
-### User setup
+### IRC User setup
 
 For plain user signups and general info
 

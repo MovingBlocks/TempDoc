@@ -24,5 +24,14 @@ The Desert biome is generated in areas with high temperature (&gt;= 0.6) and low
 The Snow biome can be found in regions with low temperature (&lt; 0.3) and low humidity (&lt; 0.4). The surface is covered with snow blocks and some sole trees.
 ![Snow](BiomeSnow.png)
 
+## Generation Example
+An image representing a random generation of biomes.
 
+* Forest = green
+* Mountains = red
+* Desert = yellow
+* Plains = blue
+* Snow = white
 
+![Biome map](BiomeMap.png)
+	 	

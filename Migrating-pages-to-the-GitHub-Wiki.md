@@ -1,46 +1,16 @@
-## From Movingblocks Wiki
+We've previously used two different wikis - an old Foswiki instance on our old webhost (before it was melted by Gronkh) and the light-weight wiki addon for Xenforo.
+
+We gave the XF wiki a try rather than reinstall Foswiki, but it turned out to be too feature poor. So we went to the GitHub wiki here instead, but not before several new pages were created, some of the content from there may overlap with old Foswiki content and new GitHub content, use best judgement in comparing to find out which is more up to date ...
+
+## From Xenforo Wiki
 
 Nothing migrated yet. Wiki is located [here](http://forum.movingblocks.net/wiki/index/).
 
-## From FOSWiki
+## From old Foswiki
 
-List taken from [here](http://wiki.nanoware.org/Terasology/WebTopicList).
+Most have either previously been imported or were idea pages that really need to go to the forum instead (this wiki isn't for "pending" stuff or "maybes")
 
-* <strike>AnatomySystem</strike>
-    * x3ro: Should we put this in the Wiki or an Incubator forum thread? 
-    * Cerv: Forum prolly, more of a suggestion than a design/system
-    * x3ro: [Migrated to Forum](http://forum.movingblocks.net/threads/anatomy.506/)
-
-* [[Applet Architecture]]
-
-* [[Block Architecture]]
-* [[Block Shapes In Blender]]
-
-* CommunitySuggestions
-    * x3ro: This seems like a canditate for the Incubator as well.
-    * Cerv: Tricky, was meant as a "misc suggestions" list rather than a unified feature. Stuff that's too small for an incubator thread, GitHub issue, or even its own Suggestion post. Maybe a sticky "Misc" post in the Suggestions forum?
-
-* [[Contributor Guide]]
-* [[Dev Setup]]
-* [[Dev Team]]
-
-* DownloadTerasology
-    * x3ro: This on a FAQ page perhaps?
-    * Cerv: Something like that. I'll try to take this one :-)
-
-* [[Entity System Architecture]]
-* [[Fancy Git]]
-* [[Issue Tracking]]
-* [[JavaDoc]]
-* [[Major Concepts]]
-* [[Release Plan]]
-* [[Shape Architecture]]
-* TextureOrigin
 * UnitTesting
 * UsingIRC
-* WhatIsTerasology
-    * Cerv: I'll try to take this one too
 * WorldBiomes
-* WorldGeology
-* WorldPortals
 * WorldTerrainGeneration

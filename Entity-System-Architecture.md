@@ -50,7 +50,7 @@ In general usage you use EntityRef's addComponent method to attach a component t
 
 ComponentSystems, or Systems for short, provide behavior to entities. They do this in two ways
 
-   * Processing entities with a desired set of components in response engine method calls like initialise(), update(float delta) and render()
+   * Processing entities with a desired set of components in response to engine method calls like initialise(), update(float delta) and render()
    * Responding to entity events sent to entities with a desired set of components
 
 For example, a particle system would iterate over all entities with both a Location and a Particle component (need the location to give the effect a position in the world, and the particle component is needed for the entity to be a particle effect in the first place) in each update(float delta) call, to update the particle positions. The health system would respond to an entity with a Health component receiving a Damage event, in order to reduce an entity's health - and if the health reaches 0, send a Death event to the entity.

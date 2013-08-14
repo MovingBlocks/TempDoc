@@ -9,8 +9,7 @@ PAG specification
 
 Header
 ------
-The _PAG-Header_ will store information for the grammar system, such as which type of structure is created by this grammar, and provide
-the possibility to assign variables for later use in the grammar.
+The _PAG-Header_ will store information for the grammar system, such as which type of structure is created by this grammar, and provide the possibility to assign constants you can later use in the grammar rules.
 
 	Header := Statement*
 

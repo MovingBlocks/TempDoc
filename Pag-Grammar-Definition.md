@@ -5,15 +5,21 @@ You read that right, this is a grammar for our grammar. That is, this defines th
 PAG specification
 =================
 
-	PAG := Header? 'grammar' Identifier Section+
+	PAG := Header 'grammar' Identifier ':' Section+
 
 Header
 ------
-The _PAG-Header_ will store information for the grammar system, such as which type of structure is created by this grammar, and provide the possibility to assign constants you can later use in the grammar rules.
+The _PAG-Header_ will store information for the grammar system, such as which type of structure is created by this grammar, and provide the possibility to assign constants you can later use in the grammar rules. 
 
-	Header := Statement*
+	Header := Declaration*
 
-	Statement := Identifier ':=' (expression | '"' qualifiedIdentifier '"')
+	Declaration := '#'? Identifier ':=' expr ';'
+
+A header declaration that starts with a ``#`` will be interpreted as grammar info field, such as building type, or fitting biomes. You can define module dependencies for the grammar here as well:
+
+        #dependencies := ["myModule", "otherAwesomeModule"];
+
+You may have noticed that different forms of _expressions_ are allowed on the right side, we will come to that later.
 
 Sections
 --------

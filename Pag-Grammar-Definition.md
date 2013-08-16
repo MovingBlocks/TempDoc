@@ -42,23 +42,20 @@ Expressions
 -----------
 The following set of expressions are supported by the grammar system. You can use standard Boolean and arithmetic operations, numbers (integer and decimal), identifiers and strings and lists of expressions. Furthermore, there are a few special operations/method calls. 
 
-	expression
-		:= primary
-		 | functionCall
-                 | ('Shape' | 'Scope') '.' ('occ' | 'visible') '(' expression ')'
-                 | '[' expression ']'
-                 | ('+' | '-') expression
-                 | '!' expression
-		 | expression ('*' | '/' | '%') expression
-		 | expression ('+' | '-') expression
-		 | expression ('<=' | '>=' | '<' | '>') expression
-		 | expression ('==' | '!=') expression
-		 | expression '&&' expression
-		 | expression '||' expression
+	expression := primary
+			| functionCall
+			| ('Shape' | 'Scope') '.' ('occ' | 'visible') '(' expression ')'
+			| '[' expression ']'
+			| ('+' | '-') expression
+			| '!' expression
+			| expression ('*' | '/' | '%') expression
+			| expression ('+' | '-') expression
+			| expression ('<=' | '>=' | '<' | '>') expression
+			| expression ('==' | '!=') expression
+			| expression '&&' expression
+			| expression '||' expression
 
-	primary := '(' expression ')' 
-                 | literal 'r'?
-                 | Identifier
+	primary := '(' expression ')'  | literal 'r'? | Identifier
 
 The only _function call_ currently available is the random selection from either a list or a defined range.
 
@@ -78,6 +75,11 @@ E.g. you can select a random block type from a list or define a scale or measure
 
         wall_mat := Random("cobblestone", "stonebricks", "stone");
         number_floors := Random(2..5);
+
+The _occlusion_ and _visibility checks_ are useful as guards. They can be used to determine whether the current scope is occluded by any other shape or scope or if a specific shape is visible from the current scope. This can be used to place doors on walls that face to the street. Note that the occlusion test for scopes is faster but less accurate than the test against shapes.
+
+	wall : Shape.visible("street") -> door_wall;
+	wall : Scope.occ("nonparent") == "none" -> win_wall;
 
 Base Rules
 ----------

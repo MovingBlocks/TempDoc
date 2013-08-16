@@ -78,8 +78,8 @@ E.g. you can select a random block type from a list or define a scale or measure
 
 The _occlusion_ and _visibility checks_ are useful as guards. They can be used to determine whether the current scope is occluded by any other shape or scope or if a specific shape is visible from the current scope. This can be used to place doors on walls that face to the street. Note that the occlusion test for scopes is faster but less accurate than the test against shapes.
 
-	wall : Shape.visible("street") -> door_wall;
-	wall : Scope.occ("nonparent") == "none" -> win_wall;
+		wall : Shape.visible("street") -> door_wall;
+		wall : Scope.occ("nonparent") == "none" -> win_wall;
 
 Base Rules
 ----------

@@ -40,34 +40,44 @@ The _successor_ can either be an identifier, which denotes another rule, a _base
 
 Expressions
 -----------
-Basic logic and arithmetic expressions supported by the grammar.
+The following set of expressions are supported by the grammar system. You can use standard Boolean and arithmetic operations, numbers (integer and decimal), identifiers and strings and lists of expressions. Furthermore, there are a few special operations/method calls. 
 
 	expression
 		:= primary
-		 | '!' expression
+		 | functionCall
+                 | ('Shape' | 'Scope') '.' ('occ' | 'visible') '(' expression ')'
+                 | '[' expression ']'
+                 | ('+' | '-') expression
+                 | '!' expression
 		 | expression ('*' | '/' | '%') expression
 		 | expression ('+' | '-') expression
-		 | expression ('<' '=' | '>' '=' | '<' | '>') expression
+		 | expression ('<=' | '>=' | '<' | '>') expression
 		 | expression ('==' | '!=') expression
 		 | expression '&&' expression
 		 | expression '||' expression
 
-	primary := '(' expression ')' | literal | Identifier | ScopeExpression | ShapeExpression | methodCall
+	primary := '(' expression ')' 
+                 | literal 'r'?
+                 | Identifier
 
-	ScopeExpression := 'Scope' '.' ( Direction | 's' | 'p' | Occlusion)	// what do s and p stand for?
+The only _function call_ currently available is the random selection from either a list or a defined range.
 
-	Occlusion := 'occ' '(' Identifier ')' ('==' | '!=') ('none' | 'part' | 'full')
+        functionCall := randomSelection
 
-	ShapeExpression :=  'Shape' '.' 'visible' '(' Identifier ')'
+        randomSelection := 'Random' '(' (exprList | rangeExpr) ')'
 
-	methodCall := randomSelection
+An expression list is simply a sequence of expressions:
 
-	randomSelection := 'Random' '(' (qualifiedIdentifierList | rangeDefinition) ')'
+        exprList := expression (',' expression)*
 
-	qualifiedIdentifierList := qualifiedIdentifier (',' qualifiedIdentifier)*
+You can define a range of integers with the following notation:
 
-	rangeDefinition := expression '..' expression	
-		 
+        rangeExpr := expression '..' expression
+
+E.g. you can select a random block type from a list or define a scale or measure of length randomly within a range from .. to.
+
+        wall_mat := Random("cobblestone", "stonebricks", "stone");
+        number_floors := Random(2..5);
 
 Base Rules
 ----------

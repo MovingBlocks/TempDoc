@@ -15,27 +15,28 @@ The _PAG-Header_ will store information for the grammar system, such as which ty
 
 	Declaration := '#'? Identifier ':=' expr ';'
 
-A header declaration that starts with a ``#`` will be interpreted as grammar info field, such as building type, or fitting biomes. You can define module dependencies for the grammar here as well:
+A header declaration that starts with a ``#`` will be interpreted as _grammar info_ field, such as building type, or fitting biomes. You can define module dependencies for the grammar here as well:
 
         #dependencies := ["myModule", "otherAwesomeModule"];
 
-You may have noticed that different forms of _expressions_ are allowed on the right side, we will come to that later.
+You may have noticed that different forms of _expressions_ are allowed on the right side, we will come to that later. Simple constants can be defined in a similar way:
+        floor_height := 3;
 
 Sections
 --------
-Section make up the actual grammar. Each section can define a priority for a rule.
+Sections make up the grammar and group the grammar rules with the same _priority_. The priority is used to control the order in which derivations are selected. Of course it is possible to have just one section for all rules.
 
-	Section := Priority Section | '{' Rule+ '}' | Rule+
+	Section := 'Priority' decimalLiteral ':' ruleStatement+
 
-	Priority := 'Priority' decimalLiteral ':'
+Each ``ruleStatement`` is of  the form ``predecessor -> successor``. Note that every rule has to be ended by a semicolon. Furthermore, you can specify _guards_ (boolean expressions that guard whether the rule can be applied or not) and _probabilities_. Guards and probabilities are optional for every rule. 
 
-	Rule := Predecessor (':' expression)? '->' Successor (':' expression)? ('|' Successor (':' expression)?)+
+	ruleStatement := Predecessor (':' expression)? '->' Successor (':' expression)? ('|' Successor (':' expression)?)+ ';'
 
-	Predecessor := Identifier ('(' Parameter ')')?
+	Predecessor := Identifier
 
-	Parameter := literal | Identifier
+The _successor_ can either be an identifier, which denotes another rule, a _base rule_ or a sequence of the former enclosed in braces.
 
-	Successor := Predecessor | BaseRule | '{' (Predecessor | BaseRule)+ '}'
+	Successor := Identifier | Baserule | '{' (Identifier | BaseRule)* '}'
 
 Expressions
 -----------

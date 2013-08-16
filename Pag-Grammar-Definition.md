@@ -164,81 +164,78 @@ Examples
 
 The following code is an example of a PAG-grammar. It is closely related to a example provided by Müller, Wonka et al.
 
-	type := "building"
-	kind := "house"
-	style := "medieval"
+	#type := house;
 
-	stone := Random( engine:stone, engine:cobblestone )
-	planks := "engine:plank"
+	window_spacing  := 4;
+	window_width 	:= 2;
+	window_depth	:= .5;
+	window_height	:= 1;
+	door_height     := 2;
+	door_width 	:= 2;
 
-	building_height := Random( 3 .. 5)
-	door_width := 1
-	door_height := 2
-	door_depth := 1
-	window_spacing := 3
-	window_width := 1
-	window_height := 1
-	window_depth := 1
-	wall_depth := 1
+	roof_angle := 45;
 
-	roof_type := hipped
-	roof_angle := 40
+	grammar TestHouse:
 
-	grammar House
+	Priority 1:
+	    footprint -> {
+		S(1r, building_height, 1r) facades
+		T(0, building_height, 0) I("prism") roof
+	    };
 
-		priority 1: 
-			footprint -> { 
-				S(100%, building_height, 100%) facades 
-				T(0, height, 0) Roof(roof_type, roof_angle){roof} 
-			}		
+        Priority 2:
+	    facades -> Split {
+		["sidefaces"] facade
+	    };
 
-		priority 2: 
-			facades -> split {
-				[walls] facade
-			}
+    	    facade : Shape.visible("street") 
+		-> Divide "X" {
+			[1r] tiles
+			[door_width * 1.5] entrance
+		} : 0.5
+		-> Divide "X" {
+			[door_width * 1.5] entrance
+			[1r] tiles			
+		} : 0.5
+	    ;
+            facade -> tiles;
 
-			facade : Shape.visible(Street) 
-				-> divide x {
-						[100%] tiles
-						[door_width * 1.5] entrance
-					} : 0.5
-				| divide x {
-						[door_width * 1.5] entrance
-						[100%] tiles
-					}
-			facade -> tiles
+	    tiles -> Repeat "X" [window_spacing] tile;
 
-			tiles -> repeat x [window_spacing] tile
+	    tile -> Divide "X" {
+		[1r] wall
+		[window_width] Divide "Y" {
+			[window_height] window
+			[1r] wall
+		    }
+		[1r] wall
+	    };
 
-			tile -> divide x {
-						[50%] wall
-						[window_width] subdiv y {
-							[2/3] wall
-							[window_height] window
-							[1/3] wall
-						}
-						[50%] wall
-					}
+	    window : Scope.occ("noparent") != "none" -> wall;
+	    window -> {
+		S(1r, 1r, window_depth) Set("enginge.glass")
+	    };
 
-			window : Scope.occ(noparent) != none -> wall
+	    entrance -> Divide "X" {
+		[1r] wall
+		[door_width] Divide "Y" {
+			[door_height] door
+			[1r] wall
+		    }
+		[1r] wall
+	    };
 
-			window -> S(100%, 100%, window_depth) set(engine:glass)
+	    door -> Set("core.door");
 
-			entrance -> divide x {
-							[50%] wall
-							[door_width] divide y {
-								[door_height] door
-								[100%] wall
-							}
-							[50%] wall
-						}
+	    wall -> Set(Random("cobblestone", "stonebricks"));
 
-			door -> S(100%, 100%, door_depth) set(engine:door)
+        Priority 3:
+	    roof -> Split {
+		["sidefaces"] covering
+		["sideedges"] roofedge
+		["topedge"] roofedge
+	    };
 
-			wall -> S(100%, 100%, wall_depth) set(stone)
+	    covering -> Set("brick" : "stair");
 
-		priority 3:
-
-			roof -> split {
-					[sidefaces] set(roofMod:redShingle)
-				}
+	    roofedge -> Set("stone");

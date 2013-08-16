@@ -164,7 +164,7 @@ Examples
 
 The following code is an example of a PAG-grammar. It is closely related to a example provided by Müller, Wonka et al.
 
-		#type := house;
+	#type := house;
 
 	window_spacing  := 4;
 	window_width    := 2;

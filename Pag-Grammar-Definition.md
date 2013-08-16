@@ -164,77 +164,78 @@ Examples
 
 The following code is an example of a PAG-grammar. It is closely related to a example provided by Müller, Wonka et al.
 
-	#type := house;
+		#type := house;
 
 	window_spacing  := 4;
-	window_width 	:= 2;
-	window_depth	:= .5;
-	window_height	:= 1;
+	window_width    := 2;
+	window_depth    := .5;
+	window_height   := 1;
 	door_height     := 2;
-	door_width 	    := 2;
+	door_width      := 2;
 	roof_angle      := 45;
 
 	grammar TestHouse:
 
 	Priority 1:
-	    footprint -> {
-		S(1r, building_height, 1r) facades
-		T(0, building_height, 0) I("prism") roof
-	    };
+		footprint -> {
+			S(1r, building_height, 1r) facades
+			T(0, building_height, 0) I("prism") roof
+		};
 
-        Priority 2:
-	    facades -> Split {
-		["sidefaces"] facade
-	    };
+		Priority 2:
+			facades -> Split {
+				["sidefaces"] facade
+			};
 
-    	    facade : Shape.visible("street") 
-		-> Divide "X" {
-			[1r] tiles
-			[door_width * 1.5] entrance
-		} : 0.5
-		-> Divide "X" {
-			[door_width * 1.5] entrance
-			[1r] tiles			
-		} : 0.5
-	    ;
-            facade -> tiles;
+			facade : Shape.visible("street") 
+				-> Divide "X" {
+					[1r] tiles
+					[door_width * 1.5] entrance
+				} : 0.5
+				-> Divide "X" {
+					[door_width * 1.5] entrance
+					[1r] tiles          
+				} : 0.5
+				;
+			facade -> tiles;
 
-	    tiles -> Repeat "X" [window_spacing] tile;
+			tiles -> Repeat "X" [window_spacing] tile;
 
-	    tile -> Divide "X" {
-		[1r] wall
-		[window_width] Divide "Y" {
-			[window_height] window
-			[1r] wall
-		    }
-		[1r] wall
-	    };
+			tile -> Divide "X" {
+				[1r] wall
+				[window_width] Divide "Y" {
+						[window_height] window
+						[1r] wall
+					}
+				[1r] wall
+			};
 
-	    window : Scope.occ("noparent") != "none" -> wall;
-	    window -> {
-		S(1r, 1r, window_depth) Set("enginge.glass")
-	    };
+			window : Scope.occ("noparent") != "none" -> wall;
+			window -> {
+				S(1r, 1r, window_depth) Set("enginge.glass")
+			};
 
-	    entrance -> Divide "X" {
-		[1r] wall
-		[door_width] Divide "Y" {
-			[door_height] door
-			[1r] wall
-		    }
-		[1r] wall
-	    };
+			entrance -> Divide "X" {
+				[1r] wall
+				[door_width] Divide "Y" {
+						[door_height] door
+						[1r] wall
+					}
+				[1r] wall
+			};
 
-	    door -> Set("core.door");
+			door -> Set("core.door");
 
-	    wall -> Set(Random("cobblestone", "stonebricks"));
+			wall -> Set(Random("cobblestone", "stonebricks"));
 
-        Priority 3:
-	    roof -> Split {
-		["sidefaces"] covering
-		["sideedges"] roofedge
-		["topedge"] roofedge
-	    };
+		Priority 3:
+			roof -> Split {
+				["sidefaces"] covering
+				["sideedges"] roofedge
+				["topedge"] roofedge
+			};
 
-	    covering -> Set("brick" : "stair");
+			covering -> Set("brick" : "stair");
 
-	    roofedge -> Set("stone");
+			roofedge -> Set("stone");
+			

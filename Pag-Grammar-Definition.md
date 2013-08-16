@@ -171,9 +171,8 @@ The following code is an example of a PAG-grammar. It is closely related to a ex
 	window_depth	:= .5;
 	window_height	:= 1;
 	door_height     := 2;
-	door_width 	:= 2;
-
-	roof_angle := 45;
+	door_width 	    := 2;
+	roof_angle         := 45;
 
 	grammar TestHouse:
 

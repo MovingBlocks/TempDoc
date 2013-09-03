@@ -51,7 +51,7 @@ Follow these instructions to get ready to run from code - unless you're a core c
    * Pick a working directory (like `C:\Dev` on Windows), bring up a command prompt there, then execute `git clone git@github.com:MovingBlocks/Terasology.git` (replace "MovingBlocks" with your username to use your own fork)
    * If you use IntelliJ then make sure only the _parent_ directory exists (Git won't check out into a project directory that already exists)
 * This will clone the remote repo to your local drive - *NOTE:* this can take quite a while! Be patient for at least a few minutes :-)
-* Open a command prompt in the directory you checked out into (so run `cmd` and do `cd C:\Dev\Terasology` or so) and execute `gradlew idea` there - this fetches the right version of Gradle automatically and builds the project config
+* Open a command prompt in the directory you checked out into (so run `cmd` and do `cd C:\Dev\Terasology` or so) and execute `gradlew idea` there - this fetches the right version of Gradle automatically and builds the project config (on some systems you may need `./gradlew idea`)
 * There's also a version for Eclipse - `gradlew eclipse` - more work on the project generation might be coming. See the Gradle section on [[Fancy Git]]
 * Open the Terasology project in your shiny new source controlled directory
  * `File` -> `Open Project` -> select the root Terasology folder from your Git working directory. _**THIS IS VERY IMPORTANT!**_ If you try to import a gradle project than you have to go through and do things manually, which takes a very long time. You will also have many other issues.

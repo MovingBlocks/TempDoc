@@ -29,7 +29,7 @@ To be able to run Terasology from source (and potentially get started for contri
 Stuff you need! Download / install / register for the following (if you don't already have them handy)
 
 * Download and install a recent Java SDK - http://www.oracle.com/technetwork/java/javase/downloads/index.html
- * Latest 1.6 is recommended (http://www.oracle.com/technetwork/java/javase/downloads/jdk6u35-downloads-1836443.html)
+ * Latest 1.7 is recommended, no longer supporting Java 1.6 (http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
  * Optional: Set JAVAHOME.  This is listed under trouble-shooting below, but if you're going to do this it's better to do it now than after a couple of things have failed.
 * Git for source control - http://git-scm.com/download
  * Pick the option to run Git from the Windows Command Prompt (middle option) and check out windows, commit unix (that is, if you're on Windows)
@@ -68,15 +68,12 @@ Extras:
 
 #### Common issues:
 
-* Usually the project will find a 1.6 Java SDK and know about Java - if you get a massive amount of Java errors (or don't see the "Run" option on Terasology.java) you may have to check under File / Project Structure / Platform Settings / SDKs to see if you have a valid Java setup. Sometimes you may only have a 1.7 SDK installed, that will trigger this issue too. Just add the 1.7 and use that instead or install a 1.6.  
-   * Click [HERE](https://raw.github.com/CallMeAsher/TeraMisc/master/wiki/AddSdkGuide.jpg) to see how to add the 1.6 SDK if IntelliJ doesn't show it by default.
+* Usually the project will find a 1.7 Java SDK and know about Java - if you get a massive amount of Java errors (or don't see the "Run" option on Terasology.java) you may have to check under File / Project Structure / Platform Settings / SDKs to see if you have a valid Java setup. 
+   * Click [HERE](https://raw.github.com/CallMeAsher/TeraMisc/master/wiki/AddSdkGuide.jpg) to see how to add a 1.6 SDK if IntelliJ doesn't show it by default.
 * You may have to set your JAVA_HOME also - such as on Linux with a command like this: `export JAVA_HOME="/usr/lib/jvm/java-6-sun"`
 * Outdated graphics card drivers can cause startup problems and some cards just seem quirky. Please post in the [Support Forum](http://forum.movingblocks.net/forums/support.20/) if you still have issues after installing your latest drivers and attach the log file from the /logs directory
 * We've seen a Windows 7 machine once fail to use Git to communicate with GitHub properly from command line and IntelliJ, yet be okay with Git Bash. Turned out the user home dir wasn't set right, so Git couldn't find the SSH files. Solution was to set the `HOME` environment variable to the user's home directory (like `C:\Users\[Username]`). Git Bash was smart enough to do without.
 * You may have to re-run =gradlew idea= occasionally if new project library files (jars) or settings are added/changed
-* LWJGL and Java 1.7 on Macs may not work due to a JAWT dependency error. This is a known (and fairly critical) issue to LWJGL due to some changes in the Apple-Oracle (Apracle?) approach to Java on Macs. For now please use Java 1.6. See http://lwjgl.org/forum/index.php/topic,4326.0.html for more details
-* On older versions of Java 1.6 you may get the following error on compilation - the solution is to upgrade to the latest 1.6 or even 1.7 (though that may bring other issues). More info at http://stackoverflow.com/questions/314572/bug-in-eclipse-compiler-or-in-javac
- * `type parameters of <T>T cannot be determined; no unique maximal instance exists for type variable T with upper bounds T,java.lang.Object`
 * On Linux you may end up with a line-ending issue on the Gradle wrapper script. If you get an error like the following try to either just run `dos2unix` on `gradlew` or alternatively copy paste its content into a new file and overwrite the old file with it
  * `bash: ./gradlew: /bin/bash^M: bad interpreter: No such file or directory`
 

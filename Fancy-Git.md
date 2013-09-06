@@ -81,6 +81,10 @@ Should you want an extra branch for a while to tinker with, you can make one wit
 
 *Note:* If you have changes in the currently checked out branch then they will exist in a new branch created from it. That's handy for always working in `develop` yet being able to switch to a topic branch for initial commit really easily.
 
+Alternatively maybe you want to create a new local branch from a remote branch that already exists somewhere:
+
+* `git checkout -b mylocalbranch movingblocks/shinybranch`
+
 ### Deleting a branch
 
 After a while a branch may have served its purpose, or possibly gotten messed up to the point where you don't want to work from it anymore.

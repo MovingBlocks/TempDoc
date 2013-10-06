@@ -16,11 +16,11 @@ Setup
 
 For plain setup of the game simply download the zip file, extract it, and run using one of the executable options in the root of the extracted directory based on your OS
 
-   * Windows: Simply execute =Terasology.exe=
-   * Mac: Run via =run_macosx.command=
-   * Linux: Use shell script =run_linux.sh=
-   * Any (if your Java is set up right): Double-click =Terasology.jar=
-You need to have a 1.6+ Java JRE or JDK installed on your system. Download Java from http://www.java.com/en/download/index.jsp
+   * Windows: Simply execute `Terasology.exe`
+   * Mac: Run via `run_macosx.command`
+   * Linux: Use shell script `run_linux.sh`
+   * Any (if your Java is set up right): Double-click `Terasology.jar`
+You need to have a 1.7+ Java JRE or JDK installed on your system. Download Java from http://www.java.com/en/download/index.jsp
 
 If you encounter any problems running the game please drop us a note in the [Support Forum](http://forum.movingblocks.net/forums/support.20/) !
 

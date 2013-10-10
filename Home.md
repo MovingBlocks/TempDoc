@@ -35,10 +35,12 @@ Interested in getting involved with working on the game? This section is for you
  technologies
 * [[Modding Guide]] - details on how to create mods for the game (quick guide making some assumptions of development
 familiarity)
+* [[Project Overview]] - a summary of the different GitHub projects involved and what libraries we use
 
 ### Programming
 
-* [[Dev Setup]] - specifically how to set up to develop on Terasology on your local machine
+* [[Codebase Structure]] - reviews how the codebase is put together
+* [[Dev Setup]] - a more detailed set up guide for developing Terasology on your local machine
 * [[Fancy Git]] - more advanced Git topics that you don't _need_ to be able to run from source,
 but may need to submit source or maintain your source setup over time
 * [[Checkstyle]] - notes about our code conventions and how to automatically check them

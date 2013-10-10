@@ -1,7 +1,7 @@
 Codebase Structure
 ===============================
 
-This is an overview of the different parts of our primary codebase and will be primarily of interest to developers/modders. See also Project Overview for a higher level view across more different projects.
+This is an overview of the different parts of our primary codebase and will be primarily of interest to developers/modders. See also [[Project Overview]] for a higher level view across more different projects.
 
 Gradle
 ---------

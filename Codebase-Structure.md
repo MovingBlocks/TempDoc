@@ -113,17 +113,17 @@ Other File Types
 
 Beyond Java we have a few major groups of stuff
 
-* Game assets - this is content wrapped in various ways. Might be textures, block shapes, models, etc. See [[Asset Types]] for more information
-* [Protobuf](http://code.google.com/p/protobuf/) - this is a tool to encode structured data provided by Google. It is used to store data in a binary format for efficient transfer over network connections and such
-* Module manifests - as mentioned above. These are also used in some other cases like for the engine and are used heavily for versioning and dependencies
-* Shaders - scary OpenGL 3D wizardry making Terasology look spectacular
+* **Game assets** - this is content wrapped in various ways. Might be textures, block shapes, models, etc. See [[Asset Types]] for more information
+* **[Protobuf](http://code.google.com/p/protobuf)** - this is a tool to encode structured data provided by Google. It is used to store data in a binary format for efficient transfer over network connections and such
+* **Module manifests** - as mentioned above. These are also used in some other cases like for the engine and are used heavily for versioning and dependencies
+* **Shaders** - scary OpenGL 3D wizardry making Terasology look spectacular
 
 We heavily use [JSON](http://www.json.org/) throughout our projects to store text data / assets, configuration, meta-data, and so on. To make the different types more distinct we use some custom file extensions:
 
-* .block = Block definition files. See [[Block Architecture]] for more details. Might be outdated at the moment though :-(
-* .shape = Defines a 3d shape that can be applied to blocks. These can be exported from Blender using a [[bundled addon|Block Shapes In Blender]] (that we need to make sure works ..)
-* .prefab = "Prefabricated" object, more or less a recipe for our entity system
-* .texinfo = Added configuration for fancy textures like foliage gradients
+* `.block` = Block definition files. See [[Block Architecture]] for more details. Might be outdated at the moment though :-(
+* `.shape` = Defines a 3d shape that can be applied to blocks. These can be exported from Blender using a [[bundled addon|Block Shapes In Blender]] (that we need to make sure works ..)
+* `.prefab` = "Prefabricated" object, more or less a recipe for our entity system
+* `.texinfo` = Added configuration for fancy textures like foliage gradients
 * TODO: add more and ask Immortius to fill in any future ideas :-)
 
 Changes from legacy

@@ -3,7 +3,7 @@ This is an overview of the different parts of our primary codebase and will be p
 Gradle
 ---------
 
-Most our projects are organized using [Gradle](http://www.gradle.org), a build automation tool similar to [Maven](http://maven.apache.org), but using [Groovy](http://groovy.codehaus.org) as its language. This allows for some pretty powerful scripting and customization of a local developer setup.
+Most of our projects are organized using [Gradle](http://www.gradle.org), a build automation tool similar to [Maven](http://maven.apache.org), but using [Groovy](http://groovy.codehaus.org) as its language. This allows for some pretty powerful scripting and customization of a local developer setup while leveraging maven repositories for dependency resolution.
 
 You interact with Gradle using a "gradlew" wrapper script that downloads and installs the correct project-specific version of Gradle itself. No need to install anything locally yourself. You simply run the command "gradlew" on any OS in the directory you've cloned the primary Terasology engine repo to and the correct version will be fetched and executed.
 
@@ -69,7 +69,7 @@ Modules
 
 If the heart of Terasology is the engine and the facades make up its different faces then the content modules are the different organs - delicious!
 
-While usually "mods" are user-created modifications to a game our modules are a little more fundamental. Even the systems and various bits of content in the base game are stored in modules that can be enabled, disabled, or even replaced.
+While usually "mods" are user-created modifications to a game our modules are a little more fundamental. Modules are containers for code and assets that can be used by game types, mods or other higher-level concepts. Even the systems and various bits of content in the base game are stored in modules that can be enabled, disabled, or even replaced.
 
 Modules have access to a limited part of the engine through the Modding API. Each is sandboxed for security. Modules do not get their own custom build file, instead one is supplied by the central project's "modules.gradle" template that builds all modules equally. If you change that template you can refresh all generated module build files with:
 
@@ -106,25 +106,23 @@ For more on modules see:
 * [[Module.txt]] - the manifest for a module. Includes description stuff, author info, dependencies, etc.
 * [[Version Handling]] - we follow [Semantic Versioning](http://semver.org) (SemVer).
 * [[Modding Guide]]
-* TODO: Moar links!
+* TODO: More links!
 
 Other File Types
 ---------
 
-Beyond Java we have a few major groups of stuff
+Beyond code, we have a few major groups of files
 
-* **Game assets** - this is content wrapped in various ways. Might be textures, block shapes, models, etc. See [[Asset Types]] for more information
-* **[Protobuf](http://code.google.com/p/protobuf)** - this is a tool to encode structured data provided by Google. It is used to store data in a binary format for efficient transfer over network connections and such
-* **Module manifests** - as mentioned above. These are also used in some other cases like for the engine and are used heavily for versioning and dependencies
-* **Shaders** - scary OpenGL 3D wizardry making Terasology look spectacular
+* **Game assets** - actual content used by the game. Might be textures, block shapes, models, etc. See [[Asset Types]] for more information.
+* **[Protobuf](http://code.google.com/p/protobuf)** - this is a framework for structured data provided by Google. It is used to store data in a binary format for efficient transfer over network connection.
+* **Module manifests** - as mentioned above. Each module has a manifest that describes it and any dependencies it has. This includes versioning information.
 
-We heavily use [JSON](http://www.json.org/) throughout our projects to store text data / assets, configuration, meta-data, and so on. To make the different types more distinct we use some custom file extensions:
+We heavily use [JSON](http://www.json.org/) throughout our projects to store text data / assets, configuration, meta-data, and so on. Rather than using json as the file extension, each asset uses an extension relevant to what it is:
 
 * `.block` = Block definition files. See [[Block Architecture]] for more details. Might be outdated at the moment though :-(
-* `.shape` = Defines a 3d shape that can be applied to blocks. These can be exported from Blender using a [[bundled addon|Block Shapes In Blender]] (that we need to make sure works ..)
-* `.prefab` = "Prefabricated" object, more or less a recipe for our entity system
-* `.texinfo` = Added configuration for fancy textures like foliage gradients
-* TODO: add more and ask Immortius to fill in any future ideas :-)
+* `.shape` = Defines a 3d shape that a block may have. These can be exported from Blender using a [[bundled addon|Block Shapes In Blender]]
+* `.prefab` = "Prefabricated" object, a recipe for creating entities in our entity system. They can also be used define static information without generating an entity.
+* `.texinfo` = Added configuration for how textures should behave.
 
 Changes from legacy
 ---------

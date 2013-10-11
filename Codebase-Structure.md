@@ -8,7 +8,7 @@ Gradle
 
 Most our projects are organized using [Gradle](http://www.gradle.org), a build automation tool similar to [Maven](http://maven.apache.org), but using [Groovy](http://groovy.codehaus.org) as its language. This allows for some pretty powerful scripting and customization of a local developer setup.
 
-You interact with Gradle using a "gradlew" wrapper script that takes care of setting up Gradle itself. No need to install anything. You simply run the command "gradlew" on any OS in the directory you've cloned the primary Terasology engine repo to and the correct version will be downloaded and executed.
+You interact with Gradle using a "gradlew" wrapper script that downloads and installs the correct project-specific version of Gradle itself. No need to install anything locally yourself. You simply run the command "gradlew" on any OS in the directory you've cloned the primary Terasology engine repo to and the correct version will be fetched and executed.
 
 Gradle works great with multiple sub-projects and builds a "project tree" before any functional work begins. This is great for dealing with dependencies but does also mean that if the project structure changes on one execution (such as when fetching a new module from GitHub) the new sub-project will only be included on the next execution.
 
@@ -49,7 +49,7 @@ The biggest architectural piece of the engine is our [[Entity System|Entity Syst
 Facades
 ---------
 
-The engine alone is not executable. It needs to run in some sort of context - facades supply that by wrapping the engine.
+The engine alone is not executable. It needs to run in some sort of context - "facades" (front-ends) supply that by wrapping the engine.
 
 The most basic one is the "PC Facade" which simply runs the game normally as an application on Windows, Linux, or Macs. This facade is bundled with the engine repo and available right out of the box.
 
@@ -88,11 +88,13 @@ With the primary repo you'll only have the bundled Core module (which contains t
 
 `gradlew fetchModuleSignalling`
 
-On the next execution of Gradle the new module will be detected and scanned. If it has dependencies on other modules Gradle will attempt to resolve them:
+On the next execution of Gradle the new module will be detected and scanned. If it has dependencies on other modules Gradle will attempt to resolve them. In the following example "Signalling" depends on "BlockNetwork":
 
-* Does the dependency exist as another local source module? If so then use that. Example: "modules/BlockNetwork" source directory fetched before the Signalling module (Signalling depends on BlockNetwork).
+* Does the dependency exist as another local source module? If so then use that. Example: "modules/BlockNetwork" source directory fetched before the Signalling module.
 * If not then look for a local binary version present in the modules directory. If you later fetch a source module the binary version will be ignored. Example: "modules/BlockNetwork.jar"
 * If a dependency is still not found go to our [[Artifactory]] instance and look there. If found the binary is copied to the local modules directory to be available at runtime. This will resolve as a local binary next time.
+
+Note: Module versioning exists but is not yet checked
 
 You can also create a brand new module and have it filled in with some template content:
 
@@ -151,4 +153,12 @@ Common Issues and Other Notes
 Related Pages
 ---------
 
-TODO: Insert some architecture pages here
+* [[Dev Setup]]
+* [[Contributor Guide]]
+* [[Modding Guide]]
+* [[Modding API]]
+* [[Entity System Architecture]]
+* [[Shape Architecture]]
+* [[Checkstyle]]
+* [[Unit Testing]]
+* [[JavaDoc]]

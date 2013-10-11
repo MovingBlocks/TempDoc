@@ -1,6 +1,3 @@
-Project Overview
-===============================
-
 This is a quick overview of all the involved GitHub repositories and related projects that are involved with Terasology
 
 Primary Repositories

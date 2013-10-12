@@ -141,7 +141,7 @@ Common Issues and Other Notes
  * Incomplete or otherwise corrupt nested git directories (modules, facades ..) may cause trouble, such as complaining about "cannot find task 'classes' on [name]". When in doubt: Delete and fetch again
  * Same issue may cause tasks to think you already have a particular module locally - again just delete the partial directory and try again
 * You cannot add the "idea" task to the same execution of Gradle as a task that messes with the project structure. "gradlew createModuleTestExecutionOrder idea" will not correctly apply the IntelliJ generation step to the brand new TestExecutionOrder module. Same goes for other tasks that base off the project structure - mess with the structure in one step then apply it in another
-* If you get compile errors on trying to run with the provided configuration immediately after setting up IntelliJ try doing a full Project Rebuild (may be a poor dependency order compilation issue)
+* If you get compile errors on trying to run with the provided configuration immediately after setting up IntelliJ try doing a full Project Rebuild (may be a poor dependency order compilation issue - or IntelliJ just hasn't finished its initial background build)
 * IntelliJ will likely show/warn about a circular dependency between the PC facade and the engine. This is actually a known issue in IntelliJ where it doesn't distinguish between a compile dependency and a unit testing dependency. The PC facade needs to compile against the engine and the engine needs to unit test against the PC facade. Both work fine :-)
 
 

@@ -70,7 +70,7 @@ Events that inherit from **ConsumableEvent** include the ability to be cancelled
 
 An example of event cancellation follows:
 
-`    private void checkDamage(EntityRef entity, int amount, Prefab damageType, EntityRef instigator, HealthComponent health) {
+`private void checkDamage(EntityRef entity, int amount, Prefab damageType, EntityRef instigator, HealthComponent health) {
         BeforeDamagedEvent beforeDamage = entity.send(new BeforeDamagedEvent(amount, damageType, instigator));
         if (**!beforeDamage.isConsumed()**) { _**// Make sure the event hasn't been cancelled. If so, do nothing!**_
              handleDamageLogic
@@ -79,7 +79,7 @@ An example of event cancellation follows:
 
 Consuming events might occur in something like the following example:
 
-`        if (canPlaceBlock(block, targetBlock, placementPos)) {
+`if (canPlaceBlock(block, targetBlock, placementPos)) {
            doSomethingCoolWithBlockPlacement
         } else { _**// If the block can't be placed, don't let anything else handle this event! (Event cancelled)**_
             event.consume();

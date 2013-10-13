@@ -66,7 +66,7 @@ The advantage of using events rather than straight method calls between systems 
 **===============================================================================================**
 
 ### Event Cancellation
-	Events that inherit from **ConsumableEvent** include the ability to be cancelled by calling their **consume()** method. This prevents the event from reaching any further event handlers. Event handling that expects to encounter ConsumableEvents can check to see if the event **isConsumed()** before doing any event handling, which is the basis behind recognizing the cancellation of an event.
+Events that inherit from **ConsumableEvent** include the ability to be cancelled by calling their **consume()** method. This prevents the event from reaching any further event handlers. Event handling that expects to encounter ConsumableEvents can check to see if the event **isConsumed()** before doing any event handling, which is the basis behind recognizing the cancellation of an event.
 
 An example of event cancellation follows:
 

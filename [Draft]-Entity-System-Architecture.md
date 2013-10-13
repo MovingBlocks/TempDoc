@@ -72,7 +72,7 @@ An example of event cancellation follows:
 
 <pre>private void checkDamage(EntityRef entity) {
         BeforeDamagedEvent beforeDamage = entity.send(new BeforeDamagedEvent());
-        if (**!beforeDamage.isConsumed()**) { <b><i>// Make sure the event hasn't been cancelled. If so, do nothing!</i></b>
+        if (<b>!beforeDamage.isConsumed()</b>) { <b><i>// Make sure the event hasn't been cancelled. If so, do nothing!</i></b>
              handleDamageLogic
         }
     }</pre> 

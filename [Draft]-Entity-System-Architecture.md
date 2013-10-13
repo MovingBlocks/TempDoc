@@ -86,7 +86,7 @@ Consuming events might occur in something like the following example:
         }
     }</pre>
 
-**===============================================================================================**
+<b>===============================================================================================</b>
 
 Systems that handle events should implement the EventHandler interface. They can then add new event handling methods by adding methods of the form:
 <pre>@ReceiveEvent(components = {HealthComponent.class, AnotherComponent.class}, priority = ReceiveEvent.PRIORITY_NORMAL)

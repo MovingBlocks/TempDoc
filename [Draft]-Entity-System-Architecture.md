@@ -72,7 +72,7 @@ An example of event cancellation follows:
 
 <pre>private void checkDamage(EntityRef entity) {
         BeforeDamagedEvent beforeDamage = entity.send(new BeforeDamagedEvent());
-        if (**!beforeDamage.isConsumed()**) { <b>// Make sure the event hasn't been cancelled. If so, do nothing!</b>
+        if (**!beforeDamage.isConsumed()**) { <b><i>// Make sure the event hasn't been cancelled. If so, do nothing!</i></b>
              handleDamageLogic
         }
     }</pre> 
@@ -81,7 +81,7 @@ Consuming events might occur in something like the following example:
 
 <pre>if (canPlaceBlock) {
            doSomethingCoolWithBlockPlacement
-        } else {// If the block can't be placed, don't let anything else handle this event! (Event cancelled)
+        } else {// <b><i>If the block can't be placed, don't let anything else handle this event! (Event cancelled)</i></b>
             event.consume();
         }
     }</pre>

@@ -80,7 +80,7 @@ An example of event cancellation follows:
 Consuming events might occur in something like the following example:
 
 <pre>if (canPlaceBlock) {
-           doSomethingCoolWithBlockPlacement()
+        doSomethingCoolWithBlockPlacement()
         } else {// <b><i>If the block can't be placed, don't let anything else handle this event! (Event cancelled)</i></b>
             event.consume();
         }

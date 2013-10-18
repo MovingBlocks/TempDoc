@@ -76,6 +76,7 @@ The method must have the signature `public void (T, EntityRef)`, where T is an t
 Events also support cancellation - this allows a system to stop an event before it reaches systems with a lower priority - for instance if you add an invincibility component to make an entity temporarily immune to damage, you can add a system that will intercept the Damage event and cancel it before it can reach the health system.
 
 Inheritance structures of events are also supported - if you have a MouseButtonEvent, and a LeftMouseButtonEvent that inherits it, subscribing to MouseButtonEvent will also pick up LeftMouseButtonEvents.
+
 ### Prefabs
 
 Prefabs are recipes for creating entities. They describe what components an entity should have, and what settings those components should start with. This can be described in JSON, with a typical prefab looking like:

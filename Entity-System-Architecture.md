@@ -66,10 +66,12 @@ The advantage of using events rather than straight method calls between systems 
 New events should extend AbstractEvent, which provides the event with the default cancellation functionality.
 
 Systems that handle events should implement the EventHandler interface. They can then add new event handling methods by adding methods of the form:
-<pre>@ReceiveEvent(components = {HealthComponent.class, AnotherComponent.class}, priority = ReceiveEvent.PRIORITY_NORMAL)
+<pre>
+@ReceiveEvent(components = {HealthComponent.class, AnotherComponent.class}, priority = ReceiveEvent.PRIORITY_NORMAL)
 public void onDamage(DamageEvent event, EntityRef entity) {
    // Do something
-}</pre>
+}
+</pre>
 
 The method must have the signature `public void (T, EntityRef)`, where T is an type of Event - this determines which event will be sent to the method. The second parameter is the EntityRef for the entity that received the event. The name of the method and parameters can be anything, though I suggest starting the method name with "on", as in "onDamage". The method must also be annotated with @ReceiveEvent. The annotation must list what components an entity must have for the event handler method to be invoked - this allows you to filter out entities which are inappropriate for the event handler. You optionally may specify a priority, either using one of the preset priority levels or with an integer - this determines the order in which event handlers functions will be called when multiple are valid for a given event.
 

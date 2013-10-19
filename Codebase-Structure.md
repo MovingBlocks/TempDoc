@@ -71,7 +71,7 @@ If the heart of Terasology is the engine and the facades make up its different f
 
 While usually "mods" are user-created modifications to a game our modules are a little more fundamental. Modules are containers for code and assets that can be used by game types, mods or other higher-level concepts. Even the systems and various bits of content in the base game are stored in modules that can be enabled, disabled, or even replaced.
 
-Modules have access to a limited part of the engine through the Modding API. Each is sandboxed for security. Modules do not get their own custom build file, instead one is supplied by the central project's "modules.gradle" template that builds all modules equally. If you change that template you can refresh all generated module build files with:
+Modules have access to a limited part of the engine through the Modding API. Each is sandboxed for security. Other than the Core module the modules do not get their own custom build file, instead one is copied in from the Core module that builds all modules equally. If you change that instance of the file you can refresh all generated module build files with:
 
 `gradlew refreshModuleGradle`
 

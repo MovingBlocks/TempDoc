@@ -41,7 +41,7 @@ This creates the IntelliJ files you can then use to open the project. Always ope
 * Some compiler settings will be tweaked, such as "Make Automatically"
 * [[Annotations]], which are used extensively in the project, will get some special consideration when IntelliJ looks at whether code is used or not
 
-The biggest architectural piece of the engine is our [[Entity System|Entity System Architecture]] which powers just about everything, much more than just creatures (typical considered "movable entities" or "mobs")
+The biggest architectural piece of the engine is our [[Entity System|Entity System Architecture]] which powers just about everything, much more than just creatures (typically considered "movable entities" or "mobs")
 
 Facades
 ---------

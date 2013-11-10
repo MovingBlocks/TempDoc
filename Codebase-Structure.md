@@ -121,7 +121,7 @@ We heavily use [JSON](http://www.json.org/) throughout our projects to store tex
 
 * `.block` = Block definition files. See [[Block Architecture]] for more details. Might be outdated at the moment though :-(
 * `.shape` = Defines a 3d shape that a block may have. These can be exported from Blender using a [[bundled addon|Block Shapes In Blender]]
-* `.prefab` = "Prefabricated" object, a recipe for creating entities in our entity system. They can also be used define static information without generating an entity.
+* `.prefab` = "Prefabricated" object, a recipe for creating entities in our entity system. They can also be used to define static information without generating an entity.
 * `.texinfo` = Added configuration for how textures should behave.
 
 Changes from legacy

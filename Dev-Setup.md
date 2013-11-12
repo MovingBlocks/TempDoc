@@ -22,7 +22,7 @@ Git can be sort of confusing - see [[Fancy Git]] for more involved details. Here
 
 ## Steps
 
-To be able to run Terasology from source (and potentially get started for contributing stuff!) follow these steps!
+To be able to run Terasology from source (and potentially get started for contributing stuff!) follow these steps! This guide is designed for IntelliJ IDEA setup with SSH keys, for other setups go to [[Alternative-Setups]].
 
 ### Initial setup
 

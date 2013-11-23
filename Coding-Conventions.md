@@ -11,10 +11,12 @@
 * Use interfaces over concrete classes for variables (e.g. Map instead of HashMap). 
 * Feel free to use guava to construct the actual instance (e.g. Maps.newHashMap())
 
-### Other
-Most settings can be applied automatically through the IDE. See [[Alternative Setups]] or, more specifically [[Checkstyle]] on how to setup Checkstyle.
+Most format and other style settings can be applied automatically through the IDE. See [[Alternative Setups]] or, more specifically [[Checkstyle]] on how to setup Checkstyle.
 
 ## Example java snippet
+
+The following snippet was created as a guideline on how to format code. It illustrates the code conventions in terms of indentation, braces, white space, comments, blank lines and control statements.
+
 ```java
 /*
  * Copyright 2013 MovingBlocks

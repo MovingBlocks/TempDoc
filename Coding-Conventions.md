@@ -1,7 +1,7 @@
 ## This page is under contruction and not yet final!
 
 ### General style 
-* Terasology follows the [[http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html|Sun Java Code Conventions]] and [[http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html|Maven standard directory layout]] except where otherwise noted.
+* Terasology follows the [[Sun Java Code Conventions|http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html]] and [[Maven standard directory layout|http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html]] except where otherwise noted.
 * use // TODO comments to note where something needs to be done
 * Don't use Hungarian notation to denote types
 * No mass imports such as import java.util.* except for static imports

@@ -3,15 +3,15 @@
 ### General style 
 * Terasology follows the [[Sun Java Code Conventions|http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html]] and [[Maven standard directory layout|http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html]] except where otherwise noted.
 * use // TODO comments to note where something needs to be done
-* Don't use Hungarian notation to denote types
+* Don't use Hungarian notation to denote types. This follows from the Sun conventions, and also acknowledges that IDEs are good at providing that information anyway.
 * No mass imports such as import java.util.* except for static imports
 * Default line width: 175 chars
 
 ### Coding-related
 * Use interfaces over concrete classes for variables (e.g. Map instead of HashMap). 
-* Feel free to use guava to construct the actual instance (e.g. Maps.newHashMap())
+* Feel free to use guava to construct the actual instance (e.g. Maps.newHashMap()).
 
-Most format and other style settings can be applied automatically through the IDE. See [[Alternative Setups]] or, more specifically [[Checkstyle]] on how to setup Checkstyle.
+Most format and other style settings can be checked or applied automatically through the IDE. See [[Alternative Setups]] or, more specifically [[Checkstyle]] on how to setup Checkstyle.
 
 ## Example java snippet
 
@@ -41,7 +41,7 @@ import java.util.List;
  * An example for comment formatting.
  * @author John Doe
  */
-abstract class Test {
+public abstract class Test {
     // This is a long comment with whitespace that should be split in multiple
     // line comments in case the line comment formatting is enabled
     abstract int foo3();

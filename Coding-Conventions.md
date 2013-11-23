@@ -1,11 +1,11 @@
 ## This page is under contruction and not yet final!
 
 ### General style 
+* Terasology follows the [[http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html|Sun Java Code Conventions]] and [[http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html|Maven standard directory layout]] except where otherwise noted.
 * use // TODO comments to note where something needs to be done
 * Don't use Hungarian notation to denote types
-* Where there are underscores before variables - feel free to remove them
 * No mass imports such as import java.util.* except for static imports
-* Default line width: 120 chars
+* Default line width: 175 chars
 
 ### Coding-related
 * Use interfaces over concrete classes for variables (e.g. Map instead of HashMap). 

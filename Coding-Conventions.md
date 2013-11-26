@@ -6,6 +6,8 @@
 * Don't use Hungarian notation to denote types. This follows from the Sun conventions, and also acknowledges that IDEs are good at providing that information anyway.
 * No mass imports such as import java.util.* except for static imports
 * Default line width: 175 chars
+* Use spaces, not tabs to indent your code
+* Use braces even for single lines
 
 ### Coding-related
 * Use interfaces over concrete classes for variables (e.g. Map instead of HashMap). 
@@ -61,6 +63,11 @@ public abstract class Test {
      * @return The result
      */
     int bar3(int a, int b) {
+	
+	if (a == 42) {
+	    b = 17;
+	}
+
 	do {
 	    bar3();
 	} while (true);

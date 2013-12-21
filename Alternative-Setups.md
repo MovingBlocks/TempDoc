@@ -59,6 +59,10 @@ This seems to work at least for Eclipse 3.4.1 through 4.3.1, which is the oldest
 
 2)
 
+You will need to remove from Core's .classpath the line referencing "Terasology/engine/build/testClasses"
+
+3)
+
 To run the project, you will need to change the current working directory to the root Terasology folder.  The easiest way to do this is to create a custom Eclipse launcher configuration, such as the following one -- copy it into your workspace's PC project as Terasology.launcher and update the WORKING_DIRECTORY path.
 
 ```

@@ -22,14 +22,14 @@ If you want to work with Eclipse you have to change the Gradle command for gener
     > ./gradlew eclipse         # on Linux/Mac
     > gradlew.bat eclipse       # on Windows
 
-After the project files are generated you can import the project to Eclipse using "Import -> Existing projects into the workspace". Make sure that "search for nested projects" is checked!
+After the project files are generated you can import the project to Eclipse using "Import -> Existing projects into the workspace" with "Terasology" as the root.  Make sure that "search for nested projects" is checked!
 
 
 __NOTE: There are currently some other issues that need to be handled  manually:__
 
 1)
 
-Force "natives" to be an eclipse project by creating a .project file for it.   This probably needs to be done before you import projects into Eclipse.  It can be as simple as this:
+Force "natives" to be an eclipse project by creating a .project file for it.   This probably needs to be done before you import projects into Eclipse.  You will need to create "natives" by running "gradlew runPC" first.  The natives .project file can be as simple as this:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -50,7 +50,7 @@ Once "natives" exists as a project, you can update the engine project's .classpa
 ```
 	<classpathentry exported="true" kind="lib" path="~/.gradle/caches/artifacts-26/filestore/org.lwjgl.lwjgl/lwjgl/2.9.0/jar/5654d06e61a1bba7ae1e7f5233e1106be64c91cd/lwjgl-2.9.0.jar" sourcepath="~/.gradle/caches/artifacts-26/filestore/org.lwjgl.lwjgl/lwjgl/2.9.0/source/c93326bd0f3a21f3b2c8c22b6f345ab6ca1dd683/lwjgl-2.9.0-sources.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="../natives/linux"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="natives/linux"/>
 		</attributes>
 	</classpathentry>
 ```
@@ -68,7 +68,7 @@ To run the project, you will need to change the current working directory to the
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
-<stringAttribute key="bad_container_name" value="/PC/launchScripts/eclipse/Terasology.launch"/>
+<stringAttribute key="bad_container_name" value="/PC/launchScripts/eclipse"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/PC/src/main/java/org/terasology/engine/Terasology.java"/>
 </listAttribute>

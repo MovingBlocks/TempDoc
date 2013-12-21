@@ -27,7 +27,7 @@ After the project files are generated you can import the project to Eclipse usin
 
 __NOTE: There are currently some other issues that need to be handled  manually:__
 
-1)
+1.
 
 Force "natives" to be an eclipse project by creating a .project file for it.   This probably needs to be done before you import projects into Eclipse.  You will need to create "natives" by running "gradlew runPC" first.  The natives .project file can be as simple as this:
 
@@ -57,11 +57,11 @@ Once "natives" exists as a project, you can update the engine project's .classpa
 
 This seems to work at least for Eclipse 3.4.1 through 4.3.1, which is the oldest and newest versions I have installed.
 
-2)
+2.
 
 You will need to remove from Core's .classpath the line referencing "Terasology/engine/build/testClasses"
 
-3)
+3.
 
 To run the project, you will need to change the current working directory to the root Terasology folder.  The easiest way to do this is to create a custom Eclipse launcher configuration, such as the following one -- copy it into your workspace's PC project as Terasology.launcher and update the WORKING_DIRECTORY path.
 
@@ -81,3 +81,13 @@ To run the project, you will need to change the current working directory to the
 <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="<TERASOLOGY CHECKOUT DIRECTORY>/Terasology"/>
 </launchConfiguration>
 ```
+Related issues and discussion:
+
+- http://forum.movingblocks.net/threads/eclipse-setup-fails-to-run.883/
+
+- https://github.com/MovingBlocks/Terasology/pull/755
+- https://github.com/Nanoware/Terasology/pull/58
+
+- https://github.com/Nanoware/Terasology/issues/54
+- https://github.com/Nanoware/Terasology/issues/56
+- https://github.com/Nanoware/Terasology/issues/57

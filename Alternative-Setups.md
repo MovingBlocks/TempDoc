@@ -87,6 +87,7 @@ Related issues and discussion:
 
 - https://github.com/MovingBlocks/Terasology/pull/755
 - https://github.com/Nanoware/Terasology/pull/58
+- https://github.com/MovingBlocks/Terasology/pull/783
 
 - https://github.com/Nanoware/Terasology/issues/54
 - https://github.com/Nanoware/Terasology/issues/56

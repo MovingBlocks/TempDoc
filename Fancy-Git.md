@@ -56,7 +56,7 @@ Aside from the easier IntelliJ GUI option on the [Dev Setup] page there's also a
 * `git fetch --all` to have all the right Git data refreshed locally
 * Make sure you have your desired local branch selected - check with `git branch -a` (the asterisk is your active branch)
 * `git merge remotes/movingblocks/develop` will grab changes from there and place them in your local directory, including conflict markers if appropriate (more info on how to avoid this better would be good...) 
- * What would the difference be between pull and merge here? Hmm - still a gray area!
+ * What would the difference be between pull and merge here? Hmm - still a gray area! [The docs say pull is a shortcut for fetch+merge]
 * At this point you can run `git status` to see what's prepared for you locally **OR** just look at IntelliJ, which will suddenly show the new files and conflict markers if present 
  * You can even use the right click file / Git / Merge Tool in IntelliJ to get a nice three-way merge tool and options to outright accept your own or the remote changes alone
 * When you're done resolving conflicts do a final `git status` to make sure all is well and nothing remains
@@ -191,3 +191,9 @@ If alternatively you're happy with the state of some changes you'd like to packa
 * [[IssueTracking]]
 * [[UnitTesting]]
 * [[JavaDoc]]
+
+## More links for people new to GIT, especially if you've worked with CVS or SVN previously
+
+* [[https://www.atlassian.com/git/tutorial]] -- When you need to know the basics.
+* [[https://git.wiki.kernel.org/index.php/GitSvnCrashCourse]] -- When you need to understand Git coming from an SVN or CVS background.
+* [[http://git.kernel.org/cgit/git/git-htmldocs.git/plain/user-manual.html]] -- When you understand the basics, and still need more help.

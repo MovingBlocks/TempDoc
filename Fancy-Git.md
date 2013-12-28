@@ -95,6 +95,20 @@ After a while a branch may have served its purpose, or possibly gotten messed up
  * You may get an error if Git doesn't believe all your changes have gone somewhere else - you can override by making the d uppercase (so `git branch -D develop`)
 * Execute `git push origin :develop` (which in essence means to push "empty" to your origin/develop, thus deleting it - of course, make sure _origin_ is the right remote repo first!)
 
+### Removing an unnecessary merge from your branch history
+
+* This is difficult to get right, but can remove unnecessary files from a branch you want to share.  Back up your repo first.
+ * git checkout hud-element-manager--gui  # start in branch with unwanted merge in it
+ * git checkout -b tmp 4504f9a974a74cca4b4f6f7b442b9d4a3ee76f4f  # commit right before merge to hide
+ * git merge --squash 06e725af02ef947e2662e9fda4b37d1e584c87f7 # starting commit of merge to hide
+ * git checkout hud-element-manager--gui # branch with merge to hide -- might need to force it if there are unimportant uncommitted files
+ * git rebase --preserve-merges --onto tmp 442e9aca927409f5bb155f60f60c6a15321e6981 # ending commit of merge to hide
+
+### Push a branch to github with a different branch name
+
+  * git push origin local-branch-name:refs/heads/remote-branch-name
+
+
 ### Handy commands
 
 Should a remote branch be closed it'll still show in your local list with `git branch -a` until you prune with the following command (remove the `--dry-run` to truly do it)

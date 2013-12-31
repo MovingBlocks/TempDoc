@@ -26,7 +26,7 @@ Typically a component is a plain java object with a flat set of value objects an
 
 Each entity can have at most one Component of a given type - an entity may have a Location, but cannot have multiple locations. Generally if you come across a situation where having multiple of the same component may seem attractive, you would be better served by using multiple entities with a component to tie them to a "main" entity.
 
-Components may only contain specific data types - this is used to support persistence. These types[](#component-data-types) are:
+Components may only contain specific data types - this is used to support persistence. These types[](Entity-System-Architecture#component-data-types) are:
 
    * Standard Java Primitives - double / float / int / boolean / long and their equivalent boxed types
    * String

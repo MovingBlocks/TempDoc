@@ -1,13 +1,15 @@
-- [Note: this page has not yet been checked for accuracy -- please remove this line once this page has been reviewed]
+- [Note: this page has not yet been checked for accuracy -- please remove this line once this page has been reviewed and all of the TODO items have been resolved]
 
-### What is a Prefab?
+### What is a [[Prefab|Entity-System-Architecture#prefabs]] file?
 
-A prefab is the definition of a [[entity|Entity-System-Architecture#entity-and-entityref]] type in Terasology, such as a block, structure, creature, or item.  Like an entity it groups a collection of [[components|Entity-System-Architecture#component]] or other prefabs.
+A prefab file is the definition of a [[entity|Entity-System-Architecture#entity-and-entityref]] type in Terasology, such as a block, structure, creature, or item. Like an entity it groups a collection of [[components|Entity-System-Architecture#component]] or other prefabs.
 
 ### Definition Format
 Prefab definitions are a type of [[asset|Asset-System]] and are stored in the _assets_ directory of a module in the _prefabs_ directory.
 
-Definitions consist of an component type name (lowercase) in quotes, followed by additional properties of that component type, which may in turn be other prefabs or components in addition to Terasology [[primitive types|Entity-System-Architecture#component-data-types]].
+Definitions consist of an component type name (lowercase) in quotes without the trailing "Component", followed by additional properties of that component type, which may in turn be other prefabs or components in addition to Terasology [[primitive types|Entity-System-Architecture#component-data-types]].  TODO: Immortius states that you can also create an EntityBuilder starting from a prefab -- more information needed.
+
+### Inheritance -- TODO - copy from [[Entity-System-Architecture#prefabs]]
 
 #### Example
 The following prefab, which was defined in module LightAndShadow and stored in _assets/prefabs/minions_ has no default location specified in its **LocationComponent**, has the **[[SkeletalMesh|SkeletalMesh]]** stored in _assets/skeletalmesh/readQueen.md5mesh_, has a defined animation stored in _assets/animations/redQueenStill.md5anim_ which loops, and uses the material definition found _assets/material/redQueen.mat_.   It is a custom **MinionComponent** component (on the red side with a health of 300).  It has a **CharacterMovementComponent** as well as a **Spawnable** custom component.  There are also additional animations and sounds defined.

@@ -3,15 +3,15 @@
 
 ### What is a Prefab?
 
-A prefab is the definition of a [entity](https://github.com/MovingBlocks/Terasology/wiki/_preview#entity-and-entityref) type in Terasology, such as a block, structure, creature, or item.  Like an entity it groups a collection of [components](https://github.com/MovingBlocks/Terasology/wiki/Entity-System-Architecture#component) or other prefabs.
+A prefab is the definition of a [[entity|Entity-System-Architecture#entity-and-entityref]] type in Terasology, such as a block, structure, creature, or item.  Like an entity it groups a collection of [[components|Entity-System-Architecture#component]] or other prefabs.
 
 ### Definition Format
-Prefab definitions are a type of [asset](https://github.com/MovingBlocks/Terasology/wiki/Asset-System) and are stored in the _assets_ directory of a module in the _prefabs_ directory.
+Prefab definitions are a type of [[asset|Asset-System]] and are stored in the _assets_ directory of a module in the _prefabs_ directory.
 
-Definitions consist of an component type name (lowercase) in quotes, followed by additional properties of that component type, which may in turn be other prefabs or components in addition to Terasology [primitive types](https://github.com/MovingBlocks/Terasology/wiki/Entity-System-Architecture#component-data-types).
+Definitions consist of an component type name (lowercase) in quotes, followed by additional properties of that component type, which may in turn be other prefabs or components in addition to Terasology [[primitive types|Entity-System-Architecture#component-data-types]].
 
 #### Example
-The following prefab, which was defined in module LightAndShadow and stored in _assets/prefabs/minions_ has no default location specified in its **LocationComponent**, has the [**SkeletalMesh**](https://github.com/MovingBlocks/Terasology/wiki/SkeletalMesh) stored in _assets/skeletalmesh/readQueen.md5mesh_, has a defined animation stored in _assets/animations/redQueenStill.md5anim_ which loops, and uses the material definition found _assets/material/redQueen.mat_.   It is a custom **MinionComponent** component (on the red side with a health of 300).  It has a **CharacterMovementComponent** as well as a **Spawnable** custom component.  There are also additional animations and sounds defined.
+The following prefab, which was defined in module LightAndShadow and stored in _assets/prefabs/minions_ has no default location specified in its **LocationComponent**, has the **[[SkeletalMesh|SkeletalMesh]]** stored in _assets/skeletalmesh/readQueen.md5mesh_, has a defined animation stored in _assets/animations/redQueenStill.md5anim_ which loops, and uses the material definition found _assets/material/redQueen.mat_.   It is a custom **MinionComponent** component (on the red side with a health of 300).  It has a **CharacterMovementComponent** as well as a **Spawnable** custom component.  There are also additional animations and sounds defined.
 
 ```
 {

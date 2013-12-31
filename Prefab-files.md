@@ -1,5 +1,4 @@
 - [Note: this page has not yet been checked for accuracy -- please remove this line once this page has been reviewed]
-- [Note: this page is still being actively written]
 
 ### What is a Prefab?
 

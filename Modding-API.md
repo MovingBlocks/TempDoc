@@ -36,6 +36,7 @@ feedback in the [[Forum Modding Doc Thread|http://forum.movingblocks.net/threads
 * [[Block Types and Block Families]]
 * [[Block Type Entities]]
 * [[Block Entities]]
+* [[Prefabs|Prefab-files]]
 
 Related Links
 --------------------------------------------------

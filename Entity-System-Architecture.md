@@ -41,6 +41,7 @@ Components may only contain specific data types - this is used to support persis
    * Color4f
    * Vector2f / Vector3f / Vector2i
    * Quat4f
+   * Texture
    * and simple POJOs composed of above (marked with the @MappedContainer annotation)
 
 This list can be extended - see Component Library section below.

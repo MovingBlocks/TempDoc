@@ -5,7 +5,7 @@ Right now all that exists on the block architecture is this:
 All blocks are defined in .block files in the assets/ folder for the mod they are contained in.  These files can be given certain attributes, which allow the blocks to be associated with block textures. These textures are usually stored as simple .png files in the assets/blockTiles/ directory. Note that only the block attributes below can be included in the .block file, any additional metadata a programmer wishes to attach to a block class must be specified in the associated .prefab file, which is located in the mod folders assets/prefabs subfolder.
 
 Block Attributes:
-
+```
  // If not specified, is the ProperCase of the file name
     "displayName" : "Block",
     "liquid" : false,
@@ -103,3 +103,4 @@ Block Attributes:
         "directPickup" : false,
         "stackable" : true
     }
+```

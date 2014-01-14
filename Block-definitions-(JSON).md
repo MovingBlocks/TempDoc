@@ -1,4 +1,4 @@
-New blocks can easily be included in the game by creating a module with a `.json` block definition file. This article gives an overview of what can be specified in this files.
+New blocks can easily be included in the game by creating a module with a `.block` block definition file. This article gives an overview of what can be specified in this files.
 
 # What exactly does a block definition produce?
 
@@ -39,7 +39,7 @@ Block definitions can extend from other block definitions, specifying just the f
 **supportRequired**     | _true, false_ | false | Specify whether the block should be destroyed when no longer attached to any other block. **Only works for vertically adjacent blocks - e.g. grass is removed if the ground under it is destroyed**
 
 ## Tiles
-By default, a block will try to use a tile texture with a matching filename. e.g. A block defined in Grass.json will use the block tile Grass.png from the same module.
+By default, a block will try to use a tile texture with a matching filename. e.g. A block defined in Grass.block will use the block tile Grass.png from the same module.
 
 You can specify a different tile to be used with the "tile" property:
 

@@ -28,7 +28,7 @@ Block Attributes:
     },
  
  
-    // Hardness 0 for indestructable, maybe make that a separate flag too?
+    // Hardness 0 for indestructible, maybe make that a separate flag too?
     "hardness" : 3,
  
     // Can other blocks be attached to this. Should add settings for this per side of the block
@@ -92,14 +92,14 @@ Block Attributes:
     "entity" : {
         // The entity prefab associated with this block (maybe allow it to be inlined?)
         "prefab" : "engine:chest",
-        // Whether the entity should be persistant
+        // Whether the entity should be persistent
         "temporary" : false,
         // whether changes to the components of an entity are persisted
         "keepActive" : true
     },
  
   "inventory" : {
-        // Should the block go straight into the havester's inventory
+        // Should the block go straight into the harvester's inventory
         "directPickup" : false,
         "stackable" : true
     }

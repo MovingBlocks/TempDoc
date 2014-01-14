@@ -68,6 +68,7 @@ Extras:
 
 #### Common issues:
 
+* **Important for Macs!** If you get a "package javax.vecmath is sealed" error your SDK has an included copy of vecmath that is too old for Terasology, and our setup is not allowed to override it. You can fix that by deleting `/System/Library/Java/Extensions/vecmath.jar` - why this is included only on Macs who knows. This issue may go away if we kick out vecmath later in favor of a better solution
 * Usually the project will find a 1.7 Java SDK and know about Java - if you get a massive amount of Java errors (or don't see the "Run" option on Terasology.java) you may have to check under File / Project Structure / Platform Settings / SDKs to see if you have a valid Java setup. 
    * Click [HERE](https://raw.github.com/CallMeAsher/TeraMisc/master/wiki/AddSdkGuide.jpg) to see how to add a 1.6 SDK if IntelliJ doesn't show it by default.
 * You may have to set your JAVA_HOME also - such as on Linux with a command like this: `export JAVA_HOME="/usr/lib/jvm/java-6-sun"`

@@ -22,7 +22,7 @@ One particular feature of the EntityRef is that when an entity is deleted, all r
 
 A component is a meaningful set of data, with a intention of being used to provide behavior, that can be attached to an Entity. For instance, a Location component stores data relating to an entity's position in the world - with the implication that the entity is something in the world. A Mesh component holds information about a mesh used to render the entity - but its presence along with a LocationComponent also implies the entity should be rendered.
 
-Typically a component is a plain java object with a flat set of value objects and minimal functionality. There may be some data related methods (to ensure values are not set to null, for instance), but there should not be any game logic - that should be provided by the Systems. Components may contain EntityRefs, but should never have a reference to other Components, or to Systems.  Components must be declared final.
+Typically a component is a plain java object with a flat set of value objects and minimal functionality. There may be some data related methods (to ensure values are not set to null, for instance), but there should not be any game logic - that should be provided by the Systems. Components may contain EntityRefs, but should never have a reference to other Components, or to Systems.  Components should be declared final.
 
 Each entity can have at most one Component of a given type - an entity may have a Location, but cannot have multiple locations. Generally if you come across a situation where having multiple of the same component may seem attractive, you would be better served by using multiple entities with a component to tie them to a "main" entity.
 

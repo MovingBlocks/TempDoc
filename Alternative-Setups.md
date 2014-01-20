@@ -22,7 +22,15 @@ If you want to work with Eclipse you have to change the Gradle command for gener
     > ./gradlew eclipse         # on Linux/Mac
     > gradlew.bat eclipse       # on Windows
 
-After the project files are generated you can import the project to Eclipse using "Import -> Existing projects into the workspace" with "Terasology" as the root.  Make sure that "search for nested projects" is checked!
+After the project files are generated you can import the project to Eclipse using "Import -> Existing projects into the workspace" with "Terasology" as the root.
+
+## Everything after this point is no longer needed, unless you are working with an older branch of the project
+
+
+  Make sure that "search for nested projects" is checked!
+
+
+
 
 
 __NOTE: There are currently some other issues that need to be handled  manually:__

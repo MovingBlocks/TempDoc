@@ -199,6 +199,19 @@ If alternatively you're happy with the state of some changes you'd like to packa
 * Add comments as needed
 * Should you push more commits to the remote source branch for the Pull it'll automatically update to the request as long as it hasn't been processed yet
 
+### Create a Pull request with only some commits of your history
+
+Sometime it happens, you are busy developing in your own branch, when you suddenly encounter, you fixed an annoying bug that may be useful to others immediatly.
+
+Of course you may pull request your branch as described above. But if you want to commit only several commits of your local history, you can use cherry-pick:
+
+* `git checkout upstream/develop -b develop_bugfix`
+* `git log <yourbranch>`, copy the wanted commit hash
+* `git cherry-pick <hash>`, hopefully you have no merge conflicts
+* `git push origin develop_bugfix`
+* Do the pull request as usual.
+* You now can checkout your local branch and continue working. As soon as the pull request is merged, you can merge the lastest upstream branch and everything should be fine.
+
 ## Related Links
 
 * [[Dev Setup]]

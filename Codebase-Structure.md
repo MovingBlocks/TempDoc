@@ -13,7 +13,7 @@ As you work on Terasology you might find out that you need source or binaries fo
 
 Note: On Linux and Mac OS you may have to first mark the "gradlew" file as executable.
 
-For more details on our use of Gradle see [[Fancy Gradle]]
+For more details on our use of Gradle see [Fancy Gradle](Fancy-Git#wiki-fancy-gradle)
 
 Engine
 ---------

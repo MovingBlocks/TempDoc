@@ -73,6 +73,7 @@ These pages offer more advanced insight into how specific features of the game a
 * [[Block Shapes In Blender]] - more on shapes.
 * [[Entity System Architecture]] - describes the structure and usage of the entity system.
 * [Pathfinder Algorithm](https://github.com/Terasology/Pathfinding) - some notes about pathfinding.
+* [[Behavior Tree System]] - how to use and extend the behavior tree (editor).  
 
 Modules
 ------------

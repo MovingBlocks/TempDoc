@@ -36,6 +36,7 @@ Interested in getting involved with working on the game? This section is for you
 * [[Modding Guide]] - details on how to create mods for the game (quick guide making some assumptions of development
 familiarity)
 * [[Project Overview]] - a summary of the different GitHub projects involved and what libraries we use
+* [[GSOC]] - we keep a set of proposals ready for Google Summer of Code participation if we get accepted
 
 ### Programming
 

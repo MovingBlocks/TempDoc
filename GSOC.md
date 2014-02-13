@@ -10,7 +10,7 @@ Newest issues are listed first and may be shorter on detail than older ones. Dif
 
 # What is Terasology
 
-In short our project goal is to make a heavily extensible voxel world game where actual gameplay can be defined in batches of modules. The engine is minimal, primarily serving to support modules of different kinds. Even systems that seem central to games in general, like a first person player, inventory, combat, and so on is here provided in modules instead and everything can be replaced with a customized version.
+In short [Terasology's](http://terasology.org) goal is to make a heavily extensible voxel world game where actual gameplay can be defined in batches of modules. The engine is minimal, primarily serving to support modules of different kinds. Even systems that seem central to games in general, like a first person player, inventory, combat, and so on is here provided in modules instead and everything can be replaced with a customized version.
 
 We plan to make a few typical game types available, like a content creation sand box mode, a twisted Alice in Wonderland style "defend your base and destroy theirs" mode, a more difficult "start from scratch" world with a realistic tech tree to claw your way up while surviving, and so on.
 
@@ -30,10 +30,10 @@ To earn some bonus points familiarize yourself with the [[Codebase Structure]] a
 
 The sooner you contact us the better! As mentioned above, [set up your environment](Dev-Setup), browse through our [Issue Tracker](https://github.com/MovingBlocks/Terasology/issues?labels=&page=1&state=open) and get your hands on some minor fixes or a simple module. 
 
-If you have any questions don't hesitate to enter #terasology on freenode. 
+If you have any questions don't hesitate to enter #terasology on [Freenode IRC](https://webchat.freenode.net) or post a thread in our [forum](http://forum.movingblocks.net/forum).
 
 If you need a more step-by-step guide:
-* Check our [forums](forums.movingblocks.net), look at the source code and read the available guidelines
+* Check our [main site](http://forum.movingblocks.net), look at the source code and read the available guidelines
 * Pick an idea that you think is interesting from the ideas list or come up with your own idea.
 * Get familiar with what exactly GSoC is! We can provide you with some information to get started, and most of the time give you some feedback, but its still *you* working out an idea.
 * Write a draft proposal about what you want to do or introduce yourself in the forums. We are open to review what your plans are.

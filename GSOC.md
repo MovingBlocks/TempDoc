@@ -149,7 +149,7 @@ This is a new rendering technique to support showing the world beyond normally v
 ## Port advanced organic growth simulator from Python
 
 * https://github.com/MovingBlocks/Terasology/issues/218
-* Difficulty: Intermediate (most concept work already done, sample code available)
+* Difficulty: Intermediate (most concept work already done, sample Pythong code available)
 * Contacts: Woodspeople, MarcinSc, glasz, ddr2, ahoehma
 
 Long ago cfkurtz / Woodspeople reviewed some old work she had done and prepared a growth simulator in Python that bases its growth on available water and mineral values in the soil, among other things (sunlight!). While we've since gotten an initial "growing trees" implementation working that is sufficient for showcasing growth in-game (doesn't consider its location much) it could be amazing to take it one (to many) steps further!
@@ -166,7 +166,7 @@ Any additional detail in the original plant simulator could be considered for ex
 ## Advanced and dynamic geology based on plate tectonics
 
 * https://github.com/MovingBlocks/Terasology/issues/141
-* Difficulty: Hard (more supporting systems needed, possible interaction with native code)
+* Difficulty: Hard (more supporting systems needed, possible interaction with native C code)
 * Contacts: Laurimann, Nym Traveel, Immortius, MarcinSc, msteiger, Skaldarnar
 
 This item is for building an ore distribution technique based on plate tectonics such as provided by PlaTec or some sort of simulated version. At a minimum it should be able to read maps generated separately from PlaTec (or some comparable source) and in turn prepare one or several mineral maps usable in-game to guide placement of actual blocks. A series of bonus features are possible:

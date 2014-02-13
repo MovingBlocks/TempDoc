@@ -1,10 +1,22 @@
 # Google Summer of Code proposals
 
+We, the Terasology community, are looking forward to this year's GSOC and hope to be accepted as organization. This page lists some ideas with corresponding references/guidelines/requirements to give you, the students, some entry points to our project.
+
 The items listed here are drawn from our issue tracker's GSOC category, suggesting tasks suitable to be worked by a student over a summer. As such they're generally time non-critical items fairly separated from more active areas. They may also end up being completed outside of GSOC and the issue may contain later updates than listed here (feel free to edit this page if you notice an outdated item or find a new one in the tracker not yet listed here). More links are likely also available in the issue linked in each section below.
 
 More conceptual work is likely needed for most items and there may be existing contributors familiar with and able to help guide a student, beyond any mentors made available for GSOC normally. Other proposals are of course also welcome :-)
 
 Newest issues are listed first and may be shorter on detail than older ones. Difficulties and contacts are best estimates
+
+# Overall Requirements
+As an incoming student you should meet these general requirements:
+
+* Intermediate level Java skills
+* Knowledge of CVS, preferable Git (the project is hosted on GitHub)
+
+More specific requirements (if any) can be found listed with corresponding proposals.
+
+To earn some bonus points familiarize yourself with the [[Contributor-Guide]], the [[Modding Guide]] and the [concepts of entity systems](Entity-System-Concepts). Get a [overview of the project](Project-Overview) and [get set up](https://github.com/MovingBlocks/Terasology/wiki/Dev-Setup)!
 
 ## Leap Motion implementation
 

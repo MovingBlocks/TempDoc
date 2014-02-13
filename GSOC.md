@@ -176,3 +176,16 @@ This item is for building an ore distribution technique based on plate tectonics
 * Placement in the world of volcanic and other interesting biomes related to tectonics
 
 An actual study of the involved sciences is best left to surfing Wikipedia although a certain level of artistic creativity to enhance gameplay value would be welcome :-)
+
+# How to get involved
+
+The sooner you contact us the better! As mentioned above, [set up your environment](Dev-Setup), browse through our [Issue Tracker](https://github.com/MovingBlocks/Terasology/issues?labels=&page=1&state=open) and get your hands on some minor fixes or a simple module. 
+If you have any questions don't hesitate to enter #terasology on freenode. 
+
+If you need a more step-by-step guide:
+* Check our [forums](forums.movingblocks.net), look at the source code and read the available guidelines
+* Pick an idea that you think is interesting from the ideas list or come up with your own idea.
+* Get familiar with what exactly GSoC is! We can provide you with some information to get started, and most of the time give you some feedback, but its still *you* working out an idea.
+* Write a draft proposal about what you want to do or introduce yourself in the forums. We are open to review what your plans are.
+* Get in contact! ;)
+

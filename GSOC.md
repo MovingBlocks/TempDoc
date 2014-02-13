@@ -2,11 +2,19 @@
 
 We, the Terasology community, are looking forward to this year's GSOC and hope to be accepted as organization. This page lists some ideas with corresponding references/guidelines/requirements to give you, the students, some entry points to our project.
 
-The items listed here are drawn from our issue tracker's GSOC category, suggesting tasks suitable to be worked by a student over a summer. As such they're generally time non-critical items fairly separated from more active areas. They may also end up being completed outside of GSOC and the issue may contain later updates than listed here (feel free to edit this page if you notice an outdated item or find a new one in the tracker not yet listed here). More links are likely also available in the issue linked in each section below.
+The items listed here are drawn from our [issue tracker's GSOC category](https://github.com/MovingBlocks/Terasology/issues?labels=GSOC), suggesting tasks suitable to be worked by a student over a summer. As such they're generally time non-critical items fairly separated from more active areas. Over time the issues may change and if you notice inaccuracies between issues and this page please feel free to edit! More links are likely also available in the issue linked in each section below.
 
 More conceptual work is likely needed for most items and there may be existing contributors familiar with and able to help guide a student, beyond any mentors made available for GSOC normally. Other proposals are of course also welcome :-)
 
 Newest issues are listed first and may be shorter on detail than older ones. Difficulties and contacts are best estimates
+
+# What is Terasology
+
+In short our project goal is to make a heavily extensible voxel world game where actual gameplay can be defined in batches of modules. The engine is minimal, primarily serving to support modules of different kinds. Even systems that seem central to games in general, like a first person player, inventory, combat, and so on is here provided in modules instead and everything can be replaced with a customized version.
+
+We plan to make a few typical game types available, like a content creation sand box mode, a twisted Alice in Wonderland style "defend your base and destroy theirs" mode, a more difficult "start from scratch" world with a realistic tech tree to claw your way up while surviving, and so on.
+
+Inspiration is obviously sourced from Minecraft, as well as other classics like Dwarf Fortress and Dungeon Keeper. One heavy focus is making sure the world contains more realistic creatures that'll interact with the player in a number of different ways as well as develop their own societies.
 
 # Overall Requirements
 As an incoming student you should meet these general requirements:
@@ -16,21 +24,22 @@ As an incoming student you should meet these general requirements:
 
 More specific requirements (if any) can be found listed with corresponding proposals.
 
-To earn some bonus points familiarize yourself with the [[Contributor-Guide]], the [[Modding Guide]] and the [concepts of entity systems](Entity-System-Concepts). Get a [overview of the project](Project-Overview) and [get set up](https://github.com/MovingBlocks/Terasology/wiki/Dev-Setup)!
+To earn some bonus points familiarize yourself with the [[Codebase Structure]] and the [concepts of entity systems](Entity-System-Concepts). Get a [overview of the project](Project-Overview) and [get set up](https://github.com/MovingBlocks/Terasology/wiki/Dev-Setup)!
+
+# How to get involved
+
+The sooner you contact us the better! As mentioned above, [set up your environment](Dev-Setup), browse through our [Issue Tracker](https://github.com/MovingBlocks/Terasology/issues?labels=&page=1&state=open) and get your hands on some minor fixes or a simple module. 
+
+If you have any questions don't hesitate to enter #terasology on freenode. 
+
+If you need a more step-by-step guide:
+* Check our [forums](forums.movingblocks.net), look at the source code and read the available guidelines
+* Pick an idea that you think is interesting from the ideas list or come up with your own idea.
+* Get familiar with what exactly GSoC is! We can provide you with some information to get started, and most of the time give you some feedback, but its still *you* working out an idea.
+* Write a draft proposal about what you want to do or introduce yourself in the forums. We are open to review what your plans are.
+* Get in contact! ;)
 
 # Project Ideas
-
-## Village / city generation
-
-* https://github.com/MovingBlocks/Terasology/issues/466
-* Difficulty: Easy (established codebase, active contributors, multiple related papers published on the web)
-* Contacts: msteiger, skaldarnar, glasz, Nym Traveel, Perdemot, Ten'son'
-
-This topic has actually become quite active since the original issue was created, with a Cities module and quite a few forum threads live. It is a huge field however and I'm sure our active contributors would appreciate the help in breaking ground on new features.
-
-For instance currently the Cities module creates fully-grown cities from scratch, while an agent-based step-by-step city growth model has been suggested, declaring lots and slowly building them up over time. This would be a good way to maintain and keep cities dynamic.
-
-Existing contributors can offer more guidance on this topic.
 
 ## Agent-based simulation of land usage
 
@@ -51,7 +60,7 @@ On a different level, the location of entire settlements could be derived based 
 
 * https://github.com/MovingBlocks/Terasology/issues/943
 * Difficulty: Intermediate (most concept work already done, sample code available)
-* Contacts: msteiger
+* Contacts: msteiger, MarcinSc
 
 Infinite terrain worlds are typically generated by noise generators such as Perlin or simplex. While the generated patterns are aperiodic, no distinguishable terrain features are created.
 Regions such as desert areas have only very little high-frequency noise while mountainous regions will have a lot. 
@@ -176,16 +185,4 @@ This item is for building an ore distribution technique based on plate tectonics
 * Placement in the world of volcanic and other interesting biomes related to tectonics
 
 An actual study of the involved sciences is best left to surfing Wikipedia although a certain level of artistic creativity to enhance gameplay value would be welcome :-)
-
-# How to get involved
-
-The sooner you contact us the better! As mentioned above, [set up your environment](Dev-Setup), browse through our [Issue Tracker](https://github.com/MovingBlocks/Terasology/issues?labels=&page=1&state=open) and get your hands on some minor fixes or a simple module. 
-If you have any questions don't hesitate to enter #terasology on freenode. 
-
-If you need a more step-by-step guide:
-* Check our [forums](forums.movingblocks.net), look at the source code and read the available guidelines
-* Pick an idea that you think is interesting from the ideas list or come up with your own idea.
-* Get familiar with what exactly GSoC is! We can provide you with some information to get started, and most of the time give you some feedback, but its still *you* working out an idea.
-* Write a draft proposal about what you want to do or introduce yourself in the forums. We are open to review what your plans are.
-* Get in contact! ;)
 

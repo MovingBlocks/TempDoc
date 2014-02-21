@@ -13,7 +13,7 @@ Every command must be implemented as a public method of a ComponentSystem. E.g. 
 
         @Command( shortDescription = "Say hello", helpText = "Writes hello world to the console" )
         public String hello() {
-            return "hello world");
+            return "hello world";
         }
 
     }
@@ -27,15 +27,13 @@ Looking at this simple examples we can see several important things:
 
 Creating your own console commands
 ------------------
-If you want to create a new console command, you must use one of the existing ``CommandProvider`` classes (such as
-the ``Commands`` class) or create a new class implementing the interface.
 
-To specify a new console command, just an annotated public method is needed. The annotation is
+To specify a new console command, just an annotated public method is needed in a ComponentSystem. The annotation is
 <pre>
     @Command()
 </pre>
 and marks the method as a command. The command will have the same name as the method,
-e.g. if you name you method ``public void hello`` the command ``/hello`` will be available in the game.
+e.g. if you name you method ``public void hello()`` the command ``hello`` will be available in the game.
 
 Short Descriptions and Help Text
 -----------------
@@ -56,11 +54,9 @@ Probably longer help text can be specified via ``helpText`` in the annotaion. An
 
 Displaying text
 ------------------
-To display text in the in game console, you have to use ``MessageManager`` class. Simple console output can be
-achieved via
-<pre>
-    MessageManager.getInstance().addMessage("Text to display")
-</pre>
+Any value returned from the command (string or object) will be displayed in the in game console.
+
+You can also write directly to the console via the Console class.
 
 Parameters
 -------------------
@@ -69,14 +65,29 @@ arguments are specified as method arguments. It is highly recommended to prefix 
 annotation, that is used for the command line help.
 <pre>
     @Command( shortDescription = "Echo-cho-cho-o-o", helpText = "Echoes the input text." )
-    public void echo(@CommandParam( name = "Message" ) String message){
-        MessageManager.getInstance().addMessage(message);
+    public String echo(@CommandParam( name = "Message" ) String message){
+        return message;
     }
 </pre>
-The method above will add an ``/echo`` command that simply echoes the input text. The command is proper annotated,
+The method above will add an ``echo <string>`` command that simply echoes the input text. The command is proper annotated,
 resulting in user friendly help messages and command description.
 
-Commands class
--------------
+The supported types for command parameters are: float, int, String.
 
-The Commands class should contain all core commands. Such are commands related to blocks and items.
+Commands and Multiplayer
+-------------------
+
+By default, commands run locally - on the client side.
+A command can be marked as runOnServer, in which case it will be replicated to the server in a multiplayer game and executed there:
+
+<pre>
+@Command(runOnServer = true)
+</pre>
+
+In such a case, the command method can have a final EntityRef parameter. This will be populated with the Client entity of the calling player.
+
+<pre>
+@Command(shortDescription = "Sends a message to all other players", runOnServer = true)
+public void say(@CommandParam("message") String message, EntityRef speaker) {
+}
+</pre>

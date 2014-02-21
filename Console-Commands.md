@@ -6,26 +6,26 @@ Command implementation
 Command structure
 ==============
 
-Every command must be implemented as a public method. E.g. the following command just displays "hello world" in the console.
+Every command must be implemented as a public method of a ComponentSystem. E.g. the following command just displays "hello world" in the console.
 
 <pre>
-    public class MyCommands implements CommandProvider {
+    public class MyCommands extends BaseComponentSystem {
 
         @Command( shortDescription = "Say hello", helpText = "Writes hello world to the console" )
-        public void hello() {
-            MessageManager.getInstance().addMessage("hello world");
+        public String hello() {
+            return "hello world");
         }
 
     }
 </pre>
 
 Looking at this simple examples we can see several important things:
-* The command method must be located in a class implementing ``CommandProvider``
+* The command method must be located in a class implementing ``ComponentSystem``
 * The command annotation ``@Command`` is necessary for every command
 * One can specify a short description and a (probably) longer help text
-* The console can be accessed via the ``MessageManager``
+* A returned string will be shown in the console.
 
-Creating own console commands
+Creating your own console commands
 ------------------
 If you want to create a new console command, you must use one of the existing ``CommandProvider`` classes (such as
 the ``Commands`` class) or create a new class implementing the interface.

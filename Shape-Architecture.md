@@ -9,7 +9,7 @@ A block shape defines a way a block can look - its shape. Each block shape can b
 
 Additionally, each side is either a full side or a partial side. A full side fills the entire side of the block, and so obscures the sides of adjacent blocks. A partial side does not. For instance, if the side is against a dirt cube, then it cannot be seen a player so need not be rendered.
 
-Below is an example stair block shape, with each side moved away from the center. In the stair block, the Front and Bottom sides are full sides, while the Top, Back, Left and Right sides are not.
+Below is an example stair block shape, with each side moved away from the center. In the stair block, the Back and Bottom sides are full sides, while the Top, Front, Left and Right sides are not.
 
 ![An 'exploded' block shape](ExplodedBlockShape.png)
 

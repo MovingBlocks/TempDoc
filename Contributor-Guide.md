@@ -13,6 +13,7 @@ If you aren't yet too comfortable with some of the technology we use then there 
    * JSON for config and properties: http://en.wikipedia.org/wiki/Json
    * Javascript possibly for mods: http://en.wikipedia.org/wiki/JavaScript (tricky to dig up relevant tutorials since we're _not_ using it for website stuff)
    * Blender for models: http://www.blender.org/education-help/tutorials/
+   * [[Collada-Models]]: Import your models into Terasology in Collada format
    * Groovy: http://groovy.codehaus.org/Beginners+Tutorial
 
 Early project steps - learning the code
@@ -43,7 +44,7 @@ We submit issues on GitHub for stuff we could use in the project, and tag some o
 Texturing
 ---------
 
-We're purposedly using low-res textures akin to Minecraft to allow the massive number of blocks in the world to render efficienctly. We're not opposed to an optional higher res mode if it can perform well enough, but are not putting effort toward that goal unless one or more contributors step up to that particular plate. In the meantime here are some helpful bits for low-res texturing!
+We're purposely using low-res textures akin to Minecraft to allow the massive number of blocks in the world to render efficiently. We're not opposed to an optional higher res mode if it can perform well enough, but are not putting effort toward that goal unless one or more contributors step up to that particular plate. In the meantime here are some helpful bits for low-res texturing!
 
    * One contributor's guide to how he makes blocks (and he's made dozens, so it works!): http://board.movingblocks.net/viewtopic.php?f=5&t=313
    * Current starting texture pack (made for Minecraft) is Good Morning Craft by Louis Durrant hosted at http://www.carrotcakestudios.co.uk/gmcraft/ 

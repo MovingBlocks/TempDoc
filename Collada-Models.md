@@ -42,5 +42,5 @@ Also, our Collada loader does not yet support <asset><unit> tags, although I wil
 To use your model, use the console "spawnPrefab <prefab-name>" command.   For example, if your prefab is named "dogC.prefab", then type "spawnPrefab MyAnimalModule:dogC"
 
 ## Importing Skeletal Meshes
-A collada file can also be dropped into the "assets/skeletalMesh" folder to be parsed as SkeletalMesh.  However this support is pre-alpha and unlikely to produce a functional result at this time.
+A collada file can also be dropped into the "assets/skeletalMesh" folder to be parsed as SkeletalMesh.  However this support is pre-alpha and unlikely to produce a functional result at this time.  For now you will need to convert these models into md5 format (although providing your original model and your converted md5 model would go a long way towards getting full support for Collada in place!)
 

@@ -37,7 +37,7 @@ Currently, only one texture image is supported, and the texture image must be in
 
 Collada allows a wide range of exported data formats, so it is possible that your particular internal geometry format is not yet supported.  Check your console log to insure that your model loaded properly, and open an issue if your static mesh was not able to be loaded.
 
-Support to respect the &lt;asset>&lt;unit> tags is now pending: [[https://github.com/MovingBlocks/Terasology/pull/1045]].   Until then, Terasology uses a unit of 1 meter, so if you designed your model with a different scale, you may need to resize your model before adding it to Terasology.
+Terasology uses a unit of 1 meter, and as long as you have specified the correct scale for your model, the importer will make the necessary adjustments.  Note that VoxelShop also uses a unit of 1 meter, so this likely will need to be changed to something else after you export to a collada file.
 
 To use your model, use the console "spawnPrefab <prefab-name>" command.   For example, if your prefab is named "dogC.prefab", then type "spawnPrefab MyAnimalModule:dogC"
 

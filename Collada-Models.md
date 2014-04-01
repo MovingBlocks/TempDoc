@@ -37,7 +37,7 @@ Currently, only one texture image is supported, and the texture image must be in
 
 Collada allows a wide range of exported data formats, so it is possible that your particular internal geometry format is not yet supported.  Check your console log to insure that your model loaded properly, and open an issue if your static mesh was not able to be loaded.
 
-Support to respect the <asset><unit> tags is now pending: [[https://github.com/MovingBlocks/Terasology/pull/1045]].   Until then, Terasology uses a unit of 1 meter, so if you designed your model with a different scale, you may need to resize your model before adding it to Terasology.
+Support to respect the &lt;asset>&lt;unit> tags is now pending: [[https://github.com/MovingBlocks/Terasology/pull/1045]].   Until then, Terasology uses a unit of 1 meter, so if you designed your model with a different scale, you may need to resize your model before adding it to Terasology.
 
 To use your model, use the console "spawnPrefab <prefab-name>" command.   For example, if your prefab is named "dogC.prefab", then type "spawnPrefab MyAnimalModule:dogC"
 

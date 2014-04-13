@@ -138,10 +138,9 @@ The ComponentLibrary stores information about the components, which is used to h
 
 ### Future Work
 
+### See Also
+[Systems and Components in Practice](https://github.com/MovingBlocks/Terasology/wiki/Systems-and-Components-in-Practice) - a list of modules using the ES, in order of increasing complexity
 ### Further Reading
-
-http://www.richardlord.net/blog/what-is-an-entity-framework
-
-http://www.richardlord.net/blog/why-use-an-entity-framework
-
-http://t-machine.org/index.php/2007/09/03/entity-systems-are-the-future-of-mmog-development-part-1/
+* http://www.richardlord.net/blog/what-is-an-entity-framework
+* http://www.richardlord.net/blog/why-use-an-entity-framework
+* http://t-machine.org/index.php/2007/09/03/entity-systems-are-the-future-of-mmog-development-part-1/

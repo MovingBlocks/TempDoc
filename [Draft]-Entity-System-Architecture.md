@@ -14,7 +14,7 @@ At the core of the Entity System we have entities - these are identifiable "thin
 
 In Terasology entities are worked with through the EntityRef class. For the most part this just delegates requests to the Entity Manager - the central manager for the Entity System. The EntityRef itself does not store components, these are stored in the Entity Manager within a hashed table, to allow ease of iterating over all entities with a given type of component.
 
-EntityRef uses the Null Object Pattern - instead of using Java's null, EntityRef.NULL should be used. !ntityRef.NULL can be safely accessed with all its functions providing sensible default results - this removes the need to check whether an EntityRef is null in many cases. Where it is needed, the exists() method can be called to check whether an EntityRef is a valid reference.
+EntityRef uses the Null Object Pattern - instead of using Java's null, EntityRef.NULL should be used. !EntityRef.NULL can be safely accessed with all its functions providing sensible default results - this removes the need to check whether an EntityRef is null in many cases. Where it is needed, the exists() method can be called to check whether an EntityRef is a valid reference.
 
 One particular feature of the EntityRef is that when an entity is deleted, all references to it are invalidated and act like EntityRef.NULL from then on. This allows EntityRef to be safely used in components, and Entity ids to be reused.
 

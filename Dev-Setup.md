@@ -69,12 +69,10 @@ Extras:
 
 #### Common issues:
 
-* **Important for Macs!** If you get a "package javax.vecmath is sealed" error [your SDK has an included copy of vecmath](https://github.com/MovingBlocks/Terasology/issues/818) that is too old for Terasology, and our setup is not allowed to override it. You can fix that by deleting `/System/Library/Java/Extensions/vecmath.jar` - why this is included only on Macs who knows. This issue may go away if we kick out vecmath later in favor of a better solution
 * Usually the project will find a 1.7 Java SDK and know about Java - if you get a massive amount of Java errors (or don't see the "Run" option on Terasology.java) you may have to check under File / Project Structure / Platform Settings / SDKs to see if you have a valid Java setup. 
    * Click [HERE](https://raw.github.com/CallMeAsher/TeraMisc/master/wiki/AddSdkGuide.jpg) to see how to add a 1.6 SDK if IntelliJ doesn't show it by default (update: we use Java 7 now)
 * You may have to set your JAVA_HOME also - such as on Linux with a command like this: `export JAVA_HOME="/usr/lib/jvm/java-7-sun"`
 * Outdated graphics card drivers can cause startup problems and some cards just seem quirky. Please post in the [Support Forum](http://forum.movingblocks.net/forums/support.20/) if you still have issues after installing your latest drivers and attach the log file from the /logs directory
-* We've seen a Windows 7 machine once fail to use Git to communicate with GitHub properly from command line and IntelliJ, yet be okay with Git Bash. Turned out the user home dir wasn't set right, so Git couldn't find the user SSH files. Solution was to set the `HOME` environment variable to the user's home directory (like `C:\Users\[Username]`). Git Bash was smart enough to do without.
 * You may have to re-run =gradlew idea= occasionally if new project library files (jars) or settings are added/changed. Any execution of =gradlew= will re-assess dependencies and download new stuff if needed but only running the IDE task will update project files
 * On Linux you may end up with a line-ending issue on the Gradle wrapper script. If you get an error like the following try to either just run `dos2unix` on `gradlew` or alternatively copy paste its content into a new file and overwrite the old file with it
  * `bash: ./gradlew: /bin/bash^M: bad interpreter: No such file or directory`

@@ -9,7 +9,7 @@ We offer stable milestone downloads and unstable develop downloads that may upda
 
    * Stable / master download: [Jenkins Stable](http://jenkins.movingblocks.net/job/TerasologyStable/lastSuccessfulBuild/artifact/build/distributions/Terasology.zip)
    * Applet on official site: [Applet](http://forum.movingblocks.net/pages/applet)
-   * Unstable / develop download: [Jenkins](http://www.movingblocks.net:8080/jenkins/job/Terasology/lastSuccessfulBuild/artifact/out/Terasology.zip)
+   * Unstable / develop download: [Jenkins](http://jenkins.movingblocks.net/job/Terasology/lastSuccessfulBuild/artifact/build/distributions/Terasology.zip)
 
 Setup
 -----

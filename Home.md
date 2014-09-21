@@ -91,7 +91,7 @@ Communication
 
 We have several ways to get the word out on updates, and likewise there are several ways to contact us.
 
-* [Forum](http://forum.movingblocks.net) - new development / game topics will be posted here, and any questions answered.
+* [Forum](http://forum.movingblocks.org) - new development / game topics will be posted here, and any questions answered.
 * [GitHub](https://github.com/MovingBlocks/Terasology) - "Watch" the official project here to be able to easily spot commits and changes.
 * [Twitter](http://twitter.com/#!/Terasology) - we'll tweet regularly about significant commits or new discussion topics posted, so "Follow" us for updates.
 * [Facebook](http://www.facebook.com/pages/Terasology/248329655219905) - if you prefer to keep updated via Facebook you can "Like" us on there to keep up.

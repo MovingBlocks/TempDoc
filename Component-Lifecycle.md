@@ -1,0 +1,1 @@
+See also [[http://forum.terasology.org/threads/block-entity-behavior.792/]]

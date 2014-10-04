@@ -73,9 +73,10 @@ These pages offer more advanced insight into how specific features of the game a
 * [[Shape Architecture]] - defining 3D meshes via definitions in JSON!
 * [[Block Shapes In Blender]] - more on shapes.
 * [[Entity System Architecture]] - describes the structure and usage of the entity system.
+* [[Events and systems]] - describes how new game logic can be hooked in
 * [Pathfinder Algorithm](https://github.com/Terasology/Pathfinding) - some notes about pathfinding.
 * [[Behavior Tree System]] - how to use and extend the behavior tree (editor).  
-* [[Events and systems]]
+
 Modules
 ------------
 A list of modules maintained at Terasology can be found here:

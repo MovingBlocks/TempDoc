@@ -75,7 +75,7 @@ These pages offer more advanced insight into how specific features of the game a
 * [[Entity System Architecture]] - describes the structure and usage of the entity system.
 * [Pathfinder Algorithm](https://github.com/Terasology/Pathfinding) - some notes about pathfinding.
 * [[Behavior Tree System]] - how to use and extend the behavior tree (editor).  
-
+* [[Events and systems]]
 Modules
 ------------
 A list of modules maintained at Terasology can be found here:

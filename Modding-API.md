@@ -9,8 +9,8 @@ links to relevant JavaDoc pages. Or, at least, that's the plan, it isn't all don
 Overview
 ---------------------------------------
 
-List all the things! That can serve as extension points for Terasology, that is. Please ask questions and provide
-feedback in the [[Forum Modding Doc Thread|http://forum.movingblocks.net/threads/modding-guide-and-api-docs.651/]].
+   * [[Events and systems]]
+
 
 ### Implemented
 

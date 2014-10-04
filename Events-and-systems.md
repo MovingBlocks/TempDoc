@@ -1,4 +1,4 @@
-# Events and systems
+# Events and Systems
 ## Summary
 Events are sent to exactly 1 entity. Systems can define methods, that get called when specific events get sent to entities with certain components.
 

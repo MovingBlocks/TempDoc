@@ -2,7 +2,7 @@
 ## Summary
 Events are sent to exactly 1 entity. Systems can define methods, that get called when specific events get sent to entities with certain components.
 
-## Processing events with events with systems.
+## Processing events
 To make a class a system you annotate it with the @RegisterSystem annotation. If a system implements certain engine interfaces like UpdateSubscriberSystem, then the methods of that itnerface will automatically be called by the engine. In addition to that, systems can declare methods that get called when certain events occured at certain entities. 
 
 Event processing methods must have the following method signature:

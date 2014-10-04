@@ -42,19 +42,35 @@ The following core events are linked to to a component and require handling meth
 
 All other core events and probably all module events aren't linked to a component. Please read the javadoc of any event you make a system for.
 
-## Event sending
-The recommended way of sending events is via the send method of entities (see EntityRef#send)
-```java
-entity.send(new MyEvent(myArg1, myArg2));
-```
 ## Event definition
 An event is a class that implements the interface Event.
 
 It's fields should be private and should be made accessible via public getters. The event should have no setters but a constructor that takes the values for all fields and sets them.
 
-For events that are inntend for network transfer, a protected default constructor should be provided.
+For events that are intend for network transfer, a protected default constructor should be provided.
 
 See also the next chapter for annotations that are necessary for having an event be transferred over the network.
 
-## Network and components
-To be written: Should explain @ServerEvent, @BroadcastEvent and @OwnerEvent and the meaning of the RegisterMode constants. Also the concept of having a request + event should be explained.
+## Sending events
+The recommended way of sending events is via the send method of entities (see EntityRef#send)
+```java
+entity.send(new MyEvent(myArg1, myArg2));
+```
+
+Per default, events aren't sent over the network.
+
+Events annotated with @ServerEvent, are sent to the server. Only systems on the server will then be able to process it. Typically those events are requests to the server to confirm a gameplay related change. For thet reason their name often ends with Request instead of Event.
+
+Events annotated with @BroadcastEvent are sent by the server to all clients.
+* TODO: What happens if a client tries to send this event?
+
+Events annotated with @OwnerEvent are sent by the server to the client that owns the entity. Typically a client only owns its character and stuff related to it.
+
+If a system on a client/server is responsible for processing an event, can and should also be defined via a network filter, that can be specified in the @RegsiterSystem annotation of the service or within @RecevieVent annotation of the handling method.
+
+## Consumable events
+Normally an event is processed by the event handling methods in the order of their priority. Events that implement ConsumableEvent can howerver be consumed. Once an event got consumed, it's event handling stops and the remaining event handlers (with  lower priorty) don't get the event.
+
+This is for example useful to determine what happens with user input: When the player is in a minecrat the input movement events may be consumed by a high priorty minecart event handler before they reach the normal movement handlers. 
+
+The sender of consumable events can check, if their event got consumed. Some consumable events are sent as a test to figure out, if there is a new system that objects with the action being taken. For example the event BeforeItemPutInInventory can be consumed by a new system, to prevent the placement of items in a slot that is reserved for certain other items.

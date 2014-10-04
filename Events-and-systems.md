@@ -42,7 +42,7 @@ The following core events are linked to to a component and require handling meth
 
 All other core events and probably all module events aren't linked to a component. Please read the javadoc of any event you make a system for.
 
-## Event definition
+## Defining events
 An event is a class that implements the interface Event.
 
 It's fields should be private and should be made accessible via public getters. The event should have no setters but a constructor that takes the values for all fields and sets them.

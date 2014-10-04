@@ -9,14 +9,14 @@ links to relevant JavaDoc pages. Or, at least, that's the plan, it isn't all don
 Overview
 ---------------------------------------
 
-   * [[Events and systems]]
+   * [[Events and Systems]]
 
 
 ### Implemented
 
    * Components - for storing data and assigning behavior to entities (blocks, creatures, tools, etc)
-   * Systems - for the logic to process entities with Components relevant to the System
-   * Events - for communication between systems
+   * [[Events and Systems|Systems]] - for the logic to process entities with Components relevant to the System
+   * [[Events and Systems|Events]] - for communication between systems
    * Actions - similar to events, need more detail
    * Blocks - definitions & textures simply go in the right spot, no need to extend anything
    * Commands - can be included by implementing CommandProvider and using annotations for descriptions. See [[Console Commands]] for details

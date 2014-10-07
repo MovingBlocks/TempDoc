@@ -29,7 +29,7 @@ Example:
 @ReceiveEvent(components = {MyComponent.class, LocationComponent.class})
 public void onMyComponentAdded(OnAddedComponent event, EntityRef entity, MyComponent myComponent) {
 ```
-The example method gets called, when the `OnAddedComponent` event occurs at an entity, which has all of the following components: `MyComponent`, `LocationComponent`. The listing of `MyCompoent` both in `@ReceiveEvent`and in the component arguments is redundant, but increased readability in the upper case.
+The example method gets called, when the `OnAddedComponent` event occurs at an entity, which has all of the following components: `MyComponent`, `LocationComponent`. The listing of `MyComponent` both in `@ReceiveEvent`and in the component arguments is redundant, but increased readability in the upper case.
 
 **Note:** Some events like the `OnAddedComponent` event are implicitly linked to a component and will only be offered to methods that require those arguments. In the upper case the event fires only when `LocationComponent` got added while `MyComponent` was present or when `MyComponent` got added while `LocationComponent` was present. When another component gets added, while `MyComponent` and `LocationComponent` are present, the method won't be called.
 

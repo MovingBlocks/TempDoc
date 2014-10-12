@@ -13,6 +13,17 @@ The application will set up Git and the SSH key for GitHub for you. When logged 
 
 After cloning was successful you will find the cloned repo under "local". If desired, you can change the branch via the application as well.
 
+## Git-less setup
+Rather than use Git at all you can simply download all source from entire repos via GitHub's `Download Zip` button, available at the bottom of the right-hand menu on the main repo page, such as https://github.com/MovingBlocks/Terasology
+
+When you do this the zip will extract into a directory named something like `Terasology-develop`, or `Crops-master`. For the root project the directory shouldn't matter (although it may in some IDEs or other setups - plain `Terasology` is still best) but for modules you want to be sure to rename the directory so you have it at `/modules/Crops` and likewise for other modules.
+
+Finally the modules won't have a build.gradle in their root directory, they normally get that during the download process through Gradle. You need to copy this in from the Core module in the root project. So `/modules/Crops/build.gradle` to `/modules/Crops/build.gradle`
+
+Only after the build file in place can you run the game or generate IDE project files correctly. Otherwise the module will be ignored as invalid. Only keeping one copy of the file is to avoid having to push updates to every module ever as well as to safeguard our build server from rogue build files (precautions there delete any attempt to inject non-standard build scripting into the process).
+
+If you don't mind having a local Git repo generated (just makes a `/.git` dir under `/modules/Crops/.git` that doesn't do anything) you can still safely use `gradlew fetchModuleCrops` instead which includes the copy of the Core build script. But grabbing zips instead can help if you need to download from somewhere else with no internet available on your developer machine. Gradle still needs internet access when it runs for the first time to download itself and required engine library files.
+
 # Alternative Java IDEs
 Although IntelliJ IDEA is the recommended IDE for Terasology you may want to use Eclipse, Netbeans or any other Java IDE of your choice. 
 

@@ -74,9 +74,9 @@ The completely manual version is simply making a copy of one of the existing bun
 --------------------------------------------------
 
 So you've got your basic mod set up, and want to add some new goodies to the game.  This is just the section to get you started.
-Lets say you've made your new mod `mymod` and want to add some simple content to it - namely a new block that both contains an inventory (like a chest) and can spawn stuff (like a portal).
 
-[[Using Blender Assets]] - A guide on how to take a model from Blender and import it to the game in a friendly format.
+* [[Tutorial: How to make blocks with custom UI]]
+* [[Using Blender Assets]] - A guide on how to take a model from Blender and import it to the game in a friendly format.
 
 ### Related Links
 --------------------------------------------------

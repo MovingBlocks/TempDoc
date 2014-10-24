@@ -22,26 +22,15 @@ The block file is json. For the start we will put the following content into the
     }
 }
 ```
-### Specifiying the texture of the block
-With the tiles object it is possible to specify cube like blocks with up to 6 different textures on the side of the block. The "tiles" object can have the following properties:
-* all
-* sides (-> 4 horizontal sides)
-* topBottom
-* top
-* front
-* back
-* left
-* right
-* center
-The generic ones like sides can be overriden by specic ones like front.
+
+With the tiles object it is possible to specify cube like blocks with up to 6 different textures on the side of the block. 
 
 The properties of the "tiles" object need to be set to texture identifiers. A texture
 identifer has the following structure:
 * <module name>:<tile image name without extension>
 Any image under assets/blockTiles in module can be referenced that way.
 
-### Other block properties
-Feel free to explain them
+For more details about the block properties have a look at [[Block definitions (JSON)]]
 
 ## Specifing the entity of the block
 With the `entity` property of the block it is possible to specify which entity is representing the block. The sub property "prefab" takes a prefab identifer. Like with texture identifiers, the value before the conon specifies the module in which the prefab is in. The value after the conon specifies the extension less filename of the prefab. Prefabs files should be placed in the assets/prefabs directory and must have the extension .prefab. Example:

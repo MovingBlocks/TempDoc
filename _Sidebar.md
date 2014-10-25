@@ -5,7 +5,7 @@
 - [[Contributing|Contributor Guide]]
  - [[Programming]]
  - [[Art]]
- - [[Markdown and Wiki]]
+ - [[The Wiki and You]]
  - [[Issue Reporting|Issue-Tracking]]
  - [[Suggestions|Community-Suggestions]]
 - [[Architecture]]

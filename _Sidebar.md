@@ -11,4 +11,3 @@
 - [[Architecture]]
 - [[Modules]]
 - [[Communication]]
-- [[Wiki Editing]]

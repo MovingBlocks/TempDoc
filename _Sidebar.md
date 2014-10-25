@@ -2,7 +2,7 @@
  - [[Download|Download-Terasology]]
  - [[About|What-is-Terasology]]
 - [[Player Guide]]
-- [[Contributing]]
+- [[Contributing|Contributor Guide]]
  - [[Programming]]
  - [[Art]]
  - [[Wiki Documentation|Markdown and Wiki]]

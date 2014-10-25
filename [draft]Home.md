@@ -6,7 +6,7 @@ Game Info
 _What is Terasology ?_ Founded by Benjamin 'begla' Glatzel as an open source tech demo to research procedural terrain generation a team is now taking it to the next level - a full fledged game. We're aiming for a survival and discovery game with a strong influence from Minecraft, Dwarf Fortress, and Dungeon Keeper. A key part of the game will be building up an estate of some sort and managing specialized minions to climb up the ladder of discovery,
  while surviving in a world that might just be full of things that want to kill you.  
 
-<p align="center">[[What is Terasology|What-is-Terasology]] | [[Download Terasology]] | [[Dev Team|Dev-Team]]</p>
+<p align="center">[[What is Terasology|What-is-Terasology]]</p>
 
 Player Guide
 ---------

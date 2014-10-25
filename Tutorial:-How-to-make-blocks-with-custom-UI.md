@@ -69,3 +69,58 @@ The InteractionTarget component makes it possible to start an interaction with t
 
 The InteractionScreen component makes it possible to specify an UI screen, which will automatically be opened when the user starts an interaction with the block. Closing that UI will automatically end the interaction with the block. The InteractionScreen component has a property called "screen". It specifies which UI should be opened.
 
+## Specification of the look of the UI
+The loook of an UI can be specified with text files that end with ".ui". Those text files need
+to be placed in the "assets/ui" folder of the module.
+
+For a quick start we will make a copy of the containerScreen.ui found in the engine and place it under "assets/ui/HiddenContainer.ui" in our module. Then we just need to change the
+screen property of the InteractionSCreen component to "<our module>:HiddenContainer". 
+
+Then we can make adjustments to the UI, for example we could make the container grid
+be 2x2 by changing the maxHorizontalCells property of the container grid to 2:
+```
+{
+    "type" : "ContainerScreen",
+    "contents" : {
+        "type" : "relativeLayout",
+        "contents" : [
+            {
+                "type" : "InventoryGrid",
+                "id" : "inventory",
+                "maxHorizontalCells" : 6,
+                "layoutInfo" : {
+                    "use-content-width" : true,
+                    "use-content-height" : true,
+                    "position-right" : {
+                        "target" : "CENTER",
+                        "offset" : 16
+                    },
+                    "position-vertical-center" : {}
+                }
+            },
+            {
+                "type" : "InventoryGrid",
+                "id" : "container",
+                "maxHorizontalCells" : 2,
+                "layoutInfo" : {
+                    "use-content-width" : true,
+                    "use-content-height" : true,
+                    "position-left" : {
+                        "target" : "CENTER",
+                        "offset" : 16
+                    },
+                    "position-vertical-center" : {}
+                }
+            }
+        ]
+    }
+}
+```
+
+## Adding logic
+
+The structure of the UI file is simple. The top most "type" property specifies the name of the java class that should be created. The other properties specify the default configuration of that java class. The type fields in the sub structures describe again which java class is providing logic to that sub structure.
+
+The top base class should extend either CoreScreenLayer or BaseInteractionScreen. The latter is just an enhanced CoreScreenLayer with a simpler way of accessing the interaction target / the block entity.
+
+In the initialize method you can then access the sub components by using a find method to search the sub components by the id you specified in the ".ui" file.

@@ -9,3 +9,6 @@ So you want to redo a page eh? Sure! create a new page called [draft]pagenameher
 
 ### Markdown and... stuff
 [[Markdown and Wiki]]
+
+### Archiving Pages
+Found a page that is no longer relevant? Great! Simply create an issue for it in the [[TeraMisc|https://github.com/MovingBlocks/TeraMisc/issues]] issue tracker. If no one has objections, someone will come along, close the issue and delete the page. Its as simple as that!

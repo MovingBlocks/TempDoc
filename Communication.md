@@ -1,6 +1,3 @@
-Communication
--------------
-
 We have several ways to get the word out on updates, and likewise there are several ways to contact us.
 
 * [Forum](http://forum.movingblocks.org) - new development / game topics will be posted here, and any questions answered.

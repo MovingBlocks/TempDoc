@@ -73,8 +73,7 @@ The InteractionScreen component makes it possible to specify an UI screen, which
 The loook of an UI can be specified with text files that end with ".ui". Those text files need
 to be placed in the "assets/ui" folder of the module.
 
-For a quick start we will make a copy of the containerScreen.ui found in the engine and place it under "assets/ui/HiddenContainer.ui" in our module. Then we just need to change the
-screen property of the InteractionSCreen component to "<our module>:HiddenContainer". 
+For a quick start we will make a copy of the containerScreen.ui found in the engine and place it under "assets/ui/HiddenContainer.ui" in our module. If you placed the UI file in the WoodAndStone module then you need to change the screen property of the InteractionScreen component to "WoodAndStone:HiddenContainer".
 
 Then we can make adjustments to the UI, for example we could make the container grid
 be 2x2 by changing the maxHorizontalCells property of the container grid to 2:

@@ -57,7 +57,8 @@ To see Art related issues that need work see [this page on GitHub](https://githu
 Block Design
 ------------
 
-[[Block Shapes In Blender]]
+* [[Tutorial: How to make blocks with custom UI]]
+* [[Block Shapes In Blender]]
 Related Sections
 ----------------
 

@@ -1,0 +1,1 @@
+<p align='center'>Found a problem on this page? Submit a new issue about it [[here|https://github.com/MovingBlocks/TeraMisc/issues]]</p>

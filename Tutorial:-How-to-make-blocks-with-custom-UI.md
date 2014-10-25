@@ -70,7 +70,7 @@ The InteractionTarget component makes it possible to start an interaction with t
 The InteractionScreen component makes it possible to specify an UI screen, which will automatically be opened when the user starts an interaction with the block. Closing that UI will automatically end the interaction with the block. The InteractionScreen component has a property called "screen". It specifies which UI should be opened.
 
 ## Specification of the look of the UI
-The loook of an UI can be specified with text files that end with ".ui". Those text files need
+The look of an UI can be specified with text files that end with ".ui". Those text files need
 to be placed in the "assets/ui" folder of the module.
 
 For a quick start we will make a copy of the containerScreen.ui found in the engine and place it under "assets/ui/HiddenContainer.ui" in our module. If you placed the UI file in the WoodAndStone module then you need to change the screen property of the InteractionScreen component to "WoodAndStone:HiddenContainer".

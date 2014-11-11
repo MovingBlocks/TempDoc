@@ -32,3 +32,9 @@ This is a quick doc dump from installing Weblate and needs to be prettified some
 * Add projects & sub projects. BE SURE TO USE THE SSH URLS (starts with git@github.com)
 
 Note: With this setup the involved services do not auto-start after a server restart.
+
+Thanks to Weblate for the great product, including the nice bitnami installer, and to Minetest for having published a helpful page detailing their installation :-)
+
+* https://weblate.org
+* https://bitnami.com/stack/weblate
+* http://dev.minetest.net/Installing_Weblate

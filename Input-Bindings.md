@@ -1,0 +1,1 @@
+Placeholder for doc on how to make hot keys for use in-game

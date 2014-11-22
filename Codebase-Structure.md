@@ -93,6 +93,10 @@ On the next execution of Gradle the new module will be detected and scanned. If 
 
 Note: Module versioning exists but is not yet checked
 
+You can update all your modules to the latest source via the command:
+
+`gradlew updateModule`
+
 You can also create a brand new module and have it filled in with some template content:
 
 `gradlew createModuleMyLittleModule`

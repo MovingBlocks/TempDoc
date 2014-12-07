@@ -9,6 +9,7 @@ Command structure
 Every command must be implemented as a public method of a ComponentSystem. E.g. the following command just displays "hello world" in the console.
 
 <pre>
+    @RegisterSystem
     public class MyCommands extends BaseComponentSystem {
 
         @Command( shortDescription = "Say hello", helpText = "Writes hello world to the console" )

@@ -116,6 +116,17 @@ be 2x2 by changing the maxHorizontalCells property of the container grid to 2:
 }
 ```
 
+For a quicker edit-preview cycle you can run the following command in terasology(check key settings for command window hotkey, which is different from the chat window):
+
+> enableAutoScreenReloading
+
+The command will make terasology automatically reload an UI file, after you have changed it.
+Please note that the game might be using not the source UI files, but a copy of it. In Eclipse you can modify the source files and see the results. In Idea you need to check the standard output for a log line like this in order to find out from where it is taking the UI files:
+
+> 02:09:50.321 [main] INFO  o.t.r.n.internal.NUIManagerInternal - Watching directory /home/me/Terasology/engine/build/classes/assets/ui for screen ui file changes
+
+Please not that any syntax error will crash terasology, so only save your UI file when it doesn't have any errors.
+
 ## Adding logic
 
 The structure of the UI file is simple. The top most "type" property specifies the name of the Java class that should be created. The other properties specify the default configuration of that Java class. The type fields in the sub structures describe again which Java class is providing logic to that sub structure.

@@ -49,7 +49,7 @@ The above command does not create idea project files. To generate those run:
 
 To create a new module, you can run the command: 
 
-` gradlew createModuleTest`
+` gradlew createModule<module name>`
 
 The created module can be found in the modules subdirectory.
 

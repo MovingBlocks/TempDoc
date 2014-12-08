@@ -31,17 +31,17 @@ As a developer you typically first setup your IDE:
 
 If you download the terasology source you don't get any modules as they are in their own repositories at https://github.com/Terasology. You don't need to download the modules manually. Instead you can run the following command to do so:
 
-> gradlew fetchModule<moduleName>
+` gradlew fetchModule<moduleName>`
 
 Note that there is no space between fetchModule and the module name. It is also possible to specify multiple modules like this:
 
-> gradlew fetchModule<moduleName1> fetchModule<moduleName2>
+`gradlew fetchModule<moduleName1> fetchModule<moduleName2>`
 
 The downloaded module source can be found in the modules subdirectory.
 
 The above command does not create idea project files. To generate those run:
 
-> gradlew idea
+` gradlew idea`
 
 
 ## Creating a new module
@@ -49,13 +49,13 @@ The above command does not create idea project files. To generate those run:
 
 To create a new module, you can run the command: 
 
-> gradlew createModuleTest
+` gradlew createModuleTest`
 
 The created module can be found in the modules subdirectory.
 
 It is propably also necessary to generate the idea project files with:
 
-> gradlew idea
+` gradlew idea`
 
 ## Structure of a mod
 ---------------------------------------

@@ -9,8 +9,8 @@ The following are the basic keys enabled in Terasology for you to interact with 
 * [Space] - Jump
 * [Double Space] - God mode (fly / no-clip)
 * [Shift] - Hold to run
-* [Left click] - Activate left click action (default = place block)
-* [Right click] - Activate right click action (default = remove block)
+* [Left click] - Activate left click action (default = remove block)
+* [Right click] - Activate right click action (default = place block)
 * [Mouse wheel up/down] - Cycle through toolbar slots
 * [1..0] - Change the active toolbar slot
 * [I] - Toggle inventory screen

@@ -1,7 +1,4 @@
-This article will give an overview of the TS Crafting System, provided by the "Crafting"-module.
-The focus of this articel is on the in-games usage. For details on how to specify own recipes please go to [[Crafting System (Developer)]]. 
-
-> **Note:** This article is based on the stable/master branch (stable build #22). Since the crafting system is under heavy development, the given information must not be valid for the development branch versions.
+> **Note:** This article is based on the legacy game from the old stable/master branch (stable build #22). Back then the 3D cube crafting system described below was under heavy development, but has since gone into hibernation, and is _**no longer available**_ in the newer builds. It still exists in a module but doesn't work with the newer engine. It may return again one day. You can get it from the legacy line in the launcher or from [Jenkins](http://jenkins.terasology.org/job/TerasologyLegacy/lastSuccessfulBuild/artifact/build/distributions/Terasology.zip)
 
 # General Information
 We made the decision not to stick with a conventional solution via GUI for the crafting system but introduced an intuitive and innovative in-game approach. 

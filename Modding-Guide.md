@@ -80,6 +80,7 @@ You can reference stuff in another module's namespace from your mod, but keep in
 So you've got your basic mod set up, and want to add some new goodies to the game.  This is just the section to get you started.
 
 * [[Tutorial: How to make blocks with custom UI]]
+* [[Tutorial: How to create new items]]
 * [[Using Blender Assets]] - A guide on how to take a model from Blender and import it to the game in a friendly format.
 
 ### Related Links

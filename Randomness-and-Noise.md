@@ -20,3 +20,5 @@ The `BrownianNoise` class integrates values from other noise implementations. Th
 The `FastNoise` class is a bit different as it works on discrete numbers. This is good enough for per-block noise values. It is about 2x faster than SimplexNoise and 5x faster than PerlinNoise. Noise values repeat after 256, i.e. noise(256) is equal to noise(0).
 
 **Rule of thumb:** Use `SimplexNoise` whenever possible. Noise that is required per block can also be computed using `FastNoise`.
+
+![An overview over different noise implementations](https://cloud.githubusercontent.com/assets/1820007/5960183/f31d5402-a7d3-11e4-90f3-6bee10c7d2ce.png)

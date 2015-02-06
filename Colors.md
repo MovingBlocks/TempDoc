@@ -1,6 +1,6 @@
 # Player colors
 
-Since commit 1da32259a225371496251e6ab804f4d0e6e8e2b2, Terasology uses a sample set of colors based the CIELch color space to define player colors. 
+Since commit [#1da3225](https://github.com/MovingBlocks/Terasology/commit/1da32259a225371496251e6ab804f4d0e6e8e2b2), Terasology uses a sample set of colors based the CIELch color space to define player colors. 
 
 Subsequent colors should be distinguishable by 50% of the population. The number of colors is restricted to those that have almost identical chroma (think of it as color intensity) and luminosity (similar to brightness).
 

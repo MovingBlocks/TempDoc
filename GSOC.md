@@ -8,6 +8,8 @@ More conceptual work is likely needed for most items and there may be existing c
 
 Newest issues are listed first and may be shorter on detail than older ones. Difficulties and contacts are best estimates - please see the "How to get involved" section below.
 
+To get more information about GSOC including a calendar with submission deadlines please see https://www.google-melange.com
+
 # What is Terasology
 
 In short [Terasology's](http://terasology.org) goal is to make a heavily extensible voxel world game where actual gameplay can be defined in batches of modules. The engine is minimal, primarily serving to support modules of different kinds. Even systems that seem central to games in general, like a first person player, inventory, combat, and so on is here provided in modules instead and everything can be replaced with a customized version or disabled if not needed.
@@ -48,7 +50,7 @@ Here is a more step-by-step guide:
 
 * https://github.com/MovingBlocks/Terasology/issues/1487
 * Difficulty: Easy
-* Contacts: ?
+* Contacts: [msteiger](http://forum.terasology.org/members/msteiger.1197), [Josharias](http://forum.terasology.org/members/josharias.1201), [skaldarnar](http://forum.terasology.org/members/skaldarnar.270)
 * Helpful skills: resource loading/locating, web design, presentation
 
 This is a fairly straight forward addition to the create world / load game screens, and similar locations in the main menu. Currently we only use text to describe modules and worlds. But a picture is worth a thousand words!

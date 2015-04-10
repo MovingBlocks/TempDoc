@@ -3,6 +3,7 @@
  - [[About|What-is-Terasology]]
 - [[Player Guide]]
 - [[Contributing|Contributor Guide]]
+ - [[Modding Guide]]
  - [[Programming]]
  - [[Art]]
  - [[The Wiki and You]]

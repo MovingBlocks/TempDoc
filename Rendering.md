@@ -5,6 +5,7 @@ Usually this will be either renderOpaque or renderAlphaBlend, depending on wheth
 ##WorldRenderer
 More often then not, you will need more information then just the description of the objects you want to render. It is likely that you also need to have access to the camera position. The [WorldRenderer](http://jenkins.terasology.org/job/Terasology/javadoc/index.html?org/terasology/rendering/world/WorldRenderer.html) can provide this amongst other useful stuff, such as block lighting information. To get access to the WorldRenderer, add a public WorldRenderer attribute to your system, with a @In annotation. The engine will assign an instance of WorldRenderer to this automatically.
 
+    @RegisterSystem(RegisterMode.CLIENT)
     class MySystem implements WorldRenderer {
       @In
       public WorldRenderer worldRenderer;

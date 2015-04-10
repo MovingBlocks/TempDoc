@@ -9,3 +9,4 @@ but may need to submit source or maintain your source setup over time
 * [[JavaDoc]] - well-written code explains itself, but it doesn't help to have that in an exportable format!
 * [[Modding API]] - Information on the engine and how what features are available for modding
 * [[Console commands]] - instructions to create new console commands
+* [[Rendering]] - What you need to know to set up your own rendering code.

@@ -1,3 +1,5 @@
+Update: We are now on Weblate 2.1. Totally need to update the docs sometime ...
+
 This is a quick doc dump from installing Weblate and needs to be prettified some :-)
 
 * Create Droplet (used CentOS 6.5 32bit with 512mb memory) + matching DNS entry translate.terasology.org

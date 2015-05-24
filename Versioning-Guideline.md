@@ -33,8 +33,6 @@ Flo: The system gives good version numbers but requries you to increment the max
 ### Suggestion
 When you make an API change, that requires other modules to be updated then change the version number from 0.x.y-SNAPSHOT to 0.x+1.0-SNAPSHOT.
 
-In the pull request for the other modules that need to be updated set the minVersion of the dependency entry to 0.x+1.0.
-
 The maxVersion of dependent modules does not need to be increased as the engine (in this suggestion) will assume that 0.x.w is compatible with anything < 1.0.0.
 
 In the pull request for the other modules that need to be updated set the minVersion of the dependency entry to 0.x+1.0.

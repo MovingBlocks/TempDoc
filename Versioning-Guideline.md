@@ -29,7 +29,7 @@ When you are publishing the jar, do the following (ideally via a script/jenkins 
 Flo: The system gives good version numbers but requries you to increment the maxVersion number for testing.
 
 
-## Guideline Suggestion 1 by Flo
+## Guideline Suggestion 2 by Flo
 ### Suggestion
 When you make an API change, that requires other modules to be updated then change the version number from 0.x.y-SNAPSHOT to 0.x+1.0-SNAPSHOT.
 

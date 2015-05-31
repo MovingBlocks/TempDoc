@@ -17,7 +17,7 @@ After a release only the patch level version number will be incremented in the h
 
 After an API breaking change the minor version number is only incremented once till the next release, even if there are other API breaking changes. That way dependent modules don't need to be marked unnecessarily often as compatible.
 
-## TODO list when you make an API breaking pull request
+## Todo list when you make an API breaking pull request
 
 If the patch level is not 0 already (0.x.0-SNAPSHOT), trigger a build or script that does the following:
 * It increases the version number from 0.x.y-SNAPSHOT to 0.x+1.0
@@ -30,7 +30,7 @@ When a module you care about needs to be fixed do the following:
 * Add/change the dependency to minVersion = 0.x+1.0 (It may be set already in which case you don't have to do anything)
 * Create a pull request for that module
 
-## TODO list when you make a release
+## Todo list when you make a release
 
 When you are publishing the jar, do the following (ideally via a script/jenkins task):
 * Check for each dependency if there had been at least one non snapshot release in the specified range.

@@ -1,11 +1,11 @@
 # Versioning Guideline
 ## Version format and reasoning
 
-For multiplayer it is important that we don't release two modules with the same version number but differnt content.
+For multiplayer it is important that we don't release two modules with the same version number but different content.
 
 During development however it is helpful when modules that aren't yet fully compatible can still be tested with each other.
 
-The idea is that during development all modules have a SNAPSHOT suffix. Not only in jar form but also in source form to make clear that they are not final releases.
+The idea is that during development all modules have a SNAPSHOT suffix. Not only in their jar form but also in source form to make clear that they are not final releases.
 
 Versions are always set to the next number that will be released + SNAPSHOT suffix. That makes it clear for everyone what the next release number will be.
 
@@ -21,8 +21,8 @@ After an API breaking change the minor version number is only incremented once t
 
 If the patch level is not 0 already (0.x.0-SNAPSHOT), trigger a build or script that does the following:
 * It increases the version number from 0.x.y-SNAPSHOT to 0.x+1.0
-* It sets the maxVersion dependency field of all dependent modules to 0.x+2.0 (= compatible with 0.x+1.*)
-* Optionally: Set the Set the minVersion dependency field of all obviously broken dependent modules to 0.x+1.0
+* It sets the maxVersion dependency field of all dependent modules to 0.x+2.0 (= compatible with 0.x+1.*) 
+* Optionally: Set the minVersion dependency field of all obviously broken dependent modules to 0.x+1.0
 
 Wait if the build server to tell you which modules are broken or test it for yourself. 
 

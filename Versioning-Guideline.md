@@ -1,48 +1,39 @@
 # Versioning Guideline
+## Version format and reasoning
 
-## Motivation
+For multiplayer it is important that we don't release two modules with the same version number but differnt content.
 
-Currently we just try to keep the current source of the engine and all modules compatible. There are often API changes without an version increment.
+During development however it is helpful when modules that aren't yet fully compatible can still be tested with each other.
 
-Sometimes however you want to go back to an older source version:
-* To try out a branch of another developer that has not yet been ported to the new API
-* To search the first revision that introduced a bug in order to find the cause of some mysterious bugs (git bisect is a nice command for searching quickly the commit that introduced a bug).
+The idea is that during development all modules have a SNAPSHOT suffix. Not only in jar form but also in source form to make clear that they are not final releases.
 
-Finding a working version of the dependency is then really a pain if there had been multiple releases with the same version identifier that aren't API compatible.
+Versions are always set to the next number that will be released + SNAPSHOT suffix. That makes it clear for everyone what the next release number will be.
 
-Also for third party modules it would be good if the version numbers have a clear and reliable meaning like SemVer.
+The version number format is <major>.<minor>.<patch level>. For time being major will however always be set to 0.
 
-## Guideline Suggestion 1 by Flo
-### Suggestion
-When you make an API change, that requires other modules to be updated then change the version number from 0.x.y-SNAPSHOT to 0.x+1.0-SNAPSHOT.
+While major is 0, a change in minor version indicates an API breaking change, while a <patch level> increment indicates that nothing got broken yet.
 
-Increase locally the maxVersion field of the dependent modules you test, so that they get used.
+After a release only the patch level version number will be incremented in the hope that no API breaking change is made.
 
-In the pull request for the other modules that need to be updated set the minVersion of the dependency entry to 0.x+1.0.
+After an API breaking change the minor version number is only incremented once till the next release, even if there are other API breaking changes. That way dependent modules don't need to be marked unnecessarily often as compatible.
+
+## TODO list when you make an API breaking pull request
+
+If the patch level is not 0 already (0.x.0-SNAPSHOT), trigger a build or script that does the following:
+* It increases the version number from 0.x.y-SNAPSHOT to 0.x+1.0
+* It sets the maxVersion dependency field of all dependent modules to 0.x+2.0 (= compatible with 0.x+1.*)
+* Optionally: Set the Set the minVersion dependency field of all obviously broken dependent modules to 0.x+1.0
+
+Wait if the build server to tell you which modules are broken or test it for yourself. 
+
+When a module you care about needs to be fixed do the following:
+* Add/change the dependency to minVersion = 0.x+1.0 (It may be set already in which case you don't have to do anything)
+* Create a pull request for that module
+
+## TODO list when you make a release
 
 When you are publishing the jar, do the following (ideally via a script/jenkins task):
+* Check for each dependency if there had been at least one non snapshot release in the specified range.
 * Change the version number from 0.x.y-SNAPSHOT to 0.x.y and release it as 0.x.y. 
 * Instantly afterwards change the version number from 0.x.y to 0.x.(y+1)-SNAPSHOT. 
 * When the version number is 0.x.0, increase the exclusive maxVersion field of all dependent modules to 0.x+1.0, if that hasn't been done already. Release the dependent modules like this one.
-
-### Comments
-Flo: The system gives good version numbers but requries you to increment the maxVersion number for testing.
-
-
-## Guideline Suggestion 2 by Flo
-### Suggestion
-When you make an API change, that requires other modules to be updated then change the version number from 0.x.y-SNAPSHOT to 0.x+1.0-SNAPSHOT.
-
-The maxVersion of dependent modules does not need to be increased as the engine (in this suggestion) will assume that 0.x.w is compatible with anything < 1.0.0.
-
-In the pull request for the other modules that need to be updated set the minVersion of the dependency entry to 0.x+1.0.
-
-When you are publishing the jar, do the following (ideally via a script/jenkins task):
-* Change the version number from 0.x.y-SNAPSHOT to 0.x.y and release it as 0.x.y. 
-* Instantly afterwards change the version number from 0.x.y to 0.x.(y+1)-SNAPSHOT. 
-* When the version number is 0.x.0, check if there are dependent modules that are broken in version 0.z.w. Set maxVersion in this modules to 0.x.0 and release it as 0.z.w+1. (it is a bug fix release to fix the dependency information)
-
-### Comments
-Flo: The big advantage of this approach is that the developer does not need to increment of dependent modules if they aren't broken. Teh second biggest advantage is that it avoids release spam if only a few dependent modules are broken by the API change.
-A disadvantage of this approach is that it is not possible to go back in history of a dependent module as its dependency information is wrong.
-So at the end the version numbers bring little gain.

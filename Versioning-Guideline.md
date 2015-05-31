@@ -19,6 +19,8 @@ After an API breaking change the minor version number is only incremented once t
 
 When an API breaking change is made we can mark all (snapshot versions of) dependent modules as compatible so that we can test them. Their dependencies need to be updated anyway and if we do it now or later does not matter much. Of course before a module gets released it must be fixed.
 
+The automatic update of the dependency to the "api changing module/engine" is only done on the branch "develop". It is still possible to have other branches at which stable versions of modules are developed that are compatible with the old engine or library.
+
 ## Todo list when you make an API breaking pull request
 
 If the patch level is not 0 already (0.x.0-SNAPSHOT), trigger a build or script that does the following:

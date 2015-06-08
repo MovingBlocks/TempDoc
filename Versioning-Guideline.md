@@ -9,7 +9,9 @@ The idea is that during development all modules have a SNAPSHOT suffix. Not only
 
 Versions are always set to the next number that will be released + SNAPSHOT suffix. That makes it clear for everyone what the next release number will be.
 
-The version number format is <major>.<minor>.<patch level>. For time being major will however always be set to 0.
+The version number format is:
+```<major>.<minor>.<patch level>```
+For time being major will however always be set to 0.
 
 While major is 0, a change in minor version indicates an API breaking change, while a <patch level> increment indicates that nothing got broken yet.
 

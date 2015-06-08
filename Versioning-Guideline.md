@@ -21,6 +21,33 @@ When an API breaking change is made we can mark all (snapshot versions of) depen
 
 The automatic update of the dependency to the "api changing module/engine" is only done on the branch "develop". It is still possible to have other branches at which stable versions of modules are developed that are compatible with the old engine or library.
 
+## Specifying a dependency
+
+The dependencies of a module are specified in the module.txt file that can be found in the root directory of a module.
+
+The module.txt is a text file in the json format. The json objectin that file can have a field called "dependencies". If it doesn't have one yet look at other files to see how it is done. To define a single dependency to the Core module in 0.54.* you would set the dependencies field to:
+```
+    "dependencies" : [
+            {
+                "id" : "Core",
+                "minVersion" : "0.54.0"
+            }
+    ],
+```
+If the first major part of the version number is 0 like in the example, then the exlusive maximum version is one minor version higher. Thus the following would also specify a 0.54.* dependency:
+```
+    "dependencies" : [
+            {
+                "id" : "Core",
+                "minVersion" : "0.54.0",
+                "maxVersion" : "0.55.0"
+            }
+    ],
+```
+
+The above version range includes the version 0.54.0 and 0.54.0-SNAPSHOT and excludes the version  0.55.0 and 0.55.0-SNAPSHOT. Any other 0.54.* version like 0.54.2 is also included.
+
+
 ## Todo list when you make an API breaking pull request
 
 If the patch level is not 0 already (0.x.0-SNAPSHOT), trigger a build or script that does the following:

@@ -45,6 +45,12 @@ You can enhance this one step further by also making sure the Git bin dir is on 
 
 This should allow PS with Posh Git to also store your password for subsequent requests. You can also use `ssh-keygen` easily this way to generate keys, one contributor had to use that trick to get around a greek keyboard issue (setting the `HOME` variable to force Git to look there for the `.ssh` dir can also help)
 
+On a related note to Windows systems if you want to be able to edit Git config files with an editor of your choice, such as Notepad++, you can use a command like so ([source](http://stackoverflow.com/questions/1634161/how-do-i-use-notepad-or-other-with-msysgit)):
+
+`git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -nosession -noPlugin -multiInst"`
+
+Naturally adjusting the path if needed. This particular setup opens a new instance of Notepad++ to not mess with any existing session/tabs you have open.
+
 ## Branch Management
 
 If you're going to be working with Git beyond the absolute minimum you'll likely need to know more about how to deal with branches

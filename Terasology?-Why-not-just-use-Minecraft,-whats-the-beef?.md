@@ -4,32 +4,24 @@ We aid to create a technically superior voxel engine, in order to address the sh
 
 For example:
 
-*A mod API is our main and formost feature, modules are easily created, easily added, and do not break beween versions. 
+-A mod API is our main and formost feature, modules are easily created, easily added, and do not break beween versions. For end users all module adding, updating, and downloading is handled through a simple GUI at world creations. Dependancies are automatic, and mods are automatically added at server join. Module packs exist for a tested and packaged experiance.
 
-*Infinite height and depth, commonly know as Cubic Chunks
+-Infinite height and depth, commonly know as Cubic Chunks
 
-*Blocks and block shapes are seperate. Once you define a shape, all blocks will have that variation. 
+-Blocks and block shapes are seperate. Once you define a shape, all blocks will have that variation. 
 
-*65,000 IDs for biomes, A biome is defined per gride space, allowing for vertical biomes.
+-65,000 IDs for biomes, A biome is defined per gride space, allowing for vertical biomes.
 
-*Community controlled and community ran
+-Community controlled and community ran
 
-*Open source and gratis, as well most modules. 
+-Open source and gratis, as well most modules. 
 
 
 This is in sharp contrast to Minecraft, which you need to pay a sum of money just to own, and are restricted on what you can do with the code. 
 
-Now, unless you install mods or develope mods, this means nothing for you. You've already bought minecraft, and you're happy, even happier if you're a windows10 user and got the windows10 version for free. 
-
-
-This one will hit home for the building type: Dynamic block shapes. Shapes are seperate from blocks. We define a shape, and now all blocks have that variation. So yes, that means every blocks comes in a slab, stair, pillar, slope(s), colom, axel, stack, small cube, smaller cube, vertical slab, etc.... even the things you don't think about, like a dirt block in the shape of a torch. Still not enough, you can define your own shapes in Blender. 
 
 
 
-Now here is the real intresting part: we natively include a mod API and it is our main feature. Perhaps you are just a player, who doesn't know how to install mods, or just wants to play a packaged version.  Perhaps you love installing mods, or perhaps you make mods yourself. Good news for all. 
-
-
-Installing mods (we call them modules) is as simple as clicking which ones you want in a menu when you create a world. All dependancies handled, downloaded, updated, you name it. You join a server and all the mods will be automatically downloaded and configured. All stable modules organized in one place, new modules automatically showing up in menu.  Maybe you don't want to choose your own, thats fine as well, module packs can and are created for a packaged and tested game experiance, just like vanilla minecraft, or mod packs for minecraft. Unlike Minecraft mods, these don't break between versions! No need to waste your time waiting for a mod loader to update, or update your mod to a new version. 
 
 
 

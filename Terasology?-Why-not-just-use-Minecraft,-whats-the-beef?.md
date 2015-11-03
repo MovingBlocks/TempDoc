@@ -1,7 +1,9 @@
 You're probably wondering that your self. Our answer: Minecraft is not suited  for what it has become. 
 
 In responce we created a voxel engine that is free as in freedom, there is no over arking company that can force items to be added, removed, or changes to be accepted or rejected. You can legally create your own version (fork) of Terasology is you feel that development is not going fast enough, or not going in your favor. More so, with some small exceptions,  all modules are also free as in freedom. 
- (an intresting exception being the inbetweelands module, which is strictly an asset module, as we are teamed with the InbetweenLands devs, and have been granted permission to create a version for Terasology.).
+ 
+(an intresting exception being the inbetweelands module, which is strictly an asset module, as we are teamed with the InbetweenLands devs, and have been granted permission to create a version for Terasology.).
+
 With that in mind, Terasology and its modules are also free as in cost, known as gratis. 
 
 

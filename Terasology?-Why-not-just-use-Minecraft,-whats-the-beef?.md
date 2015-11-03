@@ -6,7 +6,7 @@ For example:
 
 0. A mod API is our main and formost feature, modules are easily created, easily added, and do not break beween versions. For end users all module adding, updating, and downloading is handled through a simple GUI at world creations. Dependancies are automatic, and mods are automatically added at server join. Module packs exist for a tested and packaged experiance.
 
-0. A tiny core, all content should be added using modules, to not hinder others modding experiance.
+0. A tiny core, all content should be added using modules. Freedom of gameplay
 
 0. Infinite height and depth, commonly know as Cubic Chunks
 
@@ -14,7 +14,7 @@ For example:
 
 0. 65,000 IDs for biomes, A biome is defined per gride space, allowing for vertical biomes.
 
-0. Community controlled and community ran. Freedom of gameplay
+0. Community controlled and community ran. 
 
 0. Open source and gratis, as well most modules. 
 

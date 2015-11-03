@@ -14,3 +14,12 @@ Well, we do have _Cubic Chunks._ Yup, no ifs, buts, excepts, or kiddings. You ca
 
 
 This one will hit home for the building type: Dynamic block shapes. Shapes are seperate from blocks. We define a shape, and now all blocks have that variation. So yes, that means every blocks comes in a slab, stair, pillar, slope(s), colom, axel, stack, small cube, smaller cube, vertical slab, etc.... even the things you don't think about, like a dirt block in the shape of a torch. Still not enough, you can define your own shapes easily. 
+
+
+
+Now heres the real intresting part: we natively include a mod API and it is our main feature. Perhaps you are just a player, who doesn't know how to install mods, or just wants to play a packaged version.  Perhaps you love installing mods, or perhaps you make mods yourself. Good news for all. 
+
+
+Installing mods (we call them modules) is as simple as clicking which ones you want in a menu when you create a world. All dependancies handled, downloaded, updated, you name it. You join a server and all the mods will be automatically downloaded and configured. Maybe you don't want to choose your own, thats fine as well, module packs can be created for packaged and tested game play, just like vanilla minecraft, or mod packs for minecraft. 
+
+These already exist. An intresting one for example is Josharias Survival, which is inspired by Terrafirmacraft. 

@@ -1,5 +1,5 @@
-You're probably wondering that your self. Our answer: Minecraft is not suited  for what it has become. 
-Minecraft was a smash hit and received a massive amount of support from a community, far exceading what it was envisioned for, which lead to lacklust support for what the community wanted as fans could not directly improve the engine. Modding became minecraft largest community, but recieved no offical support, thus mods need to be updated at every release.
+You're probably wondering that yourself. Our answer: Minecraft is not suited  for what it has become. 
+Minecraft was a smash hit and received a massive amount of support from a community, far exceeding what it was envisioned for, which lead to lackluster support for what the community wanted as fans could not directly improve the engine. Modding became minecraft largest community, but recieved no offical support, thus mods needed to be updated at every release. Which sadly can cause whole game types and communities to dissappear if the mod cannot remain up to date. 
 
 We aim to create a technically superior voxel engine, in order to address the short commings of minecraft.
 
@@ -7,9 +7,9 @@ We aim to create a technically superior voxel engine, in order to address the sh
 
 For example:
 
-0. A mod API is our main and formost feature, modules are easily created, easily added, and do not break beween versions. For end users all module adding, updating, and downloading is handled through a simple GUI at world creations. Dependancies are automatic, and mods are automatically added at server join. Module packs exist for a tested and packaged experiance.
+0. A mod API is our main and formost feature. For end users all module adding, updating, and downloading is handled through a simple GUI at world creations. Modules are automatically added at server join. Module packs exist for a tested and packaged experiance.
 
-0. The creation of modules is simple, and if  behavior already exists, in libraries or frameworks, no java code is needed. Json is used heavily.
+0. The creation of modules is simple, and if  behavior already exists, in libraries or frameworks, no java code is needed. Modules do not break beween versions, and dependacies are automatically handled. Json is used heavily.
 
 0. A tiny core, all content should be added using modules. Freedom of gameplay
 
@@ -21,17 +21,43 @@ For example:
 
 0. Community controlled and community ran. 
 
-0. Open source and gratis. All currently existing modules as currently as well, but the licenses is to be decided by the Author. 
-
- 
-
-To prevent the duplication of work, we have a nice selection of frameworks and libraries. No longer will you have to worry about ores or compatability, we have an ore/mineral library of 121. As well as a collection of other libraries and frame works. Like a Soils and sand one, a one to add genetics, one for plants/trees and growing, one for weather/climate. 
-
-Its recommend you look at the modules yourself to see how they're made, and tweak an add to them. Perhaps even contributing to them if you think it fits. So in the act of good will, it'd be nice if you made your modules gratis, and open source (under apache 2.0) so others can learn, improve, and in general just reduce the amount of work needed. After all, you could put your plant in the plant library, and everyone could help improve it and maintain it, and easy compatability between modules is achieved. . 
-
-So if you're a wannabe mod creator, Terasology is right for you. Come look at these sands, https://github.com/Terasology/Soils/tree/master/assets/blockTiles/auto/sands , they're new simple blocks being created by litterally putting a texture in a folder, no coding needed. 
-
-Look at this, https://github.com/Terasology/Soils/blob/master/assets/blockTiles/fancy/BlackSand.png A fancy block has been created simply by giving it a texture, and defing some properties in a textfile in json https://github.com/Terasology/Soils/blob/master/assets/blocks/fancy/BlackSand.block 
+0. Open source and gratis. All currently existing modules as well, but the licenses is to be decided by the Author. 
 
 
-If you're not creating new behaviors, you won't need to do any java coding at all. Which, is again, a reason for everyone to help contribute to libraries, less duplication of work, and more time for things  you actually want to do. 
+For mod developers, a selection of libraries and frameworks has been created, to aid compataibility, and reduce duplication of work. Such as defining ores, common plants and how they grow, climate and weather, networking between blocks, etc. Modules are a good source of code refrence, for seasoned and budding mod developers alike.
+
+  
+for converting a minecraft mod to a terasology module, 
+
+textures can be placed in ModuleName/assets/blockTiles/auto 
+
+(if you want to create multiple textures for a block that get randomized, simply create a folder by the block name, then put the textures with in it. blockTiles/auto/dirt/dirt1.png, dirt2.png, dirt3.png etc)
+
+where a basic block with properties inherited is created. 
+
+placing  texture(s) in ModuleName/assets/blockTiles/fancy 
+
+and creating a simple json file of ModuleName/assets/blocks/BlockName.block
+
+allows properties to be set, such as the shape it comes in, its display name, catagories its in, hardness, the textures for each sides, its mass,translucent, if you can go through it, if you can target it, its tint, its prefab, debrisOnDestroy, if it waves in the wind, color source, its rotation, if you can climb it, if it drops when you break it or if you directly pick it up, if it casts a shadow etc. 
+
+
+creating a file in ModuleName/assets/prefabs/BlockOrItemName.prefab allows for the block or item to store data, becoming an entity. (as well as advanced data) Such as a chests ability to store items, and retain them inside when broken. Or torches needing a block to be on. Water being unbreathable, how items damage other items (like tools), the icons they use. Chests inventory being public to everyone, the sound it plays, the GUI screen it uses.  
+
+
+assets/blockSounds for sounds of when you want on blocks, in the ogg format. 
+
+assets/sounds for general sounds. 
+
+assets/music for music, assets/music/ambiance for ambiance. 
+
+define prefabs on how to trigger them. 
+
+
+
+
+
+All with out a single line of java. You can even get custom ores spawning using the OreGeneration library. 
+
+
+

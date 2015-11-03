@@ -23,11 +23,27 @@ For example:
 
 0. Open source and gratis. All currently existing modules as well, but the licenses is to be decided by the Author. 
 
+0. Its in java8(?)
 
 For mod developers, a selection of libraries and frameworks has been created, to aid compataibility, and reduce duplication of work. Such as defining ores, common plants and how they grow, climate and weather, networking between blocks, how ores spawn etc. Modules are a good source of code refrence, for seasoned and budding mod developers alike.
 
   
-for converting a minecraft mod to a terasology module, 
+for converting a minecraft mod to a terasology module:
+
+first get a working dev enviroment. 
+
+    `git clone https://github.com/MovingBlocks/Terasology.git `
+
+in the directory.
+ 
+`./gradlew` then `./gradlew createModuleModuleName` then `./gradlew` again to autopopulate the folder.
+
+you can go `./gradlew fetchModuleModuleName` if you want the source of an existing module instead. 
+
+you can then do `./gradlew idea` if you prefer using an idea, specifically the idea one, or `./gradlew eclipse` for the eclipse one. 
+
+
+Unless you want to just manually create all the folders and files for a module, and place it in your module folder. 
 
 textures can be placed in ModuleName/assets/blockTiles/auto 
 

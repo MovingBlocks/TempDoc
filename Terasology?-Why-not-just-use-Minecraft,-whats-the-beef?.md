@@ -4,17 +4,19 @@ We aid to create a technically superior voxel engine, in order to address the sh
 
 For example:
 
--A mod API is our main and formost feature, modules are easily created, easily added, and do not break beween versions. For end users all module adding, updating, and downloading is handled through a simple GUI at world creations. Dependancies are automatic, and mods are automatically added at server join. Module packs exist for a tested and packaged experiance.
+0. A mod API is our main and formost feature, modules are easily created, easily added, and do not break beween versions. For end users all module adding, updating, and downloading is handled through a simple GUI at world creations. Dependancies are automatic, and mods are automatically added at server join. Module packs exist for a tested and packaged experiance.
 
--Infinite height and depth, commonly know as Cubic Chunks
+0. A tiny core, all content should be added using modules, to not hinder others modding experiance.
 
--Blocks and block shapes are seperate. Once you define a shape, all blocks will have that variation. 
+0. Infinite height and depth, commonly know as Cubic Chunks
 
--65,000 IDs for biomes, A biome is defined per gride space, allowing for vertical biomes.
+0. Blocks and block shapes are seperate. Once you define a shape, all blocks will have that variation. 
 
--Community controlled and community ran
+0. 65,000 IDs for biomes, A biome is defined per gride space, allowing for vertical biomes.
 
--Open source and gratis, as well most modules. 
+0. Community controlled and community ran. Freedom of gameplay
+
+0. Open source and gratis, as well most modules. 
 
 
 This is in sharp contrast to Minecraft, which you need to pay a sum of money just to own, and are restricted on what you can do with the code. 

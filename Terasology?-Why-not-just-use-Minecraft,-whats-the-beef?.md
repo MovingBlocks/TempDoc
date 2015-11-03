@@ -1,7 +1,7 @@
 You're probably wondering that yourself. Our answer: Minecraft is not suited  for what it has become. 
 Minecraft was a smash hit and received a massive amount of support from a community, far exceeding what it was envisioned for, which lead to lackluster support for what the community wanted as fans could not directly improve the engine. Modding became minecraft largest community, but recieved no offical support, thus mods needed to be updated at every release. Which sadly can cause whole game types and communities to dissappear if the mod cannot remain up to date. 
 
-We aim to create a technically superior voxel engine, in order to address the short commings of minecraft.
+We aim to create a technically superior voxel engine, to address the short commings of minecraft.
 
 
 
@@ -28,7 +28,7 @@ For example:
 For mod developers, a selection of libraries and frameworks has been created, to aid compataibility, and reduce duplication of work. Such as defining ores, common plants and how they grow, climate and weather, networking between blocks, how ores spawn etc. Modules are a good source of code refrence, for seasoned and budding mod developers alike.
 
   
-for converting a minecraft mod to a terasology module:
+#  Converting a minecraft mod to a terasology module
 
 first get a working dev enviroment. 
 
@@ -40,10 +40,12 @@ in the directory.
 
 you can go `./gradlew fetchModuleModuleName` if you want the source of an existing module instead. 
 
-you can then do `./gradlew idea` if you prefer using an idea, specifically the idea one, or `./gradlew eclipse` for the eclipse one. 
+you can then do `./gradlew idea` if you prefer using an IDE, specifically the idea one, or `./gradlew eclipse` for the eclipse IDE. 
 
 
 Unless you want to just manually create all the folders and files for a module, and place it in your module folder. 
+
+___ 
 
 textures can be placed in ModuleName/assets/blockTiles/auto 
 

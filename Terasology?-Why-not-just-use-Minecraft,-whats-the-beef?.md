@@ -24,7 +24,7 @@ For example:
 0. Open source and gratis. All currently existing modules as well, but the licenses is to be decided by the Author. 
 
 
-For mod developers, a selection of libraries and frameworks has been created, to aid compataibility, and reduce duplication of work. Such as defining ores, common plants and how they grow, climate and weather, networking between blocks, etc. Modules are a good source of code refrence, for seasoned and budding mod developers alike.
+For mod developers, a selection of libraries and frameworks has been created, to aid compataibility, and reduce duplication of work. Such as defining ores, common plants and how they grow, climate and weather, networking between blocks, how ores spawn etc. Modules are a good source of code refrence, for seasoned and budding mod developers alike.
 
   
 for converting a minecraft mod to a terasology module, 

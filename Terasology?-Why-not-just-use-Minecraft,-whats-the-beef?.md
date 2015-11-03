@@ -34,9 +34,9 @@ first get a working dev enviroment.
 
     git clone https://github.com/MovingBlocks/Terasology.git
 
-in the directory.
+in the directory
  
-`./gradlew` then `./gradlew createModuleModuleName` then `./gradlew` again to autopopulate the folder.
+`./gradlew` then `./gradlew createModuleModuleName` then `./gradlew` again to create a module and autopopulate the folder.
 
 you can go `./gradlew fetchModuleModuleName` if you want the source of an existing module instead. 
 
@@ -66,6 +66,7 @@ creating a file in _ModuleName/assets/prefabs/BlockOrItemName.prefab_
 
 allows for the block or item to store data, becoming an entity. (as well as advanced data) Such as a chests ability to store items, and retain them inside when broken. Or torches needing a block to be on. Water being unbreathable, how items damage other items (like tools), the icons they use. Chests inventory being public to everyone, the sound it plays, the GUI screen it uses.  
 
+___
 
 _assets/blockSounds_ for sounds of when you want on blocks, in the ogg format. 
 
@@ -78,7 +79,11 @@ _assets/music/ambiance_ for ambiance.
 define prefabs on how to trigger them. 
 
 
+    
 
+    
+
+    
 
 
 All with out a single line of java. You can even get custom ores spawning using the OreGeneration library. 

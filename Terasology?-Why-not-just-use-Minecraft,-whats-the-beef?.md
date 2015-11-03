@@ -1,10 +1,15 @@
 You're probably wondering that your self. Our answer: Minecraft is not suited  for what it has become. 
+Minecraft was a smash hit and received a massive amount of support from a community, far exceading what it was envisioned for, which lead to lacklust support for what the community wanted as fans could not directly improve the engine. Modding became minecraft largest community, but recieved no offical support, thus mods need to be updated at every release.
 
-We aid to create a technically superior voxel engine, in order to address the short commings of minecraft.
+We aim to create a technically superior voxel engine, in order to address the short commings of minecraft.
+
+
 
 For example:
 
 0. A mod API is our main and formost feature, modules are easily created, easily added, and do not break beween versions. For end users all module adding, updating, and downloading is handled through a simple GUI at world creations. Dependancies are automatic, and mods are automatically added at server join. Module packs exist for a tested and packaged experiance.
+
+0. The creation of modules is simple, and if  behavior already exists, in libraries or frameworks, no java code is needed. Json is used heavily.
 
 0. A tiny core, all content should be added using modules. Freedom of gameplay
 
@@ -16,20 +21,9 @@ For example:
 
 0. Community controlled and community ran. 
 
-0. Open source and gratis, as well most modules. 
+0. Open source and gratis. All currently existing modules as currently as well, but the licenses is to be decided by the Author. 
 
-
-This is in sharp contrast to Minecraft, which you need to pay a sum of money just to own, and are restricted on what you can do with the code. 
-
-
-
-
-
-
-
-Now, you ask, "As a mod developer why should I care, i'd have to do all that work to convert my mod over" 
-
-Well, for one, you don't have to learn a new language, we're still in java (8 to be exact), and secondly, since we have a API, you don't have to worry about having to update it or change your code. Because of the API you can do quite a lot with out knowing any java, all in json. 
+ 
 
 To prevent the duplication of work, we have a nice selection of frameworks and libraries. No longer will you have to worry about ores or compatability, we have an ore/mineral library of 121. As well as a collection of other libraries and frame works. Like a Soils and sand one, a one to add genetics, one for plants/trees and growing, one for weather/climate. 
 

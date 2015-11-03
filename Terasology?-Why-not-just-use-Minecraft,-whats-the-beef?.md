@@ -17,7 +17,7 @@ For example:
 
 0. Blocks and block shapes are seperate. Once you define a shape, all blocks will have that variation. 
 
-0. 65,000 IDs for biomes, A biome is defined per gride space, allowing for vertical biomes.
+0. 65,000 IDs for biomes, A biome is defined per grid space, allowing for vertical biomes.
 
 0. Community controlled and community ran. 
 

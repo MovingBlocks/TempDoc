@@ -21,7 +21,7 @@ For example:
 
 0. Community controlled and community ran. 
 
-0. A better lighting engine. Includes shades by defualt, torches can give off light while places, held, or dropped.
+0. A better lighting engine. Includes shaders by defualt, torches can give off light while places, held, or dropped.
 
 0. Open source and gratis. All currently existing modules as well, but the licenses is to be decided by the Author. 
 

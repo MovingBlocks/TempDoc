@@ -13,4 +13,4 @@ Now, unless you install mods or develope mods, this means nothing for you. You'v
 Well, we do have _Cubic Chunks._ Yup, no ifs, buts, excepts, or kiddings. You can dig as deep as you want, and build as high as you want. Even better that most terrain generators take advantage of this. 2,000 block high mountains really are something to behold. 
 
 
-This one will hit home for the building type: Dynamic block shapes. Shapes are seperate from blocks. We define a shape, and now all blocks have that variation. So yes, that means every blocks comes in a slab, stair, pillar, slope(s), colom, axel, stack, small cube, smaller cube, vertical slab, etc.... even the things you don't think about, like a dirt block in the shape of a torch.
+This one will hit home for the building type: Dynamic block shapes. Shapes are seperate from blocks. We define a shape, and now all blocks have that variation. So yes, that means every blocks comes in a slab, stair, pillar, slope(s), colom, axel, stack, small cube, smaller cube, vertical slab, etc.... even the things you don't think about, like a dirt block in the shape of a torch. Still not enough, you can define your own shapes easily. 

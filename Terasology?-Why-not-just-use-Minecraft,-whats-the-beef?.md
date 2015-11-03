@@ -32,7 +32,7 @@ For mod developers, a selection of libraries and frameworks has been created, to
 
 first get a working dev enviroment. 
 
-    `git clone https://github.com/MovingBlocks/Terasology.git `
+    git clone https://github.com/MovingBlocks/Terasology.git
 
 in the directory.
  
@@ -47,27 +47,33 @@ Unless you want to just manually create all the folders and files for a module, 
 
 ___ 
 
-textures can be placed in ModuleName/assets/blockTiles/auto 
+textures can be placed in _ModuleName/assets/blockTiles/auto_ 
 
 (if you want to create multiple textures for a block that get randomized, simply create a folder by the block name, then put the textures with in it. blockTiles/auto/dirt/dirt1.png, dirt2.png, dirt3.png etc)
 
 where a basic block with properties inherited is created. 
 
-placing  texture(s) in ModuleName/assets/blockTiles/fancy 
+___
 
-and creating a simple json file of ModuleName/assets/blocks/BlockName.block
+placing  texture(s) in _ModuleName/assets/blockTiles/fancy_ 
+
+and creating a simple json file of _ModuleName/assets/blocks/BlockName.block_
 
 allows properties to be set, such as the shape it comes in, its display name, catagories its in, hardness, the textures for each sides, its mass,translucent, if you can go through it, if you can target it, its tint, its prefab, debrisOnDestroy, if it waves in the wind, color source, its rotation, if you can climb it, if it drops when you break it or if you directly pick it up, if it casts a shadow etc. 
 
+___
+creating a file in _ModuleName/assets/prefabs/BlockOrItemName.prefab_ 
 
-creating a file in ModuleName/assets/prefabs/BlockOrItemName.prefab allows for the block or item to store data, becoming an entity. (as well as advanced data) Such as a chests ability to store items, and retain them inside when broken. Or torches needing a block to be on. Water being unbreathable, how items damage other items (like tools), the icons they use. Chests inventory being public to everyone, the sound it plays, the GUI screen it uses.  
+allows for the block or item to store data, becoming an entity. (as well as advanced data) Such as a chests ability to store items, and retain them inside when broken. Or torches needing a block to be on. Water being unbreathable, how items damage other items (like tools), the icons they use. Chests inventory being public to everyone, the sound it plays, the GUI screen it uses.  
 
 
-assets/blockSounds for sounds of when you want on blocks, in the ogg format. 
+_assets/blockSounds_ for sounds of when you want on blocks, in the ogg format. 
 
-assets/sounds for general sounds. 
+_assets/sounds_ for general sounds. 
 
-assets/music for music, assets/music/ambiance for ambiance. 
+_assets/music_ for music
+
+_assets/music/ambiance_ for ambiance. 
 
 define prefabs on how to trigger them. 
 

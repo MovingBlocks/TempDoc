@@ -32,21 +32,11 @@ For mod developers, a selection of libraries and frameworks has been created, to
   
 #  Converting a minecraft mod to a terasology module
 
-first get a working dev enviroment. 
-
-    git clone https://github.com/MovingBlocks/Terasology.git
-
-in the directory
- 
-`./gradlew` then `./gradlew createModuleModuleName` then `./gradlew` again to create a module and autopopulate the folder.
-
-you can go `./gradlew fetchModuleModuleName` if you want the source of an existing module instead. 
-
-you can then do `./gradlew idea` if you prefer using an IDE, specifically the idea one, or `./gradlew eclipse` for the eclipse IDE. 
+first get a working [dev enviroment](https://github.com/MovingBlocks/Terasology/wiki/Modding-Guide#running-terasology-from-source) and continue one to creating or downloading a modul.e 
 
 
-Unless you want to just manually create all the folders and files for a module, and place it in your module folder. 
-
+___
+[The structure of a module](https://github.com/MovingBlocks/Terasology/wiki/Modding-Guide#structure-of-a-mod)
 ___ 
 
 textures can be placed in _ModuleName/assets/blockTiles/auto_ 
@@ -55,6 +45,7 @@ textures can be placed in _ModuleName/assets/blockTiles/auto_
 
 where a basic block with properties inherited is created. 
 
+[Example](https://github.com/Terasology/Minerals/tree/master/assets/blockTiles/auto)
 ___
 
 placing  texture(s) in _ModuleName/assets/blockTiles/fancy_ 
@@ -63,24 +54,14 @@ and creating a simple json file of _ModuleName/assets/blocks/BlockName.block_
 
 allows properties to be set, such as the shape it comes in, its display name, catagories its in, hardness, the textures for each sides, its mass,translucent, if you can go through it, if you can target it, its tint, its prefab, debrisOnDestroy, if it waves in the wind, color source, its rotation, if you can climb it, if it drops when you break it or if you directly pick it up, if it casts a shadow etc. 
 
+[Example](https://github.com/Terasology/Soils/tree/master/assets/blockTiles/fancy)
+[Example](https://github.com/Terasology/Soils/tree/master/assets/blocks/fancy)
 ___
 creating a file in _ModuleName/assets/prefabs/BlockOrItemName.prefab_ 
 
 allows for the block or item to store data, becoming an entity. (as well as advanced data) Such as a chests ability to store items, and retain them inside when broken. Or torches needing a block to be on. Water being unbreathable, how items damage other items (like tools), the icons they use. Chests inventory being public to everyone, the sound it plays, the GUI screen it uses.  
 
-___
-
-_assets/blockSounds_ for sounds of when you want on blocks, in the ogg format. 
-
-_assets/sounds_ for general sounds. 
-
-_assets/music_ for music
-
-_assets/music/ambiance_ for ambiance. 
-
-define prefabs on how to trigger them. 
-
-
+[example](https://github.com/Terasology/JoshariasSurvival/tree/master/assets/prefabs)
     
 
     

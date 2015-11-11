@@ -1,7 +1,6 @@
-You're probably wondering that yourself. Our answer: Minecraft is not suited  for what it has become. 
-Minecraft was a smash hit and received a massive amount of support from a community, far exceeding what it was envisioned for, which lead to lackluster support for what the community wanted as fans could not directly improve the engine. Modding became minecraft largest community, but recieved no offical support, thus mods needed to be updated at every release. Which sadly can cause whole game types and communities to dissappear if a mod cannot remain up to date. 
+Minecraft was a smash hit and received a massive amount of support from a community, far exceeding what it was envisioned for, which lead to lackluster support for what the community wanted as fans could not directly improve the engine. Modding became minecraft largest community, but recieved no offical support, thus mods needed to be updated at every release. Which can cause whole game types and communities to dissappear if a mod cannot remain up to date. 
 
-We aim to create a technically superior voxel engine, to address the short commings of minecraft.
+Terasology's goal is to be a solid, stable, and extremely extensible voxel game engine.
 
 
 
@@ -9,7 +8,7 @@ For example:
 
 0. A mod API is our main and formost feature. For end users all module adding, updating, and downloading is handled through a simple GUI at world creations. Modules are automatically added at server join. Module packs exist for a tested and packaged experiance.
 
-0. The creation of modules is simple, and if  behavior already exists, in libraries or frameworks, no java code is needed. Modules do not break beween versions, and dependacies are automatically handled. Json is used heavily.
+0. The creation of modules is simple, and if  behavior already exists, in libraries or frameworks, no java code is needed. Modules work across many [versions](http://semver.org/), and dependacies are automatically handled. Json is used heavily.
 
 0. A tiny core, all content should be added using modules. Freedom of gameplay
 
@@ -21,7 +20,7 @@ For example:
 
 0. Community controlled and community ran. 
 
-0. A better lighting engine. Includes shaders by defualt, torches can give off light while placed, held, or dropped.
+0. A better lighting engine. Includes shaders by default, torches can give off light while placed, held, or dropped.
 
 0. Open source and gratis. All currently existing modules as well, but the licenses is to be decided by the Author. 
 
@@ -36,38 +35,6 @@ __For the average user__
 Switching between gameplay templates (a collection of modules, like a Minecraft modpack), is as simple as choosing between survival, creative, or hardcore in Minecraft. That is to say, its completely handled through GUI with no external tools needed, and is managed perworld. This holds true for joining servers as well, no user setup needed.
 
 ![](https://i.imgur.com/OpmgYGP.png)
-
-Current gameplay templates:
-
-
-* __Josharias Survival__     
-  
- _"Survival with an emphasis on technology"_
-
-   The closest there currently is to Minecraft. It draws inspiration from Terrafirmacraft, and focuses on progression and automation.
-
-* __Through Out The Ages__      
-  
- _"Develop your skills and tools Through the Ages from stone to copper and beyond"_
-
-   Survival is more realistic and progression is based on actual Ages. It can be likened to what BetterThanWolves does to Minecraft survival. 
-
-
-* __LightAndShadow__
-  
- _"Light & Shadow is an experimental game type set in a quirky Alice in Wonderland inspired setting"_
-
-
-
-* __Core__
-
-   Core is blocks and items that currently come with the engine. Its not technically a template, and will be eventually slimed down or removed. Its plants moved to [PlantPack](https://github.com/Terasology/PlantPack), its ores moved to the [Ore Library](https://github.com/Terasology/Minerals) etc. It can compared to Minecraft Classic.  All other templates are built off this. 
-
-
-     
-      
-
-Non of these are finished (except for core), and contribution is encouraged. However, creating your own template is also recommended. 
   
 
 __For the advanced user__

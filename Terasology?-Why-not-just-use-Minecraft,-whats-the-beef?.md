@@ -25,7 +25,7 @@ For example:
 
 0. Open source and gratis. All currently existing modules as well, but the licenses is to be decided by the Author. 
 
-0. Its in java8(?)
+0. Its in java8
 
 For mod developers, a selection of libraries and frameworks has been created, to aid compataibility, and reduce duplication of work. Such as defining ores, common plants and how they grow, climate and weather, networking between blocks, how ores spawn etc. Modules are a good source of code refrence, for seasoned and budding mod developers alike. A list of ready to use modules,libraries, and frameworks can be found in the [module repo](https://github.com/Terasology/)
 
@@ -78,9 +78,9 @@ There exists a module button next to the template dropdown box, this allows for 
 
 #  Converting a Minecraft mod to a Terasology module
 
-_note: this is a prelimiary guide, more information can be found in the wiki_
+_note: this is a preliminary  guide, more information can be found in the wiki_
 
-first get a working [dev enviroment](https://github.com/MovingBlocks/Terasology/wiki/Modding-Guide#running-terasology-from-source) and continue one to creating or downloading a module 
+First get a working [dev enviroment](https://github.com/MovingBlocks/Terasology/wiki/Modding-Guide#running-terasology-from-source) and continue on to creating or downloading a module. 
 
 
 ___
@@ -108,7 +108,7 @@ creating a file in _ModuleName/assets/prefabs/BlockOrItemName.prefab_
 
 allows for the block or item to store data, becoming an entity. (as well as advanced data) Such as a chests ability to store items, and retain them inside when broken. Or torches needing a block to be on. Water being unbreathable, how items damage other items (like tools), the icons they use. Chests inventory being public to everyone, the sound it plays, the GUI screen it uses.  
 
-[example](https://github.com/Terasology/JoshariasSurvival/tree/master/assets/prefabs)
+[Example](https://github.com/Terasology/JoshariasSurvival/tree/master/assets/prefabs)
     
 
     

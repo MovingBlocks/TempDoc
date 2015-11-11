@@ -1,5 +1,5 @@
 You're probably wondering that yourself. Our answer: Minecraft is not suited  for what it has become. 
-Minecraft was a smash hit and received a massive amount of support from a community, far exceeding what it was envisioned for, which lead to lackluster support for what the community wanted as fans could not directly improve the engine. Modding became minecraft largest community, but recieved no offical support, thus mods needed to be updated at every release. Which sadly can cause whole game types and communities to dissappear if the mod cannot remain up to date. 
+Minecraft was a smash hit and received a massive amount of support from a community, far exceeding what it was envisioned for, which lead to lackluster support for what the community wanted as fans could not directly improve the engine. Modding became minecraft largest community, but recieved no offical support, thus mods needed to be updated at every release. Which sadly can cause whole game types and communities to dissappear if a mod cannot remain up to date. 
 
 We aim to create a technically superior voxel engine, to address the short commings of minecraft.
 
@@ -21,18 +21,66 @@ For example:
 
 0. Community controlled and community ran. 
 
-0. A better lighting engine. Includes shaders by defualt, torches can give off light while places, held, or dropped.
+0. A better lighting engine. Includes shaders by defualt, torches can give off light while placed, held, or dropped.
 
 0. Open source and gratis. All currently existing modules as well, but the licenses is to be decided by the Author. 
 
 0. Its in java8(?)
 
-For mod developers, a selection of libraries and frameworks has been created, to aid compataibility, and reduce duplication of work. Such as defining ores, common plants and how they grow, climate and weather, networking between blocks, how ores spawn etc. Modules are a good source of code refrence, for seasoned and budding mod developers alike.
+For mod developers, a selection of libraries and frameworks has been created, to aid compataibility, and reduce duplication of work. Such as defining ores, common plants and how they grow, climate and weather, networking between blocks, how ores spawn etc. Modules are a good source of code refrence, for seasoned and budding mod developers alike. A list of ready to use modules,libraries, and frameworks can be found in the [module repo](https://github.com/Terasology/)
 
+# Gameplay and Module Management
+
+__For the average user__
+
+Switching between gameplay templates (a collection of modules, like a Minecraft modpack), is as simple as choosing between survival, creative, or hardcore in Minecraft. That is to say, its completely handled through GUI with no external tools needed, and is managed perworld. This holds true for joining servers as well, no user setup needed.
+
+![](https://i.imgur.com/OpmgYGP.png)
+
+Current gameplay templates:
+
+
+* __Josharias Survival__     
   
-#  Converting a minecraft mod to a terasology module
+ _"Survival with an emphasis on technology"_
 
-first get a working [dev enviroment](https://github.com/MovingBlocks/Terasology/wiki/Modding-Guide#running-terasology-from-source) and continue one to creating or downloading a modul.e 
+   The closest there currently is to Minecraft. It draws inspiration from Terrafirmacraft, and focuses on progression and automation.
+
+* __Through Out The Ages__      
+  
+ _"Develop your skills and tools Through the Ages from stone to copper and beyond"_
+
+   Survival is more realistic and progression is based on actual Ages. It can be likened to what BetterThanWolves does to Minecraft survival. 
+
+
+* __LightAndShadow__
+  
+ _"Light & Shadow is an experimental game type set in a quirky Alice in Wonderland inspired setting"_
+
+
+
+* __Core__
+
+   Core is blocks and items that currently come with the engine. Its not technically a template, and will be eventually slimed down or removed. Its plants moved to [PlantPack](https://github.com/Terasology/PlantPack), its ores moved to the [Ore Library](https://github.com/Terasology/Minerals) etc. It can compared to Minecraft Classic.  All other templates are built off this. 
+
+
+     
+      
+
+Non of these are finished (except for core), and contribution is encouraged. However, creating your own template is also recommended. 
+  
+
+__For the advanced user__
+
+There exists a module button next to the template dropdown box, this allows for customizing any template that is currently selected. Allowing you to remove or add modules. Modules can be updated and downloaded from the [module repo](https://github.com/Terasology/) from here. Dependancies are automatically handled. Modules not in repo can be enabled here after being placed in the correct folder. 
+
+![](https://i.imgur.com/GTzNKiL.png)
+
+#  Converting a Minecraft mod to a Terasology module
+
+_note: this is a prelimiary guide, more information can be found in the wiki_
+
+first get a working [dev enviroment](https://github.com/MovingBlocks/Terasology/wiki/Modding-Guide#running-terasology-from-source) and continue one to creating or downloading a module 
 
 
 ___
@@ -40,8 +88,6 @@ ___
 ___ 
 
 textures can be placed in _ModuleName/assets/blockTiles/auto_ 
-
-(if you want to create multiple textures for a block that get randomized, simply create a folder by the block name, then put the textures with in it. blockTiles/auto/dirt/dirt1.png, dirt2.png, dirt3.png etc)
 
 where a basic block with properties inherited is created. 
 
@@ -55,6 +101,7 @@ and creating a simple json file of _ModuleName/assets/blocks/BlockName.block_
 allows properties to be set, such as the shape it comes in, its display name, catagories its in, hardness, the textures for each sides, its mass,translucent, if you can go through it, if you can target it, its tint, its prefab, debrisOnDestroy, if it waves in the wind, color source, its rotation, if you can climb it, if it drops when you break it or if you directly pick it up, if it casts a shadow etc. 
 
 [Example](https://github.com/Terasology/Soils/tree/master/assets/blockTiles/fancy)
+
 [Example](https://github.com/Terasology/Soils/tree/master/assets/blocks/fancy)
 ___
 creating a file in _ModuleName/assets/prefabs/BlockOrItemName.prefab_ 
@@ -66,10 +113,7 @@ allows for the block or item to store data, becoming an entity. (as well as adva
 
     
 
-    
-
-
-All with out a single line of java. You can even get custom ores spawning using the OreGeneration library. 
+     
 
 
 

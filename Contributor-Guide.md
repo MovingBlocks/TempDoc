@@ -11,7 +11,6 @@ If you aren't yet too comfortable with some of the technology we use then there 
    * !IntelliJ for IDE: http://wiki.jetbrains.net/intellij/
    * Java for core engine: http://docs.oracle.com/javase/tutorial/
    * JSON for config and properties: http://en.wikipedia.org/wiki/Json
-   * Javascript possibly for mods: http://en.wikipedia.org/wiki/JavaScript (tricky to dig up relevant tutorials since we're _not_ using it for website stuff)
    * Blender for models: http://www.blender.org/education-help/tutorials/
    * [[Collada-Models]]: Import your models into Terasology in Collada format
    * Groovy: http://groovy.codehaus.org/Beginners+Tutorial

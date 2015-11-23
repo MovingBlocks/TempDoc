@@ -1,6 +1,6 @@
 Contributor Guide
 =================
-If you're interested in contributing in some way or just learn about some more developer stuff, you're in the right place! Once done, [Introduce yourself](http://forum.terasology.org/forums/contributor-introductions.7/)!
+If you're interested in contributing in some way or just learn about some more developer stuff, you're in the right place! Once done, [Introduce yourself!](http://forum.terasology.org/forums/contributor-introductions.7/)
 
 First steps - for those who want to learn
 -----------------------------------------
@@ -15,6 +15,8 @@ If you aren't yet too comfortable with some of the technology we use then there 
    * Blender for models: http://www.blender.org/education-help/tutorials/
    * [[Collada-Models]]: Import your models into Terasology in Collada format
    * Groovy: http://groovy.codehaus.org/Beginners+Tutorial
+
+Once done, set up your [enviroment.](https://github.com/MovingBlocks/Terasology/wiki/Dev-Setup)
 
 Early project steps - learning the code
 ---------------------------------------

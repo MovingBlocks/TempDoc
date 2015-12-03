@@ -6,9 +6,11 @@ Terasology's goal is to be a solid, stable, and extremely extensible voxel game 
 
 For example:
 
-0. A mod API is our main and formost feature. For end users all module adding, updating, and downloading is handled through a simple GUI at world creations. Modules are automatically added at server join. Module packs exist for a tested and packaged experiance.
+0. A mod API is our main and formost feature. For end users all module adding, updating, and downloading is handled through a simple GUI at world creations. Modules are automatically added at server join. Gameplay Templates exist for a tested and packaged experiance.
 
 0. The creation of modules is simple, and if  behavior already exists, in libraries or frameworks, no java code is needed. Modules work across many [versions](http://semver.org/), and dependacies are automatically handled. Json is used heavily.
+
+0. Organized, unified, but still independent. There is an offical forum, IRC, and module repo. Content is unified: plugins, ResourcePacks, libraries, frameworks are just types of modules, and thus are acessed through the offical module repo. However, the module repo is git based so it can be easily duplicated or forked, for decentralization. There is no login servers as each server manages the accounts themselves. Clients are reconized not by password, but by what is basically a SSH key that is generated on server join. However, a login module can be created for a centralized login server. 
 
 0. A tiny core, all content should be added using modules. Freedom of gameplay
 
@@ -23,6 +25,8 @@ For example:
 0. A better lighting engine. Includes shaders by default, torches can give off light while placed, held, or dropped.
 
 0. Open source and gratis. All currently existing modules as well, but the licenses is to be decided by the Author. 
+
+0. Multithreaded. (Rendering is single threaded because of openGL, but this could change if a Rendering Wizard shows up)
 
 0. Its in java8
 
@@ -77,6 +81,20 @@ allows for the block or item to store data, becoming an entity. (as well as adva
 
 [Example](https://github.com/Terasology/JoshariasSurvival/tree/master/assets/prefabs)
     
+____
+
+**Module.txt**
+
+This is a textfile in the root of the module directory that gives module stats, and helps do the magic. 
+
+It gives modules: an internal name, a displayed name, the Authors names, a short description, listing of dependancies so they can automatically be pulled, and so forth. 
+
+[JoshariasSurvival](https://github.com/Terasology/JoshariasSurvival/blob/master/module.txt)  , a higher level module for example. 
+
+'Josharias Survival' the game play Is  fairly complex. 'JoshariasSurvival' The module is not. JoshariasSurvival is more or less a meta package. It contains few content of its own, and actually calls Libraries and other modules as dependacies. All modules in Josharias Survival can be mixed and matched  with other modules, but JoshariasSurvival automatically pull all required modules for a set up and tested play style, a gameplay template, or in Minecraft terms, a modpack. 
+
+The __"isGameplay" : "true",__  Causes this module to show up in the Gameplay template dropdown, as it has everything in order to be played as is. Things like Mineral Library or Hunger have this set to false as they are not useful or playable on their own. 
+
 
     
 

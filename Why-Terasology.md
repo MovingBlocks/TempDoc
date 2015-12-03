@@ -10,27 +10,29 @@ For example:
 
 0. The creation of modules is simple, and if  behavior already exists, in libraries or frameworks, no java code is needed. Modules work across many [versions](http://semver.org/), and dependacies are automatically handled. Json is used heavily.
 
-0. Organized, unified, but still independent. There is an offical forum, IRC, and module repo. Content is unified: plugins, ResourcePacks, libraries, frameworks are just types of modules, and thus are acessed through the offical module repo. However, the module repo is git based so it can be easily duplicated or forked, for decentralization. There is no login servers as each server manages the accounts themselves. Clients are reconized not by password, but by what is basically a SSH key that is generated on server join. However, a login module can be created for a centralized login server. 
+0. Organized, unified, but still independent. There is an offical forum, IRC, and module repo. Content is unified: plugins, ResourcePacks, libraries, frameworks are just types of modules, and thus are acessed through the offical module repo. However, the module repo is git based so it can be easily duplicated or forked, for decentralization. There is no login servers as each server manages the accounts themselves. Clients generate a SSH key at server join as form of Identity. However, a login module can be created for a centralized login server. 
 
 0. A tiny core, all content should be added using modules. Freedom of gameplay
 
-0. Infinite height and depth, commonly know as Cubic Chunks
+0. Infinite height and depth, commonly known as Cubic Chunks
 
 0. Blocks and block shapes are seperate. Once you define a shape, all blocks will have that variation. 
 
 0. 65,000 IDs for biomes, A biome is defined per grid space, allowing for vertical biomes.
 
-0. Community controlled and community ran. 
-
 0. A better lighting engine. Includes shaders by default, torches can give off light while placed, held, or dropped.
-
-0. Open source and gratis. All currently existing modules as well, but the licenses is to be decided by the Author. 
 
 0. Multithreaded. (Rendering is single threaded because of openGL, but this could change if a Rendering Wizard shows up)
 
+0. Open source and gratis. All currently existing modules as well, but the licenses is to be decided by the Author. 
+
+0. Community controlled and community ran. 
+
 0. Its in java8
 
-For mod developers, a selection of libraries and frameworks has been created, to aid compataibility, and reduce duplication of work. Such as defining ores, common plants and how they grow, climate and weather, networking between blocks, how ores spawn etc. Modules are a good source of code refrence, for seasoned and budding mod developers alike. A list of ready to use modules,libraries, and frameworks can be found in the [module repo](https://github.com/Terasology/)
+__For Mod Developers__ 
+
+A selection of libraries and frameworks has been created, to aid compataibility, and reduce duplication of work. Such as defining ores, common plants and how they grow, climate and weather, networking between blocks, how ores spawn etc. Modules are a good source of code reference, for seasoned and budding mod developers alike. A list of ready to use modules,libraries, and frameworks can be found in the [module repo](https://github.com/Terasology/)
 
 # Gameplay and Module Management
 

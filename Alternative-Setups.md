@@ -48,7 +48,7 @@ __NOTE: There are currently some other issues that need to be handled  manually:
 
 1.
 
-Force "natives" to be an eclipse project by creating a .project file for it.   This probably needs to be done before you import projects into Eclipse.  You will need to create "natives" by running "gradlew runPC" first.  The natives .project file can be as simple as this:
+Force "natives" to be an eclipse project by creating a .project file for it.   This probably needs to be done before you import projects into Eclipse.  You will need to create "natives" by running `gradlew extractNatives` first.  The natives .project file can be as simple as this:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>

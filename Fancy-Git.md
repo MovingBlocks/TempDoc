@@ -13,7 +13,7 @@ We have the Gradle Wrapper in use so you can simply start a local setup with `gr
 
 There are more interesting pieces that can be auto configured via Gradle - we just need time to work some of them out! You can also have Gradle set up Eclipse, but that is less commonly used by the project team and may not work as well as for IntelliJ. Here are some more Gradle tasks:
 
-* Execute the game from command line: `gradlew run`
+* Execute the game from command line: `gradlew game`
 * Generate javadoc: `gradlew javadoc`
 * Build the applet: `gradlew applet`
 

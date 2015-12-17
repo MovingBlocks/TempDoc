@@ -40,3 +40,82 @@ Thanks to Weblate for the great product, including the nice bitnami installer, a
 * https://weblate.org
 * https://bitnami.com/stack/weblate
 * http://dev.minetest.net/Installing_Weblate
+
+
+# Installing Weblate 2.4
+
+2015-12-13
+msteiger
+CentOS 7.1
+
+yum install git
+
+yum install mariadb mariadb-server
+
+CREATE USER 'weblate'@'%' IDENTIFIED BY 'weblatePassword';
+GRANT SELECT ON weblate.* TO 'weblate'@'%';
+
+
+sudo systemctl start mariadb.service
+--> Launch now
+sudo systemctl enable mariadb.service
+--> Launch at boot time
+
+yum install epel-release
+
+--> python-django is 1.6.11 -> Weblate 2.4 needs 1.7
+
+yum install python-pip
+pip install django
+
+django-admin --version
+
+--> 1.9+
+
+pip install translate-toolkit
+
+pip install python-social-auth
+
+pip install Whoosh==2.5.7
+
+pip install Pillow
+
+--> already exists
+
+yum install python-lxml
+
+yum install python-dateutil
+
+pip install django-compressor
+
+
+pip install django-crispy-forms
+
+pip install pyuca
+
+pip install weblate
+
+--> Maybe pip install weblate automatically installs the right things?
+
+
+--> Install webserver
+
+yum install httpd mod_wsgi
+
+yum install memcached
+
+pip install python-memcached
+--> manage.py --> Error 'module' object has no attribute 'PY2'
+pip install --upgrade six
+
+
+--> Configure apache2
+
+ /etc/httpd/conf.d/weblate.conf from examples/apache.conf
+
+
+--> Weblate with MySQL support:
+
+yum install MySQL-python
+
+--> manage.py is a runnable 'weblate' command for the pip installer and stored in usr/bin 

@@ -2,6 +2,9 @@ Contributor Guide
 =================
 If you're interested in contributing in some way or just learn about some more developer stuff, you're in the right place! Once done, [Introduce yourself!](http://forum.terasology.org/forums/contributor-introductions.7/)
 
+# _**[Dev Setup](https://github.com/MovingBlocks/Terasology/wiki/Dev-Setup)**_
+
+
 First steps - for those who want to learn
 -----------------------------------------
 

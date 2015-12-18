@@ -66,7 +66,7 @@ Block Design
 Related Sections
 ----------------
 
-   * [http://jenkins.terasology.org](The Jenkins Page)
+   * [The Jenkins Page](http://jenkins.terasology.org)
    * [[Issue tracking]] - details on how we're working with issue tracking on GitHub
    * [[UnitTesting]] - you know you gotta, it helps!
    * [[JavaDoc]] - and so does this

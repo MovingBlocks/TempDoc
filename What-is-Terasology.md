@@ -6,7 +6,7 @@ The what's what of Terasology - for the who's who see DevTeam.
 Goals at a glance
 -----------------
 
-While the exact destination of Terasology is subject to change as we're still early in development we try to give some ideas of where things are heading via [milestones on GitHub](https://github.com/MovingBlocks/Terasology/issues/milestones) and history on the DownloadTerasology page - but for a nice short summary here's a quick list:
+While the exact destination of Terasology is subject to change as we're still early in development we try to give some ideas of where things are heading via [milestones on GitHub](https://github.com/MovingBlocks/Terasology/milestones) and history on the DownloadTerasology page - but for a nice short summary here's a quick list:
 
    * Minion management akin to Dwarf Fortress or Dungeon Keeper - creatures that will have needs that take up space to provide that then in return provide you with various benefits. This helps fill out the world.
    * The simple visual appeal of 3D in a voxel world like Minecraft - not too focused on providing hi-res splendor, as that inevitably leads to the high-cost race towards photorealism. At the same time, if we can jam in some fancy effects on top of that, like reflective water, so be it! :-)
